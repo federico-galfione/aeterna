@@ -19,6 +19,7 @@
   const fadeElements = document.querySelectorAll('.fade-in');
   const staggerContainers = document.querySelectorAll('.stagger-children');
   const scaleElements = document.querySelectorAll('.scale-in');
+  const timelineItems = document.querySelectorAll('.timeline-item');
   const contactForm = document.getElementById('contact-form');
 
   // ═══════════════════════════════════════════════════════════════════════════
@@ -136,6 +137,7 @@
     fadeElements.forEach(el => animationObserver.observe(el));
     staggerContainers.forEach(el => animationObserver.observe(el));
     scaleElements.forEach(el => animationObserver.observe(el));
+    timelineItems.forEach(el => animationObserver.observe(el));
   }
 
   initScrollAnimations();
