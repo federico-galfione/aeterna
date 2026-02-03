@@ -305,4 +305,51 @@
     yearSpan.textContent = new Date().getFullYear();
   }
 
+  // ═══════════════════════════════════════════════════════════════════════════
+  // Cookie Consent Banner
+  // ═══════════════════════════════════════════════════════════════════════════
+
+  const cookieBanner = document.getElementById('cookie-banner');
+  const cookieAcceptBtn = document.getElementById('cookie-accept');
+  const COOKIE_CONSENT_KEY = 'aeterna_cookie_consent';
+
+  function checkCookieConsent() {
+    if (!cookieBanner) return;
+
+    const consent = localStorage.getItem(COOKIE_CONSENT_KEY);
+
+    if (!consent) {
+      // Show banner with slight delay for smooth appearance
+      setTimeout(() => {
+        cookieBanner.classList.add('visible');
+      }, 500);
+    }
+  }
+
+  function acceptCookies() {
+    // Store consent with timestamp
+    const consentData = {
+      accepted: true,
+      timestamp: new Date().toISOString()
+    };
+    localStorage.setItem(COOKIE_CONSENT_KEY, JSON.stringify(consentData));
+
+    // Hide banner
+    cookieBanner.classList.remove('visible');
+  }
+
+  // Initialize cookie consent
+  checkCookieConsent();
+
+  if (cookieAcceptBtn) {
+    cookieAcceptBtn.addEventListener('click', acceptCookies);
+  }
+
+  // Close cookie banner on Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && cookieBanner && cookieBanner.classList.contains('visible')) {
+      acceptCookies();
+    }
+  });
+
 })();

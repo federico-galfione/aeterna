@@ -2076,6 +2076,26 @@ p:last-child {
   .included-grid {
     grid-template-columns: 1fr;
   }
+
+  /* Cookie banner mobile */
+  .cookie-banner-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cookie-banner-actions {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .cookie-banner .btn {
+    width: 100%;
+  }
+
+  /* Footer legal links mobile */
+  .footer-legal {
+    justify-content: center;
+  }
 }
 
 /* Small mobile */
@@ -2100,6 +2120,228 @@ p:last-child {
   .image-grid-item--large {
     grid-column: 1;
   }
+}
+
+/* ─── Cookie Consent Banner ─── */
+
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--bg-dark);
+  color: var(--text-on-dark);
+  padding: var(--space-lg) 0;
+  z-index: 9999;
+  transform: translateY(100%);
+  transition: transform var(--duration-base) var(--ease-out);
+  box-shadow: 0 -4px 20px rgba(44, 44, 44, 0.15);
+}
+
+.cookie-banner.visible {
+  transform: translateY(0);
+}
+
+.cookie-banner-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-xl);
+  flex-wrap: wrap;
+}
+
+.cookie-banner-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.cookie-banner-text p {
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  font-weight: 300;
+  color: rgba(250, 247, 240, 0.85);
+  margin-bottom: 0;
+}
+
+.cookie-banner-text a {
+  color: var(--accent-primary);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.cookie-banner-text a:hover {
+  color: var(--accent-hover);
+}
+
+.cookie-banner-actions {
+  display: flex;
+  gap: var(--space-md);
+  flex-shrink: 0;
+}
+
+.cookie-banner .btn {
+  padding: var(--space-sm) var(--space-lg);
+  font-size: var(--text-xs);
+}
+
+/* ─── Form Checkbox (Consent) ─── */
+
+.form-checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-sm);
+}
+
+.form-checkbox input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin-top: 3px;
+  flex-shrink: 0;
+  accent-color: var(--accent-primary);
+  cursor: pointer;
+}
+
+.form-checkbox label {
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  font-weight: 300;
+  color: var(--text-secondary);
+  text-transform: none;
+  letter-spacing: normal;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+.form-checkbox label a {
+  color: var(--accent-primary);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.form-checkbox label a:hover {
+  color: var(--accent-warm);
+}
+
+/* ─── Legal Pages (Privacy & Cookie Policy) ─── */
+
+.legal-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.legal-content h1 {
+  font-size: var(--text-3xl);
+  margin-bottom: var(--space-md);
+}
+
+.legal-content .last-updated {
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  font-weight: 300;
+  color: var(--text-secondary);
+  margin-bottom: var(--space-3xl);
+}
+
+.legal-content h2 {
+  font-size: var(--text-xl);
+  margin-top: var(--space-3xl);
+  margin-bottom: var(--space-md);
+  padding-bottom: var(--space-sm);
+  border-bottom: 1px solid rgba(196, 162, 101, 0.3);
+}
+
+.legal-content h3 {
+  font-size: var(--text-lg);
+  margin-top: var(--space-xl);
+  margin-bottom: var(--space-sm);
+}
+
+.legal-content p {
+  font-family: var(--font-sans);
+  font-weight: 300;
+  color: var(--text-secondary);
+  margin-bottom: var(--space-md);
+  line-height: 1.7;
+}
+
+.legal-content ul,
+.legal-content ol {
+  font-family: var(--font-sans);
+  font-weight: 300;
+  color: var(--text-secondary);
+  margin-bottom: var(--space-md);
+  padding-left: var(--space-xl);
+  list-style: disc;
+}
+
+.legal-content ol {
+  list-style: decimal;
+}
+
+.legal-content li {
+  margin-bottom: var(--space-sm);
+  line-height: 1.6;
+}
+
+.legal-content a {
+  color: var(--accent-primary);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.legal-content a:hover {
+  color: var(--accent-warm);
+}
+
+.legal-content strong {
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.legal-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: var(--space-xl) 0;
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+}
+
+.legal-content th,
+.legal-content td {
+  text-align: left;
+  padding: var(--space-md);
+  border-bottom: 1px solid rgba(44, 44, 44, 0.1);
+}
+
+.legal-content th {
+  font-weight: 500;
+  color: var(--text-primary);
+  background-color: var(--bg-secondary);
+}
+
+.legal-content td {
+  color: var(--text-secondary);
+  font-weight: 300;
+}
+
+/* ─── Footer Legal Links ─── */
+
+.footer-legal {
+  display: flex;
+  gap: var(--space-lg);
+  margin-top: var(--space-md);
+}
+
+.footer-legal a {
+  font-family: var(--font-sans);
+  font-size: var(--text-xs);
+  font-weight: 300;
+  color: rgba(250, 247, 240, 0.5);
+  transition: color var(--duration-fast) var(--ease-out);
+}
+
+.footer-legal a:hover {
+  color: var(--text-on-dark);
 }
 
 /* Reduce motion for accessibility */

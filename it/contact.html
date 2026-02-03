@@ -172,6 +172,13 @@
                 <textarea id="message" name="message" required placeholder="Che tipo di location immagini? Quale atmosfera vuoi creare? Hai requisiti o sogni specifici?"></textarea>
               </div>
 
+              <div class="form-group form-checkbox">
+                <input type="checkbox" id="consent" name="consent" required>
+                <label for="consent">
+                  Acconsento al trattamento dei miei dati personali come descritto nella <a href="privacy.html" target="_blank">Privacy Policy</a>. *
+                </label>
+              </div>
+
               <button type="submit" class="btn btn-primary btn-lg" style="margin-top: var(--space-lg);">Invia Messaggio</button>
             </form>
           </div>
@@ -275,10 +282,26 @@
       </div>
       <div class="footer-bottom">
         <p>&copy; <span class="current-year">2026</span> Aeterna Events. Tutti i diritti riservati.</p>
+        <div class="footer-legal">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="cookie-policy.html">Cookie Policy</a>
+        </div>
         <p>P.IVA 00000000000</p>
       </div>
     </div>
   </footer>
+
+  <!-- Cookie Consent Banner -->
+  <div class="cookie-banner" id="cookie-banner">
+    <div class="container cookie-banner-inner">
+      <div class="cookie-banner-text">
+        <p>Utilizziamo i cookie per garantire il corretto funzionamento del nostro sito web e per migliorare la tua esperienza. Continuando a utilizzare il nostro sito, accetti l'uso dei cookie. <a href="cookie-policy.html">Scopri di piu</a></p>
+      </div>
+      <div class="cookie-banner-actions">
+        <button class="btn btn-primary" id="cookie-accept">Accetta</button>
+      </div>
+    </div>
+  </div>
 
   <script src="../js/main.js"></script>
 </body>
