@@ -1,0 +1,8 @@
+# Aeterna Events - robots.txt
+# https://aeternaevents.com
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://aeternaevents.com/sitemap.xml

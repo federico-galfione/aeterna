@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- English Pages -->
+  <url>
+    <loc>https://aeternaevents.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aeternaevents.com/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://aeternaevents.com/it/"/>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://aeternaevents.com/corporate.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aeternaevents.com/corporate.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://aeternaevents.com/it/corporate.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://aeternaevents.com/weddings.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aeternaevents.com/weddings.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://aeternaevents.com/it/weddings.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://aeternaevents.com/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aeternaevents.com/about.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://aeternaevents.com/it/about.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://aeternaevents.com/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aeternaevents.com/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://aeternaevents.com/it/contact.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Italian Pages -->
+  <url>
+    <loc>https://aeternaevents.com/it/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aeternaevents.com/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://aeternaevents.com/it/"/>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://aeternaevents.com/it/corporate.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aeternaevents.com/corporate.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://aeternaevents.com/it/corporate.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://aeternaevents.com/it/weddings.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aeternaevents.com/weddings.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://aeternaevents.com/it/weddings.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://aeternaevents.com/it/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aeternaevents.com/about.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://aeternaevents.com/it/about.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://aeternaevents.com/it/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aeternaevents.com/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://aeternaevents.com/it/contact.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>
