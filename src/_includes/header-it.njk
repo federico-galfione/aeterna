@@ -1,0 +1,42 @@
+<!-- Navigation -->
+<header class="navbar{% if navbarScrolled %} navbar--scrolled{% endif %}" id="navbar">
+  <div class="container navbar-inner">
+    <a href="/it/index.html" class="navbar-logo">
+      <img src="/public/logos/Light_logo.svg" alt="Aeterna Events" class="logo-light">
+      <img src="/public/logos/Dark_logo.svg" alt="Aeterna Events" class="logo-dark">
+      <img src="/public/logos/Hero_logo.svg" alt="Aeterna Events" class="logo-hero">
+    </a>
+    <nav class="navbar-links">
+      <a href="/it/corporate.html">Corporate</a>
+      <a href="/it/weddings.html">Matrimoni</a>
+      <a href="/it/services.html">Come Funziona</a>
+      <a href="/it/about.html">Chi Siamo</a>
+      <a href="/it/contact.html" class="btn btn-primary btn-sm">Contattaci</a>
+      <div class="navbar-lang">
+        <a href="/{{ pageName }}">EN</a>
+        <span>|</span>
+        <a href="/it/{{ pageName }}" class="active">IT</a>
+      </div>
+    </nav>
+    <button class="navbar-hamburger" aria-label="Menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" aria-hidden="true">
+  <a href="/it/index.html">Home</a>
+  <a href="/it/corporate.html">Corporate</a>
+  <a href="/it/weddings.html">Matrimoni</a>
+  <a href="/it/services.html">Come Funziona</a>
+  <a href="/it/about.html">Chi Siamo</a>
+  <a href="/it/contact.html">Contatti</a>
+  <div class="mobile-lang">
+    <a href="/{{ pageName }}">EN</a>
+    <span>|</span>
+    <a href="/it/{{ pageName }}" class="active">IT</a>
+  </div>
+</div>
