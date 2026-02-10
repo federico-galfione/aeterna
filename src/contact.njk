@@ -18,7 +18,7 @@ eleventyComputed:
   ogUrl: "https://aeternaevents.com/{% if lang == 'it' %}it/{% endif %}contact.html"
 ---
 {% set t = en if lang == "en" else it %}
-{% set prefix = "" if lang == "en" else "/it" %}
+{% set prefix = baseUrl if lang == "en" else baseUrl + "it/" %}
 
   <main>
     <!-- Contact Section -->
@@ -120,7 +120,7 @@ eleventyComputed:
               <div class="form-group form-checkbox">
                 <input type="checkbox" id="consent" name="consent" required>
                 <label for="consent">
-                  {{ t.contact.form.consentText }} <a href="{{ prefix }}/privacy.html" target="_blank">{{ t.contact.form.consentLink }}</a>. *
+                  {{ t.contact.form.consentText }} <a href="{{ prefix }}privacy.html" target="_blank">{{ t.contact.form.consentLink }}</a>. *
                 </label>
               </div>
 

@@ -1,23 +1,23 @@
 {% set t = en if lang == "en" else it %}
-{% set prefix = "" if lang == "en" else "/it" %}
+{% set prefix = baseUrl if lang == "en" else baseUrl + "it/" %}
 <!-- Footer -->
 <footer class="footer">
   <div class="container">
     <div class="footer-inner">
       <div class="footer-brand">
         <div class="footer-logo">
-          <img src="/public/logos/Dark_logo.svg" alt="Aeterna Events">
+          <img src="{{ baseUrl }}public/logos/Dark_logo.svg" alt="Aeterna Events">
         </div>
         <p class="footer-tagline">{{ t.footer.tagline }}</p>
       </div>
       <nav class="footer-nav">
         <h4>{{ t.footer.navigate }}</h4>
         <ul>
-          <li><a href="{{ prefix }}/corporate.html">{{ t.footer.corporateEvents }}</a></li>
-          <li><a href="{{ prefix }}/weddings.html">{{ t.footer.weddings }}</a></li>
-          <li><a href="{{ prefix }}/services.html">{{ t.footer.services }}</a></li>
-          <li><a href="{{ prefix }}/about.html">{{ t.footer.aboutUs }}</a></li>
-          <li><a href="{{ prefix }}/contact.html">{{ t.footer.contactLink }}</a></li>
+          <li><a href="{{ prefix }}corporate.html">{{ t.footer.corporateEvents }}</a></li>
+          <li><a href="{{ prefix }}weddings.html">{{ t.footer.weddings }}</a></li>
+          <li><a href="{{ prefix }}services.html">{{ t.footer.services }}</a></li>
+          <li><a href="{{ prefix }}about.html">{{ t.footer.aboutUs }}</a></li>
+          <li><a href="{{ prefix }}contact.html">{{ t.footer.contactLink }}</a></li>
         </ul>
       </nav>
       <div class="footer-contact">
@@ -49,8 +49,8 @@
     <div class="footer-bottom">
       <p>&copy; <span class="current-year">2026</span> Aeterna Events. {{ t.footer.rights }}</p>
       <div class="footer-legal">
-        <a href="{{ prefix }}/privacy.html">{{ t.footer.privacyPolicy }}</a>
-        <a href="{{ prefix }}/cookie-policy.html">{{ t.footer.cookiePolicy }}</a>
+        <a href="{{ prefix }}privacy.html">{{ t.footer.privacyPolicy }}</a>
+        <a href="{{ prefix }}cookie-policy.html">{{ t.footer.cookiePolicy }}</a>
       </div>
       <p>P.IVA 00000000000</p>
     </div>

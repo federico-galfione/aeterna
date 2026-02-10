@@ -18,7 +18,7 @@ eleventyComputed:
   ogUrl: "https://aeternaevents.com/{% if lang == 'it' %}it/{% endif %}privacy.html"
 ---
 {% set t = en if lang == "en" else it %}
-{% set prefix = "" if lang == "en" else "/it" %}
+{% set prefix = baseUrl if lang == "en" else baseUrl + "it/" %}
 
   <main>
     <section class="section bg-gradient-warm" style="padding-top: calc(var(--space-section) + 80px);">

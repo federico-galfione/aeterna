@@ -39,7 +39,7 @@ structuredData: |
   }
 ---
 {% set t = en if lang == "en" else it %}
-{% set prefix = "" if lang == "en" else "/it" %}
+{% set prefix = baseUrl if lang == "en" else baseUrl + "it/" %}
 
   <main>
     <!-- Hero Section -->
@@ -52,7 +52,7 @@ structuredData: |
         <span class="label hero-anim">{{ t.home.hero.label }}</span>
         <h1 class="hero-anim">{{ t.home.hero.title | safe }}</h1>
         <p class="subtitle hero-anim">{{ t.home.hero.subtitle }}</p>
-        <a href="{{ prefix }}/contact.html" class="btn btn-ghost hero-anim">{{ t.home.hero.cta }}</a>
+        <a href="{{ prefix }}contact.html" class="btn btn-ghost hero-anim">{{ t.home.hero.cta }}</a>
       </div>
       <div class="scroll-indicator">
         <span>{{ t.home.hero.scrollIndicator }}</span>
@@ -84,7 +84,7 @@ structuredData: |
           <span class="label">{{ t.home.servicesCorporate.label }}</span>
           <h3>{{ t.home.servicesCorporate.title }}</h3>
           <p>{{ t.home.servicesCorporate.text }}</p>
-          <a href="{{ prefix }}/corporate.html" class="btn btn-ghost">{{ t.home.servicesCorporate.cta }}</a>
+          <a href="{{ prefix }}corporate.html" class="btn btn-ghost">{{ t.home.servicesCorporate.cta }}</a>
         </div>
       </div>
       <div class="services-split-item">
@@ -95,7 +95,7 @@ structuredData: |
           <span class="label">{{ t.home.servicesWeddings.label }}</span>
           <h3>{{ t.home.servicesWeddings.title }}</h3>
           <p>{{ t.home.servicesWeddings.text }}</p>
-          <a href="{{ prefix }}/weddings.html" class="btn btn-ghost">{{ t.home.servicesWeddings.cta }}</a>
+          <a href="{{ prefix }}weddings.html" class="btn btn-ghost">{{ t.home.servicesWeddings.cta }}</a>
         </div>
       </div>
     </section>
@@ -181,7 +181,7 @@ structuredData: |
           <span class="label">{{ t.home.cta.label }}</span>
           <h2>{{ t.home.cta.title }}</h2>
           <p>{{ t.home.cta.text }}</p>
-          <a href="{{ prefix }}/contact.html" class="btn btn-primary btn-lg">{{ t.home.cta.button }}</a>
+          <a href="{{ prefix }}contact.html" class="btn btn-primary btn-lg">{{ t.home.cta.button }}</a>
         </div>
       </div>
     </section>

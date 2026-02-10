@@ -18,7 +18,7 @@ eleventyComputed:
   ogImage: "https://aeternaevents.com/images/og-image.jpg"
 ---
 {% set t = en if lang == "en" else it %}
-{% set prefix = "" if lang == "en" else "/it" %}
+{% set prefix = baseUrl if lang == "en" else baseUrl + "it/" %}
 
   <main>
     <!-- Hero Section -->
@@ -31,7 +31,7 @@ eleventyComputed:
         <span class="label hero-anim">{{ t.corporate.hero.label }}</span>
         <h1 class="hero-anim">{{ t.corporate.hero.title | safe }}</h1>
         <p class="subtitle hero-anim">{{ t.corporate.hero.subtitle }}</p>
-        <a href="{{ prefix }}/contact.html" class="btn btn-ghost hero-anim">{{ t.corporate.hero.cta }}</a>
+        <a href="{{ prefix }}contact.html" class="btn btn-ghost hero-anim">{{ t.corporate.hero.cta }}</a>
       </div>
       <div class="scroll-indicator">
         <span>{{ t.corporate.hero.scrollIndicator }}</span>
@@ -153,7 +153,7 @@ eleventyComputed:
           <span class="label">{{ t.corporate.cta.label }}</span>
           <h2>{{ t.corporate.cta.title }}</h2>
           <p>{{ t.corporate.cta.text }}</p>
-          <a href="{{ prefix }}/contact.html" class="btn btn-primary btn-lg">{{ t.corporate.cta.button }}</a>
+          <a href="{{ prefix }}contact.html" class="btn btn-primary btn-lg">{{ t.corporate.cta.button }}</a>
         </div>
       </div>
     </section>

@@ -6,6 +6,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/robots.txt");
   eleventyConfig.addPassthroughCopy("src/sitemap.xml");
 
+  // Base URL for links — set via BASE_URL env var, defaults to "/" for local dev
+  eleventyConfig.addGlobalData("baseUrl", process.env.BASE_URL || "/");
+
   return {
     dir: {
       input: "src",
@@ -15,6 +18,6 @@ module.exports = function (eleventyConfig) {
     },
     templateFormats: ["njk", "md"],
     htmlTemplateEngine: "njk",
-    pathPrefix: "/",
+    pathPrefix: process.env.BASE_URL || "/",
   };
 };

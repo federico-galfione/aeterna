@@ -1,10 +1,10 @@
 {% set t = en if lang == "en" else it %}
-{% set prefix = "" if lang == "en" else "/it" %}
+{% set prefix = baseUrl if lang == "en" else baseUrl + "it/" %}
 <!-- Cookie Consent Banner -->
 <div class="cookie-banner" id="cookie-banner">
   <div class="container cookie-banner-inner">
     <div class="cookie-banner-text">
-      <p>{{ t.cookie.text }} <a href="{{ prefix }}/cookie-policy.html">{{ t.cookie.learnMore }}</a></p>
+      <p>{{ t.cookie.text }} <a href="{{ prefix }}cookie-policy.html">{{ t.cookie.learnMore }}</a></p>
     </div>
     <div class="cookie-banner-actions">
       <button class="btn btn-primary" id="cookie-accept">{{ t.cookie.accept }}</button>
@@ -12,4 +12,4 @@
   </div>
 </div>
 
-<script src="/js/main.js"></script>
+<script src="{{ baseUrl }}js/main.js"></script>
