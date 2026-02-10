@@ -1,0 +1,190 @@
+---
+pagination:
+  data: languages
+  size: 1
+  alias: lang
+permalink: "{% if lang == 'it' %}it/{% endif %}weddings.html"
+layout: base.njk
+pageName: "weddings.html"
+eleventyComputed:
+  title: "{% if lang == 'it' %}{{ it.pages.weddings.title }}{% else %}{{ en.pages.weddings.title }}{% endif %}"
+  description: "{% if lang == 'it' %}{{ it.pages.weddings.description }}{% else %}{{ en.pages.weddings.description }}{% endif %}"
+  canonical: "https://aeternaevents.com/{% if lang == 'it' %}it/{% endif %}weddings.html"
+  hreflangEn: "https://aeternaevents.com/weddings.html"
+  hreflangIt: "https://aeternaevents.com/it/weddings.html"
+  ogTitle: "{% if lang == 'it' %}{{ it.pages.weddings.ogTitle }}{% else %}{{ en.pages.weddings.ogTitle }}{% endif %}"
+  ogDescription: "{% if lang == 'it' %}{{ it.pages.weddings.ogDescription }}{% else %}{{ en.pages.weddings.ogDescription }}{% endif %}"
+  ogUrl: "https://aeternaevents.com/{% if lang == 'it' %}it/{% endif %}weddings.html"
+  ogImage: "https://aeternaevents.com/images/og-image.jpg"
+---
+{% set t = en if lang == "en" else it %}
+{% set prefix = "" if lang == "en" else "/it" %}
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-bg">
+        <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=1920&q=80" alt="{{ t.weddings.hero.heroImgAlt }}" loading="eager">
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <span class="label hero-anim">{{ t.weddings.hero.label }}</span>
+        <h1 class="hero-anim">{{ t.weddings.hero.title | safe }}</h1>
+        <p class="subtitle hero-anim">{{ t.weddings.hero.subtitle }}</p>
+        <a href="{{ prefix }}/contact.html" class="btn btn-ghost hero-anim">{{ t.weddings.hero.cta }}</a>
+      </div>
+      <div class="scroll-indicator">
+        <span>{{ t.weddings.hero.scrollIndicator }}</span>
+        <div class="scroll-indicator-line"></div>
+      </div>
+    </section>
+
+    <!-- Emotional Story -->
+    <section class="section bg-gradient-warm">
+      <div class="container container--narrow text-center">
+        <div class="fade-in">
+          <span class="label">{{ t.weddings.feeling.label }}</span>
+          <h2 class="mt-md mb-xl">{{ t.weddings.feeling.title }}</h2>
+          <p style="font-size: var(--text-lg); max-width: 700px; margin: 0 auto;">
+            {{ t.weddings.feeling.text }}
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Image Feature -->
+    <section class="section section--ivory" style="padding-top: 0;">
+      <div class="container">
+        <div class="grid grid-asymmetric-reverse fade-in" style="align-items: center; gap: var(--space-4xl);">
+          <div>
+            <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=1000&q=80" alt="{{ t.weddings.promise.imgAlt }}" style="border-radius: var(--radius-lg);">
+          </div>
+          <div>
+            <span class="label label--olive">{{ t.weddings.promise.label }}</span>
+            <h2 class="mt-md mb-lg">{{ t.weddings.promise.title }}</h2>
+            <p style="font-family: var(--font-sans); font-weight: 300; color: var(--text-secondary);">
+              {{ t.weddings.promise.text1 }}
+            </p>
+            <p style="font-family: var(--font-sans); font-weight: 300; color: var(--text-secondary); margin-top: var(--space-md);">
+              {{ t.weddings.promise.text2 }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process -->
+    <section class="section">
+      <div class="container container--narrow">
+        <div class="section-header text-center fade-in">
+          <span class="label">{{ t.weddings.process.label }}</span>
+          <h2>{{ t.weddings.process.title }}</h2>
+          <div class="gold-line"></div>
+        </div>
+
+        <div class="process-steps fade-in">
+          {% for step in t.weddings.process.steps %}
+          <div class="process-step">
+            <div>
+              <h3>{{ step.title }}</h3>
+              <p>{{ step.text }}</p>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+
+    <!-- Venue Types -->
+    <section class="section bg-gradient-ivory">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="label label--olive">{{ t.weddings.venueStyles.label }}</span>
+          <h2>{{ t.weddings.venueStyles.title }}</h2>
+          <div class="gold-line"></div>
+        </div>
+        <div class="grid grid-3 stagger-children">
+          {% for type in t.weddings.venueStyles.types %}
+          <div class="card">
+            <div class="card-image">
+              {% if loop.index == 1 %}
+              <img src="https://images.unsplash.com/photo-1534445867742-43195f401b6c?w=800&q=80" alt="{{ type.imgAlt }}" loading="lazy">
+              {% elif loop.index == 2 %}
+              <img src="https://images.unsplash.com/photo-1533104816931-20fa691ff6ca?w=800&q=80" alt="{{ type.imgAlt }}" loading="lazy">
+              {% elif loop.index == 3 %}
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80" alt="{{ type.imgAlt }}" loading="lazy">
+              {% endif %}
+            </div>
+            <div class="card-content">
+              <h3>{{ type.title }}</h3>
+              <p>{{ type.text }}</p>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+        <div class="grid grid-2 stagger-children mt-xl">
+          {% for type in t.weddings.venueStyles.typesRow2 %}
+          <div class="card">
+            <div class="card-image">
+              {% if loop.index == 1 %}
+              <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=800&q=80" alt="{{ type.imgAlt }}" loading="lazy">
+              {% elif loop.index == 2 %}
+              <img src="https://images.unsplash.com/photo-1602524206684-fdf1fdb3dff2?w=800&q=80" alt="{{ type.imgAlt }}" loading="lazy">
+              {% endif %}
+            </div>
+            <div class="card-content">
+              <h3>{{ type.title }}</h3>
+              <p>{{ type.text }}</p>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial -->
+    <section class="section section--dark bg-gradient-dark">
+      <div class="container">
+        <div class="testimonial fade-in">
+          <p class="testimonial-quote">
+            {{ t.weddings.testimonial.quote }}
+          </p>
+          <div class="testimonial-author">
+            <strong>{{ t.weddings.testimonial.author }}</strong>
+            <span>{{ t.weddings.testimonial.role }}</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Regions -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header text-center fade-in">
+          <span class="label">{{ t.weddings.regions.label }}</span>
+          <h2>{{ t.weddings.regions.title }}</h2>
+          <div class="gold-line"></div>
+        </div>
+        <div class="grid grid-4 fade-in" style="text-align: center;">
+          {% for region in t.weddings.regions.list %}
+          <div>
+            <h4 style="margin-bottom: var(--space-xs);">{{ region.name }}</h4>
+            <p style="font-family: var(--font-sans); font-weight: 300; color: var(--text-secondary); font-size: var(--text-sm);">{{ region.desc }}</p>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section bg-gradient-warm">
+      <div class="container">
+        <div class="cta-section fade-in">
+          <span class="label">{{ t.weddings.cta.label }}</span>
+          <h2>{{ t.weddings.cta.title }}</h2>
+          <p>{{ t.weddings.cta.text }}</p>
+          <a href="{{ prefix }}/contact.html" class="btn btn-primary btn-lg">{{ t.weddings.cta.button }}</a>
+        </div>
+      </div>
+    </section>
+  </main>

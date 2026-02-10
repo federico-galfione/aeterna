@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }}</title>
+  <meta name="description" content="{{ description }}">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="{{ canonical }}">
+
+  <!-- Hreflang -->
+  <link rel="alternate" hreflang="en" href="{{ hreflangEn }}">
+  <link rel="alternate" hreflang="it" href="{{ hreflangIt }}">
+  <link rel="alternate" hreflang="x-default" href="{{ hreflangEn }}">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="{{ ogTitle or title }}">
+  <meta property="og:description" content="{{ ogDescription or description }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ ogUrl or canonical }}">
+  {% if ogImage %}
+  <meta property="og:image" content="{{ ogImage }}">
+  {% endif %}
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/public/logos/Aeterna_logo.svg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/css/styles.css">
+
+  {% if structuredData %}
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {{ structuredData | safe }}
+  </script>
+  {% endif %}
+</head>
+<body>
+  {% include "header.njk" %}
+
+  {{ content | safe }}
+
+  {% include "footer.njk" %}
+  {% include "cookie.njk" %}
+</body>
+</html>

@@ -1,0 +1,34 @@
+---
+pagination:
+  data: languages
+  size: 1
+  alias: lang
+permalink: "{% if lang == 'it' %}it/{% endif %}privacy.html"
+layout: base.njk
+pageName: "privacy.html"
+navbarScrolled: true
+eleventyComputed:
+  title: "{% if lang == 'it' %}{{ it.pages.privacy.title }}{% else %}{{ en.pages.privacy.title }}{% endif %}"
+  description: "{% if lang == 'it' %}{{ it.pages.privacy.description }}{% else %}{{ en.pages.privacy.description }}{% endif %}"
+  canonical: "https://aeternaevents.com/{% if lang == 'it' %}it/{% endif %}privacy.html"
+  hreflangEn: "https://aeternaevents.com/privacy.html"
+  hreflangIt: "https://aeternaevents.com/it/privacy.html"
+  ogTitle: "{% if lang == 'it' %}{{ it.pages.privacy.ogTitle }}{% else %}{{ en.pages.privacy.ogTitle }}{% endif %}"
+  ogDescription: "{% if lang == 'it' %}{{ it.pages.privacy.ogDescription }}{% else %}{{ en.pages.privacy.ogDescription }}{% endif %}"
+  ogUrl: "https://aeternaevents.com/{% if lang == 'it' %}it/{% endif %}privacy.html"
+---
+{% set t = en if lang == "en" else it %}
+{% set prefix = "" if lang == "en" else "/it" %}
+
+  <main>
+    <section class="section bg-gradient-warm" style="padding-top: calc(var(--space-section) + 80px);">
+      <div class="container">
+        <div class="legal-content">
+          <h1>{{ t.privacy.title }}</h1>
+          <p class="last-updated">{{ t.privacy.lastUpdated }}</p>
+
+          {{ t.privacy.content | safe }}
+        </div>
+      </div>
+    </section>
+  </main>

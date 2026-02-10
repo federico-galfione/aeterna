@@ -1,0 +1,187 @@
+---
+pagination:
+  data: languages
+  size: 1
+  alias: lang
+permalink: "{% if lang == 'it' %}it/{% endif %}about.html"
+layout: base.njk
+pageName: "about.html"
+eleventyComputed:
+  title: "{% if lang == 'it' %}{{ it.pages.about.title }}{% else %}{{ en.pages.about.title }}{% endif %}"
+  description: "{% if lang == 'it' %}{{ it.pages.about.description }}{% else %}{{ en.pages.about.description }}{% endif %}"
+  canonical: "https://aeternaevents.com/{% if lang == 'it' %}it/{% endif %}about.html"
+  hreflangEn: "https://aeternaevents.com/about.html"
+  hreflangIt: "https://aeternaevents.com/it/about.html"
+  ogTitle: "{% if lang == 'it' %}{{ it.pages.about.ogTitle }}{% else %}{{ en.pages.about.ogTitle }}{% endif %}"
+  ogDescription: "{% if lang == 'it' %}{{ it.pages.about.ogDescription }}{% else %}{{ en.pages.about.ogDescription }}{% endif %}"
+  ogUrl: "https://aeternaevents.com/{% if lang == 'it' %}it/{% endif %}about.html"
+  ogImage: "https://aeternaevents.com/images/og-image.jpg"
+---
+{% set t = en if lang == "en" else it %}
+{% set prefix = "" if lang == "en" else "/it" %}
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" style="min-height: 70vh;">
+      <div class="hero-bg">
+        <img src="https://images.unsplash.com/photo-1515859005217-8a1f08870f59?w=1920&q=80" alt="{{ t.about.hero.heroImgAlt }}" loading="eager">
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <span class="label hero-anim">{{ t.about.hero.label }}</span>
+        <h1 class="hero-anim">{{ t.about.hero.title | safe }}</h1>
+        <p class="subtitle hero-anim">{{ t.about.hero.subtitle }}</p>
+      </div>
+    </section>
+
+    <!-- Our Story -->
+    <section class="section bg-gradient-warm">
+      <div class="container">
+        <div class="grid grid-asymmetric" style="align-items: center; gap: var(--space-4xl);">
+          <div class="fade-in">
+            <span class="label label--olive">{{ t.about.story.label }}</span>
+            <h2 class="mt-md mb-lg">{{ t.about.story.title }}</h2>
+            <p style="font-family: var(--font-sans); font-weight: 300; color: var(--text-secondary); margin-bottom: var(--space-md);">
+              {{ t.about.story.text1 }}
+            </p>
+            <p style="font-family: var(--font-sans); font-weight: 300; color: var(--text-secondary); margin-bottom: var(--space-md);">
+              {{ t.about.story.text2 }}
+            </p>
+            <p style="font-family: var(--font-sans); font-weight: 300; color: var(--text-secondary);">
+              {{ t.about.story.text3 }}
+            </p>
+          </div>
+          <div class="fade-in">
+            <img src="https://images.unsplash.com/photo-1543429257-3eb0b65d9c58?w=800&q=80" alt="{{ t.about.story.imgAlt }}" style="border-radius: var(--radius-lg);">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Vision & Mission -->
+    <section class="section section--dark bg-gradient-dark">
+      <div class="container container--narrow">
+        <div class="grid grid-2 fade-in" style="gap: var(--space-4xl);">
+          <div>
+            <span class="label">{{ t.about.vision.label }}</span>
+            <h3 class="mt-md mb-lg" style="color: var(--text-on-dark);">{{ t.about.vision.title }}</h3>
+            <p style="font-family: var(--font-sans); font-weight: 300; color: rgba(250, 247, 240, 0.8);">
+              {{ t.about.vision.text }}
+            </p>
+          </div>
+          <div>
+            <span class="label">{{ t.about.mission.label }}</span>
+            <h3 class="mt-md mb-lg" style="color: var(--text-on-dark);">{{ t.about.mission.title }}</h3>
+            <p style="font-family: var(--font-sans); font-weight: 300; color: rgba(250, 247, 240, 0.8);">
+              {{ t.about.mission.text }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Values -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header text-center fade-in">
+          <span class="label">{{ t.about.values.label }}</span>
+          <h2>{{ t.about.values.title }}</h2>
+          <div class="gold-line"></div>
+        </div>
+        <div class="grid grid-4 stagger-children" style="text-align: center; gap: var(--space-3xl);">
+          {% for item in t.about.values.items %}
+          <div>
+            <div class="value-prop-icon" style="margin: 0 auto var(--space-lg);">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                {% if loop.index == 1 %}
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M12 6v6l4 2"/>
+                {% elif loop.index == 2 %}
+                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                <path d="M2 17l10 5 10-5"/>
+                <path d="M2 12l10 5 10-5"/>
+                {% elif loop.index == 3 %}
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                {% elif loop.index == 4 %}
+                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                {% endif %}
+              </svg>
+            </div>
+            <h4 style="margin-bottom: var(--space-sm);">{{ item.title }}</h4>
+            <p style="font-family: var(--font-sans); font-weight: 300; color: var(--text-secondary); font-size: var(--text-sm);">
+              {{ item.text }}
+            </p>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Work With Us -->
+    <section class="section bg-gradient-ivory">
+      <div class="container container--narrow">
+        <div class="section-header text-center fade-in">
+          <span class="label label--olive">{{ t.about.whyUs.label }}</span>
+          <h2>{{ t.about.whyUs.title }}</h2>
+          <div class="gold-line"></div>
+        </div>
+        <div class="fade-in">
+          <div class="quote" style="max-width: 700px; margin: 0 auto;">
+            <p>
+              {{ t.about.whyUs.quote }}
+            </p>
+          </div>
+        </div>
+        <div class="grid grid-2 fade-in mt-3xl" style="gap: var(--space-xl);">
+          {% for item in t.about.whyUs.items %}
+          <div style="padding: var(--space-lg); border-left: 2px solid var(--accent-primary);">
+            <h4 style="margin-bottom: var(--space-sm);">{{ item.title }}</h4>
+            <p style="font-family: var(--font-sans); font-weight: 300; color: var(--text-secondary); font-size: var(--text-sm);">
+              {{ item.text }}
+            </p>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Placeholder -->
+    <section class="section">
+      <div class="container container--narrow text-center">
+        <div class="section-header text-center fade-in">
+          <span class="label">{{ t.about.team.label }}</span>
+          <h2>{{ t.about.team.title }}</h2>
+          <div class="gold-line"></div>
+        </div>
+        <p class="fade-in" style="font-family: var(--font-sans); font-weight: 300; color: var(--text-secondary); max-width: 600px; margin: 0 auto var(--space-3xl);">
+          {{ t.about.team.text }}
+        </p>
+        <!-- Team member placeholder - to be replaced with actual photos/bios -->
+        <div class="team-grid fade-in">
+          <div class="team-member">
+            <div class="team-member-image" style="background-color: var(--bg-secondary); display: flex; align-items: center; justify-content: center;">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="width: 60px; height: 60px; stroke: var(--text-secondary); stroke-width: 1; fill: none;">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                <circle cx="12" cy="7" r="4"/>
+              </svg>
+            </div>
+            <h4>{{ t.about.team.founderTitle }}</h4>
+            <p class="team-member-role">{{ t.about.team.founderRole }}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section section--dark bg-gradient-dark">
+      <div class="container">
+        <div class="cta-section fade-in">
+          <span class="label">{{ t.about.cta.label }}</span>
+          <h2 style="color: var(--text-on-dark);">{{ t.about.cta.title }}</h2>
+          <p style="color: rgba(250, 247, 240, 0.7);">{{ t.about.cta.text }}</p>
+          <a href="{{ prefix }}/contact.html" class="btn btn-ghost btn-lg">{{ t.about.cta.button }}</a>
+        </div>
+      </div>
+    </section>
+  </main>

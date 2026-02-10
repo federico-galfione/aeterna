@@ -1,0 +1,155 @@
+---
+pagination:
+  data: languages
+  size: 1
+  alias: lang
+permalink: "{% if lang == 'it' %}it/{% endif %}contact.html"
+layout: base.njk
+pageName: "contact.html"
+navbarScrolled: true
+eleventyComputed:
+  title: "{% if lang == 'it' %}{{ it.pages.contact.title }}{% else %}{{ en.pages.contact.title }}{% endif %}"
+  description: "{% if lang == 'it' %}{{ it.pages.contact.description }}{% else %}{{ en.pages.contact.description }}{% endif %}"
+  canonical: "https://aeternaevents.com/{% if lang == 'it' %}it/{% endif %}contact.html"
+  hreflangEn: "https://aeternaevents.com/contact.html"
+  hreflangIt: "https://aeternaevents.com/it/contact.html"
+  ogTitle: "{% if lang == 'it' %}{{ it.pages.contact.ogTitle }}{% else %}{{ en.pages.contact.ogTitle }}{% endif %}"
+  ogDescription: "{% if lang == 'it' %}{{ it.pages.contact.ogDescription }}{% else %}{{ en.pages.contact.ogDescription }}{% endif %}"
+  ogUrl: "https://aeternaevents.com/{% if lang == 'it' %}it/{% endif %}contact.html"
+---
+{% set t = en if lang == "en" else it %}
+{% set prefix = "" if lang == "en" else "/it" %}
+
+  <main>
+    <!-- Contact Section -->
+    <section class="section bg-gradient-warm" style="padding-top: calc(var(--space-section) + 80px);">
+      <div class="container">
+        <div class="contact-split">
+          <!-- Contact Info -->
+          <div class="contact-info fade-in">
+            <span class="label label--olive">{{ t.contact.info.label }}</span>
+            <h2 class="mt-md">{{ t.contact.info.title | safe }}</h2>
+            <p>
+              {{ t.contact.info.text }}
+            </p>
+
+            <div class="contact-detail">
+              <h4>{{ t.contact.info.emailLabel }}</h4>
+              <a href="mailto:hello@aeternaevents.com">hello@aeternaevents.com</a>
+            </div>
+
+            <div class="contact-detail">
+              <h4>{{ t.contact.info.responseLabel }}</h4>
+              <p>{{ t.contact.info.responseText }}</p>
+            </div>
+
+            <div class="contact-detail">
+              <h4>{{ t.contact.info.followLabel }}</h4>
+              <div class="footer-social" style="margin-top: var(--space-sm);">
+                <a href="https://instagram.com/aeternaevents" aria-label="Instagram" target="_blank" rel="noopener" style="border-color: rgba(44, 44, 44, 0.2);">
+                  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="fill: var(--text-primary);">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                  </svg>
+                </a>
+                <a href="https://facebook.com/aeternaevents" aria-label="Facebook" target="_blank" rel="noopener" style="border-color: rgba(44, 44, 44, 0.2);">
+                  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="fill: var(--text-primary);">
+                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                  </svg>
+                </a>
+                <a href="https://linkedin.com/company/aeternaevents" aria-label="LinkedIn" target="_blank" rel="noopener" style="border-color: rgba(44, 44, 44, 0.2);">
+                  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="fill: var(--text-primary);">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                    <rect x="2" y="9" width="4" height="12"/>
+                    <circle cx="4" cy="4" r="2"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="fade-in">
+            <form id="contact-form" class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+              <!-- Honeypot field for spam protection -->
+              <input type="text" name="_gotcha" class="form-honeypot" tabindex="-1" autocomplete="off">
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">{{ t.contact.form.nameLabel }}</label>
+                  <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">{{ t.contact.form.emailLabel }}</label>
+                  <input type="email" id="email" name="email" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="event-type">{{ t.contact.form.eventTypeLabel }}</label>
+                <select id="event-type" name="event_type" required>
+                  <option value="" disabled selected>{{ t.contact.form.eventTypePlaceholder }}</option>
+                  <option value="corporate_retreat">{{ t.contact.form.eventTypeCorporate }}</option>
+                  <option value="destination_wedding">{{ t.contact.form.eventTypeWedding }}</option>
+                  <option value="other">{{ t.contact.form.eventTypeOther }}</option>
+                </select>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="guest-count">{{ t.contact.form.guestCountLabel }}</label>
+                  <input type="text" id="guest-count" name="guest_count" placeholder="{{ t.contact.form.guestCountPlaceholder }}">
+                </div>
+                <div class="form-group">
+                  <label for="preferred-dates">{{ t.contact.form.datesLabel }}</label>
+                  <input type="text" id="preferred-dates" name="preferred_dates" placeholder="{{ t.contact.form.datesPlaceholder }}">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="region">{{ t.contact.form.regionLabel }}</label>
+                <input type="text" id="region" name="region" placeholder="{{ t.contact.form.regionPlaceholder }}">
+              </div>
+
+              <div class="form-group">
+                <label for="message">{{ t.contact.form.messageLabel }}</label>
+                <textarea id="message" name="message" required placeholder="{{ t.contact.form.messagePlaceholder }}"></textarea>
+              </div>
+
+              <div class="form-group form-checkbox">
+                <input type="checkbox" id="consent" name="consent" required>
+                <label for="consent">
+                  {{ t.contact.form.consentText }} <a href="{{ prefix }}/privacy.html" target="_blank">{{ t.contact.form.consentLink }}</a>. *
+                </label>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-lg" style="margin-top: var(--space-lg);">{{ t.contact.form.submit }}</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section section--ivory">
+      <div class="container container--narrow">
+        <div class="section-header text-center fade-in">
+          <span class="label">{{ t.contact.faq.label }}</span>
+          <h2>{{ t.contact.faq.title }}</h2>
+          <div class="gold-line"></div>
+        </div>
+
+        <div class="fade-in" style="max-width: 700px; margin: 0 auto;">
+          {% for item in t.contact.faq.items %}
+          <div{% if not loop.last %} style="margin-bottom: var(--space-2xl);"{% endif %}>
+            <h4 style="margin-bottom: var(--space-sm);">{{ item.question }}</h4>
+            <p style="font-family: var(--font-sans); font-weight: 300; color: var(--text-secondary);">
+              {{ item.answer }}
+            </p>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+  </main>

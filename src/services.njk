@@ -1,0 +1,263 @@
+---
+pagination:
+  data: languages
+  size: 1
+  alias: lang
+permalink: "{% if lang == 'it' %}it/{% endif %}services.html"
+layout: base.njk
+pageName: "services.html"
+eleventyComputed:
+  title: "{% if lang == 'it' %}{{ it.pages.services.title }}{% else %}{{ en.pages.services.title }}{% endif %}"
+  description: "{% if lang == 'it' %}{{ it.pages.services.description }}{% else %}{{ en.pages.services.description }}{% endif %}"
+  canonical: "https://aeternaevents.com/{% if lang == 'it' %}it/{% endif %}services.html"
+  hreflangEn: "https://aeternaevents.com/services.html"
+  hreflangIt: "https://aeternaevents.com/it/services.html"
+  ogTitle: "{% if lang == 'it' %}{{ it.pages.services.ogTitle }}{% else %}{{ en.pages.services.ogTitle }}{% endif %}"
+  ogDescription: "{% if lang == 'it' %}{{ it.pages.services.ogDescription }}{% else %}{{ en.pages.services.ogDescription }}{% endif %}"
+  ogUrl: "https://aeternaevents.com/{% if lang == 'it' %}it/{% endif %}services.html"
+  ogImage: "https://aeternaevents.com/images/og-image.jpg"
+---
+{% set t = en if lang == "en" else it %}
+{% set prefix = "" if lang == "en" else "/it" %}
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero hero--services">
+      <div class="hero-bg">
+        <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=1920&q=80" alt="{{ t.services.hero.heroImgAlt }}" loading="eager">
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <span class="label hero-anim">{{ t.services.hero.label }}</span>
+        <h1 class="hero-anim">{{ t.services.hero.title }}</h1>
+        <p class="subtitle hero-anim">{{ t.services.hero.subtitle }}</p>
+      </div>
+      <div class="scroll-indicator">
+        <span>{{ t.services.hero.scrollIndicator }}</span>
+        <div class="scroll-indicator-line"></div>
+      </div>
+    </section>
+
+    <!-- Introduction - What We Do -->
+    <section class="section bg-gradient-warm">
+      <div class="container">
+        <div class="section-header text-center fade-in">
+          <span class="label">{{ t.services.intro.label }}</span>
+          <h2>{{ t.services.intro.title }}</h2>
+          <div class="gold-line"></div>
+        </div>
+        <p class="fade-in text-center" style="font-size: var(--text-lg); max-width: 700px; margin: 0 auto var(--space-3xl);">
+          {{ t.services.intro.text }}
+        </p>
+
+        <!-- 3 Value Props -->
+        <div class="services-intro stagger-children">
+          {% for item in t.services.intro.items %}
+          <div class="services-intro-item">
+            <div class="services-intro-icon">
+              {% if loop.index == 1 %}
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="11" cy="11" r="8"/>
+                <path d="m21 21-4.35-4.35"/>
+              </svg>
+              {% elif loop.index == 2 %}
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+              {% elif loop.index == 3 %}
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+              {% endif %}
+            </div>
+            <h4>{{ item.title }}</h4>
+            <p>{{ item.text }}</p>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+
+    <!-- Timeline Section - 5-Step Process -->
+    <section class="section section--ivory">
+      <div class="container">
+        <div class="section-header text-center fade-in">
+          <span class="label label--olive">{{ t.services.timeline.label }}</span>
+          <h2>{{ t.services.timeline.title }}</h2>
+          <div class="gold-line"></div>
+        </div>
+
+        <div class="timeline">
+          {% for step in t.services.timeline.steps %}
+          <div class="timeline-item">
+            {% if loop.index % 2 == 1 %}
+            <div class="timeline-content">
+              <div class="timeline-content-icon">
+                {% if loop.index == 1 %}
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                </svg>
+                {% elif loop.index == 3 %}
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                  <polyline points="14 2 14 8 20 8"/>
+                  <line x1="16" y1="13" x2="8" y2="13"/>
+                  <line x1="16" y1="17" x2="8" y2="17"/>
+                  <polyline points="10 9 9 9 8 9"/>
+                </svg>
+                {% elif loop.index == 5 %}
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
+                  <path d="m9 12 2 2 4-4"/>
+                </svg>
+                {% endif %}
+              </div>
+              <h3>{{ step.title }}</h3>
+              <p>{{ step.text }}</p>
+            </div>
+            <div class="timeline-marker">0{{ loop.index }}</div>
+            <div class="timeline-spacer"></div>
+            {% else %}
+            <div class="timeline-spacer"></div>
+            <div class="timeline-marker">0{{ loop.index }}</div>
+            <div class="timeline-content">
+              <div class="timeline-content-icon">
+                {% if loop.index == 2 %}
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="11" cy="11" r="8"/>
+                  <path d="m21 21-4.35-4.35"/>
+                </svg>
+                {% elif loop.index == 4 %}
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <polyline points="9 11 12 14 22 4"/>
+                  <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
+                </svg>
+                {% endif %}
+              </div>
+              <h3>{{ step.title }}</h3>
+              <p>{{ step.text }}</p>
+            </div>
+            {% endif %}
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Split - Corporate vs Weddings -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header text-center fade-in">
+          <span class="label">{{ t.services.servicesCards.label }}</span>
+          <h2>{{ t.services.servicesCards.title }}</h2>
+          <div class="gold-line"></div>
+        </div>
+
+        <div class="services-cards">
+          <div class="services-card fade-in">
+            <div class="services-card-image">
+              <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80" alt="{{ t.services.servicesCards.corporate.imgAlt }}" loading="lazy">
+            </div>
+            <div class="services-card-content">
+              <span class="label label--olive">{{ t.services.servicesCards.corporate.label }}</span>
+              <h3>{{ t.services.servicesCards.corporate.title }}</h3>
+              <p>{{ t.services.servicesCards.corporate.text }}</p>
+              <a href="{{ prefix }}/corporate.html" class="btn btn-secondary">{{ t.services.servicesCards.corporate.cta }}</a>
+            </div>
+          </div>
+          <div class="services-card fade-in">
+            <div class="services-card-image">
+              <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=800&q=80" alt="{{ t.services.servicesCards.weddings.imgAlt }}" loading="lazy">
+            </div>
+            <div class="services-card-content">
+              <span class="label label--olive">{{ t.services.servicesCards.weddings.label }}</span>
+              <h3>{{ t.services.servicesCards.weddings.title }}</h3>
+              <p>{{ t.services.servicesCards.weddings.text }}</p>
+              <a href="{{ prefix }}/weddings.html" class="btn btn-secondary">{{ t.services.servicesCards.weddings.cta }}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What's Included -->
+    <section class="section section--ivory">
+      <div class="container">
+        <div class="section-header text-center fade-in">
+          <span class="label">{{ t.services.included.label }}</span>
+          <h2>{{ t.services.included.title }}</h2>
+          <div class="gold-line"></div>
+        </div>
+
+        <div class="included-grid stagger-children">
+          {% for item in t.services.included.items %}
+          <div class="included-item">
+            <div class="included-icon">
+              {% if loop.index == 1 %}
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+              </svg>
+              {% elif loop.index == 2 %}
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="11" cy="11" r="8"/>
+                <path d="m21 21-4.35-4.35"/>
+              </svg>
+              {% elif loop.index == 3 %}
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14 2 14 8 20 8"/>
+              </svg>
+              {% elif loop.index == 4 %}
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                <line x1="16" y1="2" x2="16" y2="6"/>
+                <line x1="8" y1="2" x2="8" y2="6"/>
+                <line x1="3" y1="10" x2="21" y2="10"/>
+              </svg>
+              {% elif loop.index == 5 %}
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+              {% elif loop.index == 6 %}
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                <polyline points="22 4 12 14.01 9 11.01"/>
+              </svg>
+              {% endif %}
+            </div>
+            <div class="included-text">
+              <h4>{{ item.title }}</h4>
+              <p>{{ item.text }}</p>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Note -->
+    <section class="section">
+      <div class="container">
+        <div class="pricing-note fade-in">
+          <h3>{{ t.services.pricing.title }}</h3>
+          <p>{{ t.services.pricing.text }}</p>
+          <p style="margin-top: var(--space-lg);"><a href="{{ prefix }}/contact.html" style="color: var(--accent-primary); text-decoration: underline;">{{ t.services.pricing.contactText }}</a>{{ t.services.pricing.contactSuffix }}</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section section--dark bg-gradient-dark">
+      <div class="container">
+        <div class="cta-section fade-in">
+          <span class="label">{{ t.services.cta.label }}</span>
+          <h2>{{ t.services.cta.title }}</h2>
+          <p>{{ t.services.cta.text }}</p>
+          <a href="{{ prefix }}/contact.html" class="btn btn-ghost btn-lg">{{ t.services.cta.button }}</a>
+        </div>
+      </div>
+    </section>
+  </main>

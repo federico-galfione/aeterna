@@ -1,6 +1,12 @@
 # Claude Code
 .claude/
 
+# Dependencies
+node_modules/
+
+# Build output
+_site/
+
 # OS files
 .DS_Store
 Thumbs.db

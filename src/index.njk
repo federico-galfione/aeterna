@@ -1,0 +1,188 @@
+---
+pagination:
+  data: languages
+  size: 1
+  alias: lang
+permalink: "{% if lang == 'it' %}it/{% endif %}index.html"
+layout: base.njk
+pageName: "index.html"
+eleventyComputed:
+  title: "{% if lang == 'it' %}{{ it.pages.index.title }}{% else %}{{ en.pages.index.title }}{% endif %}"
+  description: "{% if lang == 'it' %}{{ it.pages.index.description }}{% else %}{{ en.pages.index.description }}{% endif %}"
+  canonical: "https://aeternaevents.com/{% if lang == 'it' %}it/{% endif %}"
+  hreflangEn: "https://aeternaevents.com/"
+  hreflangIt: "https://aeternaevents.com/it/"
+  ogTitle: "{% if lang == 'it' %}{{ it.pages.index.ogTitle }}{% else %}{{ en.pages.index.ogTitle }}{% endif %}"
+  ogDescription: "{% if lang == 'it' %}{{ it.pages.index.ogDescription }}{% else %}{{ en.pages.index.ogDescription }}{% endif %}"
+  ogUrl: "https://aeternaevents.com/{% if lang == 'it' %}it/{% endif %}"
+  ogImage: "https://aeternaevents.com/images/og-image.jpg"
+structuredData: |
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Aeterna Events",
+    "description": "Italian venue finding agency for corporate retreats and destination weddings",
+    "url": "https://aeternaevents.com",
+    "logo": "https://aeternaevents.com/public/logos/Light_logo.svg",
+    "email": "hello@aeternaevents.com",
+    "areaServed": {
+      "@type": "Country",
+      "name": "Italy"
+    },
+    "serviceType": ["Venue Finding", "Corporate Event Planning", "Wedding Planning"],
+    "priceRange": "$$",
+    "sameAs": [
+      "https://instagram.com/aeternaevents",
+      "https://facebook.com/aeternaevents",
+      "https://linkedin.com/company/aeternaevents"
+    ]
+  }
+---
+{% set t = en if lang == "en" else it %}
+{% set prefix = "" if lang == "en" else "/it" %}
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-bg">
+        <img src="https://images.unsplash.com/photo-1523531294919-4bcd7c65e216?w=1920&q=80" alt="{{ t.home.hero.heroImgAlt }}" loading="eager">
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <span class="label hero-anim">{{ t.home.hero.label }}</span>
+        <h1 class="hero-anim">{{ t.home.hero.title | safe }}</h1>
+        <p class="subtitle hero-anim">{{ t.home.hero.subtitle }}</p>
+        <a href="{{ prefix }}/contact.html" class="btn btn-ghost hero-anim">{{ t.home.hero.cta }}</a>
+      </div>
+      <div class="scroll-indicator">
+        <span>{{ t.home.hero.scrollIndicator }}</span>
+        <div class="scroll-indicator-line"></div>
+      </div>
+    </section>
+
+    <!-- Introduction -->
+    <section class="section bg-gradient-warm">
+      <div class="container container--narrow text-center">
+        <div class="section-header text-center fade-in">
+          <span class="label">{{ t.home.intro.label }}</span>
+          <h2>{{ t.home.intro.title }}</h2>
+          <div class="gold-line"></div>
+        </div>
+        <p class="fade-in" style="font-size: var(--text-lg); max-width: 700px; margin: 0 auto;">
+          {{ t.home.intro.text }}
+        </p>
+      </div>
+    </section>
+
+    <!-- Services Split -->
+    <section class="services-split">
+      <div class="services-split-item">
+        <div class="services-split-bg">
+          <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1200&q=80" alt="{{ t.home.servicesCorporate.imgAlt }}" loading="lazy">
+        </div>
+        <div class="services-split-content fade-in">
+          <span class="label">{{ t.home.servicesCorporate.label }}</span>
+          <h3>{{ t.home.servicesCorporate.title }}</h3>
+          <p>{{ t.home.servicesCorporate.text }}</p>
+          <a href="{{ prefix }}/corporate.html" class="btn btn-ghost">{{ t.home.servicesCorporate.cta }}</a>
+        </div>
+      </div>
+      <div class="services-split-item">
+        <div class="services-split-bg">
+          <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=1200&q=80" alt="{{ t.home.servicesWeddings.imgAlt }}" loading="lazy">
+        </div>
+        <div class="services-split-content fade-in">
+          <span class="label">{{ t.home.servicesWeddings.label }}</span>
+          <h3>{{ t.home.servicesWeddings.title }}</h3>
+          <p>{{ t.home.servicesWeddings.text }}</p>
+          <a href="{{ prefix }}/weddings.html" class="btn btn-ghost">{{ t.home.servicesWeddings.cta }}</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Value Propositions -->
+    <section class="section section--ivory">
+      <div class="container">
+        <div class="value-props stagger-children">
+          {% for prop in t.home.valueProps %}
+          <div class="value-prop">
+            <div class="value-prop-icon">
+              {% if loop.index == 1 %}
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+              {% elif loop.index == 2 %}
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+              {% elif loop.index == 3 %}
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 16 14"/>
+              </svg>
+              {% endif %}
+            </div>
+            <h4>{{ prop.title }}</h4>
+            <p>{{ prop.text }}</p>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Venues Preview -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="label label--olive">{{ t.home.featured.label }}</span>
+          <h2>{{ t.home.featured.title }}</h2>
+          <div class="gold-line"></div>
+        </div>
+        <div class="image-grid fade-in">
+          <div class="image-grid-item image-grid-item--large">
+            <img src="https://images.unsplash.com/photo-1534445867742-43195f401b6c?w=1200&q=80" alt="{{ t.home.featured.images[0].alt }}" loading="lazy">
+          </div>
+          <div class="image-grid-item">
+            <img src="https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=600&q=80" alt="{{ t.home.featured.images[1].alt }}" loading="lazy">
+          </div>
+          <div class="image-grid-item">
+            <img src="https://images.unsplash.com/photo-1504893524553-b855bce32c67?w=600&q=80" alt="{{ t.home.featured.images[2].alt }}" loading="lazy">
+          </div>
+          <div class="image-grid-item">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="{{ t.home.featured.images[3].alt }}" loading="lazy">
+          </div>
+          <div class="image-grid-item">
+            <img src="https://images.unsplash.com/photo-1598135753163-6167c1a1ad65?w=600&q=80" alt="{{ t.home.featured.images[4].alt }}" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial -->
+    <section class="section section--dark bg-gradient-dark">
+      <div class="container">
+        <div class="testimonial fade-in">
+          <p class="testimonial-quote">
+            {{ t.home.testimonial.quote }}
+          </p>
+          <div class="testimonial-author">
+            <strong>{{ t.home.testimonial.author }}</strong>
+            <span>{{ t.home.testimonial.role }}</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section bg-gradient-ivory">
+      <div class="container">
+        <div class="cta-section fade-in">
+          <span class="label">{{ t.home.cta.label }}</span>
+          <h2>{{ t.home.cta.title }}</h2>
+          <p>{{ t.home.cta.text }}</p>
+          <a href="{{ prefix }}/contact.html" class="btn btn-primary btn-lg">{{ t.home.cta.button }}</a>
+        </div>
+      </div>
+    </section>
+  </main>

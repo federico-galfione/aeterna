@@ -1,0 +1,34 @@
+---
+pagination:
+  data: languages
+  size: 1
+  alias: lang
+permalink: "{% if lang == 'it' %}it/{% endif %}cookie-policy.html"
+layout: base.njk
+pageName: "cookie-policy.html"
+navbarScrolled: true
+eleventyComputed:
+  title: "{% if lang == 'it' %}{{ it.pages.cookiePolicy.title }}{% else %}{{ en.pages.cookiePolicy.title }}{% endif %}"
+  description: "{% if lang == 'it' %}{{ it.pages.cookiePolicy.description }}{% else %}{{ en.pages.cookiePolicy.description }}{% endif %}"
+  canonical: "https://aeternaevents.com/{% if lang == 'it' %}it/{% endif %}cookie-policy.html"
+  hreflangEn: "https://aeternaevents.com/cookie-policy.html"
+  hreflangIt: "https://aeternaevents.com/it/cookie-policy.html"
+  ogTitle: "{% if lang == 'it' %}{{ it.pages.cookiePolicy.ogTitle }}{% else %}{{ en.pages.cookiePolicy.ogTitle }}{% endif %}"
+  ogDescription: "{% if lang == 'it' %}{{ it.pages.cookiePolicy.ogDescription }}{% else %}{{ en.pages.cookiePolicy.ogDescription }}{% endif %}"
+  ogUrl: "https://aeternaevents.com/{% if lang == 'it' %}it/{% endif %}cookie-policy.html"
+---
+{% set t = en if lang == "en" else it %}
+{% set prefix = "" if lang == "en" else "/it" %}
+
+  <main>
+    <section class="section bg-gradient-warm" style="padding-top: calc(var(--space-section) + 80px);">
+      <div class="container">
+        <div class="legal-content">
+          <h1>{{ t.cookiePolicy.title }}</h1>
+          <p class="last-updated">{{ t.cookiePolicy.lastUpdated }}</p>
+
+          {{ t.cookiePolicy.content | safe }}
+        </div>
+      </div>
+    </section>
+  </main>
