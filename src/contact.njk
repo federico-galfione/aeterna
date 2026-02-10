@@ -1,18 +1,24 @@
 ---
+pagination:
+  data: languages
+  size: 1
+  alias: lang
+permalink: "{% if lang == 'it' %}it/{% endif %}contact.html"
 layout: base.njk
-title: "Contact Us | Aeterna Events"
-description: "Get in touch with Aeterna Events. Tell us about your corporate retreat or destination wedding, and let us find the perfect Italian venue."
-canonical: "https://aeternaevents.com/contact.html"
-hreflangEn: "https://aeternaevents.com/contact.html"
-hreflangIt: "https://aeternaevents.com/it/contact.html"
-ogTitle: "Contact Us | Aeterna Events"
-ogDescription: "Get in touch with Aeterna Events for Italian venue finding."
-ogUrl: "https://aeternaevents.com/contact.html"
-lang: en
 pageName: "contact.html"
-permalink: "contact.html"
 navbarScrolled: true
+eleventyComputed:
+  title: "{% if lang == 'it' %}{{ it.pages.contact.title }}{% else %}{{ en.pages.contact.title }}{% endif %}"
+  description: "{% if lang == 'it' %}{{ it.pages.contact.description }}{% else %}{{ en.pages.contact.description }}{% endif %}"
+  canonical: "https://aeternaevents.com/{% if lang == 'it' %}it/{% endif %}contact.html"
+  hreflangEn: "https://aeternaevents.com/contact.html"
+  hreflangIt: "https://aeternaevents.com/it/contact.html"
+  ogTitle: "{% if lang == 'it' %}{{ it.pages.contact.ogTitle }}{% else %}{{ en.pages.contact.ogTitle }}{% endif %}"
+  ogDescription: "{% if lang == 'it' %}{{ it.pages.contact.ogDescription }}{% else %}{{ en.pages.contact.ogDescription }}{% endif %}"
+  ogUrl: "https://aeternaevents.com/{% if lang == 'it' %}it/{% endif %}contact.html"
 ---
+{% set t = en if lang == "en" else it %}
+{% set prefix = "" if lang == "en" else "/it" %}
 
   <main>
     <!-- Contact Section -->
@@ -21,24 +27,24 @@ navbarScrolled: true
         <div class="contact-split">
           <!-- Contact Info -->
           <div class="contact-info fade-in">
-            <span class="label label--olive">Get in Touch</span>
-            <h2 class="mt-md">Let's Start<br>a Conversation</h2>
+            <span class="label label--olive">{{ t.contact.info.label }}</span>
+            <h2 class="mt-md">{{ t.contact.info.title | safe }}</h2>
             <p>
-              Tell us about your event. Whether you're planning a corporate retreat or a destination wedding, we'd love to hear your vision and help you discover the perfect Italian venue.
+              {{ t.contact.info.text }}
             </p>
 
             <div class="contact-detail">
-              <h4>Email</h4>
+              <h4>{{ t.contact.info.emailLabel }}</h4>
               <a href="mailto:hello@aeternaevents.com">hello@aeternaevents.com</a>
             </div>
 
             <div class="contact-detail">
-              <h4>Response Time</h4>
-              <p>We typically respond within 24-48 hours.</p>
+              <h4>{{ t.contact.info.responseLabel }}</h4>
+              <p>{{ t.contact.info.responseText }}</p>
             </div>
 
             <div class="contact-detail">
-              <h4>Follow Us</h4>
+              <h4>{{ t.contact.info.followLabel }}</h4>
               <div class="footer-social" style="margin-top: var(--space-sm);">
                 <a href="https://instagram.com/aeternaevents" aria-label="Instagram" target="_blank" rel="noopener" style="border-color: rgba(44, 44, 44, 0.2);">
                   <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="fill: var(--text-primary);">
@@ -71,54 +77,54 @@ navbarScrolled: true
 
               <div class="form-row">
                 <div class="form-group">
-                  <label for="name">Name *</label>
+                  <label for="name">{{ t.contact.form.nameLabel }}</label>
                   <input type="text" id="name" name="name" required>
                 </div>
                 <div class="form-group">
-                  <label for="email">Email *</label>
+                  <label for="email">{{ t.contact.form.emailLabel }}</label>
                   <input type="email" id="email" name="email" required>
                 </div>
               </div>
 
               <div class="form-group">
-                <label for="event-type">Event Type *</label>
+                <label for="event-type">{{ t.contact.form.eventTypeLabel }}</label>
                 <select id="event-type" name="event_type" required>
-                  <option value="" disabled selected>Select an option</option>
-                  <option value="corporate_retreat">Corporate Retreat</option>
-                  <option value="destination_wedding">Destination Wedding</option>
-                  <option value="other">Other</option>
+                  <option value="" disabled selected>{{ t.contact.form.eventTypePlaceholder }}</option>
+                  <option value="corporate_retreat">{{ t.contact.form.eventTypeCorporate }}</option>
+                  <option value="destination_wedding">{{ t.contact.form.eventTypeWedding }}</option>
+                  <option value="other">{{ t.contact.form.eventTypeOther }}</option>
                 </select>
               </div>
 
               <div class="form-row">
                 <div class="form-group">
-                  <label for="guest-count">Estimated Guest Count</label>
-                  <input type="text" id="guest-count" name="guest_count" placeholder="e.g., 50-75">
+                  <label for="guest-count">{{ t.contact.form.guestCountLabel }}</label>
+                  <input type="text" id="guest-count" name="guest_count" placeholder="{{ t.contact.form.guestCountPlaceholder }}">
                 </div>
                 <div class="form-group">
-                  <label for="preferred-dates">Preferred Dates</label>
-                  <input type="text" id="preferred-dates" name="preferred_dates" placeholder="e.g., June 2026">
+                  <label for="preferred-dates">{{ t.contact.form.datesLabel }}</label>
+                  <input type="text" id="preferred-dates" name="preferred_dates" placeholder="{{ t.contact.form.datesPlaceholder }}">
                 </div>
               </div>
 
               <div class="form-group">
-                <label for="region">Preferred Region in Italy</label>
-                <input type="text" id="region" name="region" placeholder="e.g., Tuscany, Amalfi Coast, or 'Open to suggestions'">
+                <label for="region">{{ t.contact.form.regionLabel }}</label>
+                <input type="text" id="region" name="region" placeholder="{{ t.contact.form.regionPlaceholder }}">
               </div>
 
               <div class="form-group">
-                <label for="message">Tell Us About Your Vision *</label>
-                <textarea id="message" name="message" required placeholder="What kind of venue are you imagining? What atmosphere do you want to create? Any specific requirements or dreams?"></textarea>
+                <label for="message">{{ t.contact.form.messageLabel }}</label>
+                <textarea id="message" name="message" required placeholder="{{ t.contact.form.messagePlaceholder }}"></textarea>
               </div>
 
               <div class="form-group form-checkbox">
                 <input type="checkbox" id="consent" name="consent" required>
                 <label for="consent">
-                  I agree to the processing of my personal data as described in the <a href="/privacy.html" target="_blank">Privacy Policy</a>. *
+                  {{ t.contact.form.consentText }} <a href="{{ prefix }}/privacy.html" target="_blank">{{ t.contact.form.consentLink }}</a>. *
                 </label>
               </div>
 
-              <button type="submit" class="btn btn-primary btn-lg" style="margin-top: var(--space-lg);">Send Message</button>
+              <button type="submit" class="btn btn-primary btn-lg" style="margin-top: var(--space-lg);">{{ t.contact.form.submit }}</button>
             </form>
           </div>
         </div>
@@ -129,46 +135,20 @@ navbarScrolled: true
     <section class="section section--ivory">
       <div class="container container--narrow">
         <div class="section-header text-center fade-in">
-          <span class="label">Common Questions</span>
-          <h2>What to Expect</h2>
+          <span class="label">{{ t.contact.faq.label }}</span>
+          <h2>{{ t.contact.faq.title }}</h2>
           <div class="gold-line"></div>
         </div>
 
         <div class="fade-in" style="max-width: 700px; margin: 0 auto;">
-          <div style="margin-bottom: var(--space-2xl);">
-            <h4 style="margin-bottom: var(--space-sm);">How does your service work?</h4>
+          {% for item in t.contact.faq.items %}
+          <div{% if not loop.last %} style="margin-bottom: var(--space-2xl);"{% endif %}>
+            <h4 style="margin-bottom: var(--space-sm);">{{ item.question }}</h4>
             <p style="font-family: var(--font-sans); font-weight: 300; color: var(--text-secondary);">
-              After you reach out, we'll schedule a call to understand your vision, requirements, and budget. We then search our network of Italian venues and present you with a curated selection. Once you choose, we help coordinate the booking process.
+              {{ item.answer }}
             </p>
           </div>
-
-          <div style="margin-bottom: var(--space-2xl);">
-            <h4 style="margin-bottom: var(--space-sm);">What does the venue finding service cost?</h4>
-            <p style="font-family: var(--font-sans); font-weight: 300; color: var(--text-secondary);">
-              Our venue finding service is free if you book through us. We receive a commission from the venue, which doesn't affect the price you pay. If you use our research but book independently, a flat consultation fee applies.
-            </p>
-          </div>
-
-          <div style="margin-bottom: var(--space-2xl);">
-            <h4 style="margin-bottom: var(--space-sm);">How far in advance should I start?</h4>
-            <p style="font-family: var(--font-sans); font-weight: 300; color: var(--text-secondary);">
-              For weddings, we recommend starting 12-18 months ahead, especially for popular regions and dates. Corporate retreats typically need 3-6 months lead time, though we can work with shorter timelines when needed.
-            </p>
-          </div>
-
-          <div style="margin-bottom: var(--space-2xl);">
-            <h4 style="margin-bottom: var(--space-sm);">Do you only work with venues in certain regions?</h4>
-            <p style="font-family: var(--font-sans); font-weight: 300; color: var(--text-secondary);">
-              We have connections across all of Italy, from the northern lakes to Sicily. While we have particularly strong networks in Tuscany, Umbria, Puglia, and the Amalfi Coast, we can search any region based on your preferences.
-            </p>
-          </div>
-
-          <div>
-            <h4 style="margin-bottom: var(--space-sm);">Do you provide full event planning?</h4>
-            <p style="font-family: var(--font-sans); font-weight: 300; color: var(--text-secondary);">
-              Our core service is venue finding. Once you've secured your venue, we can recommend trusted local planners, caterers, and vendors if you need full event coordination. Many venues also offer their own event management services.
-            </p>
-          </div>
+          {% endfor %}
         </div>
       </div>
     </section>

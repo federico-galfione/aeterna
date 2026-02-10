@@ -1,33 +1,40 @@
 ---
+pagination:
+  data: languages
+  size: 1
+  alias: lang
+permalink: "{% if lang == 'it' %}it/{% endif %}weddings.html"
 layout: base.njk
-title: "Destination Weddings in Italy | Aeterna Events"
-description: "Discover your dream Italian wedding venue. From Tuscan villas to Amalfi Coast estates, we find venues that feel destined for your love story."
-canonical: "https://aeternaevents.com/weddings.html"
-hreflangEn: "https://aeternaevents.com/weddings.html"
-hreflangIt: "https://aeternaevents.com/it/weddings.html"
-ogTitle: "Destination Weddings in Italy | Aeterna Events"
-ogDescription: "Discover your dream Italian wedding venue."
-ogUrl: "https://aeternaevents.com/weddings.html"
-lang: en
 pageName: "weddings.html"
-permalink: "weddings.html"
+eleventyComputed:
+  title: "{% if lang == 'it' %}{{ it.pages.weddings.title }}{% else %}{{ en.pages.weddings.title }}{% endif %}"
+  description: "{% if lang == 'it' %}{{ it.pages.weddings.description }}{% else %}{{ en.pages.weddings.description }}{% endif %}"
+  canonical: "https://aeternaevents.com/{% if lang == 'it' %}it/{% endif %}weddings.html"
+  hreflangEn: "https://aeternaevents.com/weddings.html"
+  hreflangIt: "https://aeternaevents.com/it/weddings.html"
+  ogTitle: "{% if lang == 'it' %}{{ it.pages.weddings.ogTitle }}{% else %}{{ en.pages.weddings.ogTitle }}{% endif %}"
+  ogDescription: "{% if lang == 'it' %}{{ it.pages.weddings.ogDescription }}{% else %}{{ en.pages.weddings.ogDescription }}{% endif %}"
+  ogUrl: "https://aeternaevents.com/{% if lang == 'it' %}it/{% endif %}weddings.html"
+  ogImage: "https://aeternaevents.com/images/og-image.jpg"
 ---
+{% set t = en if lang == "en" else it %}
+{% set prefix = "" if lang == "en" else "/it" %}
 
   <main>
     <!-- Hero Section -->
     <section class="hero">
       <div class="hero-bg">
-        <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=1920&q=80" alt="Italian destination wedding" loading="eager">
+        <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=1920&q=80" alt="{{ t.weddings.hero.heroImgAlt }}" loading="eager">
       </div>
       <div class="hero-overlay"></div>
       <div class="hero-content">
-        <span class="label hero-anim">Destination Weddings</span>
-        <h1 class="hero-anim">Where Love<br>Unfolds</h1>
-        <p class="subtitle hero-anim">Your wedding venue shapes everything that follows, the photos, the memories, the feeling that lingers. We find Italian venues where your story naturally belongs.</p>
-        <a href="/contact.html" class="btn btn-ghost hero-anim">Begin Your Search</a>
+        <span class="label hero-anim">{{ t.weddings.hero.label }}</span>
+        <h1 class="hero-anim">{{ t.weddings.hero.title | safe }}</h1>
+        <p class="subtitle hero-anim">{{ t.weddings.hero.subtitle }}</p>
+        <a href="{{ prefix }}/contact.html" class="btn btn-ghost hero-anim">{{ t.weddings.hero.cta }}</a>
       </div>
       <div class="scroll-indicator">
-        <span>Discover</span>
+        <span>{{ t.weddings.hero.scrollIndicator }}</span>
         <div class="scroll-indicator-line"></div>
       </div>
     </section>
@@ -36,10 +43,10 @@ permalink: "weddings.html"
     <section class="section bg-gradient-warm">
       <div class="container container--narrow text-center">
         <div class="fade-in">
-          <span class="label">The Feeling</span>
-          <h2 class="mt-md mb-xl">More Than a Venue</h2>
+          <span class="label">{{ t.weddings.feeling.label }}</span>
+          <h2 class="mt-md mb-xl">{{ t.weddings.feeling.title }}</h2>
           <p style="font-size: var(--text-lg); max-width: 700px; margin: 0 auto;">
-            You've imagined it: golden light falling through olive trees, stone walls that have witnessed centuries of celebrations, the scent of jasmine on an evening breeze. Italy holds these moments, waiting. Your wedding venue isn't just a backdrop, it's where your story takes root in a place that feels eternal.
+            {{ t.weddings.feeling.text }}
           </p>
         </div>
       </div>
@@ -50,16 +57,16 @@ permalink: "weddings.html"
       <div class="container">
         <div class="grid grid-asymmetric-reverse fade-in" style="align-items: center; gap: var(--space-4xl);">
           <div>
-            <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=1000&q=80" alt="Wedding celebration in Italian garden" style="border-radius: var(--radius-lg);">
+            <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=1000&q=80" alt="{{ t.weddings.promise.imgAlt }}" style="border-radius: var(--radius-lg);">
           </div>
           <div>
-            <span class="label label--olive">Our Promise</span>
-            <h2 class="mt-md mb-lg">Finding What Feels Right</h2>
+            <span class="label label--olive">{{ t.weddings.promise.label }}</span>
+            <h2 class="mt-md mb-lg">{{ t.weddings.promise.title }}</h2>
             <p style="font-family: var(--font-sans); font-weight: 300; color: var(--text-secondary);">
-              We don't work from a fixed list of venues. Every search begins fresh, guided by your vision, your guests, your dreams. Historic villas, coastal estates, hidden monasteries, rustic agriturismi, we explore possibilities until we find the one that resonates.
+              {{ t.weddings.promise.text1 }}
             </p>
             <p style="font-family: var(--font-sans); font-weight: 300; color: var(--text-secondary); margin-top: var(--space-md);">
-              This is Italy as it should be discovered: through someone who knows its hidden corners, speaks its language, and understands what makes a celebration truly unforgettable.
+              {{ t.weddings.promise.text2 }}
             </p>
           </div>
         </div>
@@ -70,36 +77,20 @@ permalink: "weddings.html"
     <section class="section">
       <div class="container container--narrow">
         <div class="section-header text-center fade-in">
-          <span class="label">The Journey</span>
-          <h2>How We Work Together</h2>
+          <span class="label">{{ t.weddings.process.label }}</span>
+          <h2>{{ t.weddings.process.title }}</h2>
           <div class="gold-line"></div>
         </div>
 
         <div class="process-steps fade-in">
+          {% for step in t.weddings.process.steps %}
           <div class="process-step">
             <div>
-              <h3>Share Your Vision</h3>
-              <p>Tell us about your dream wedding. The atmosphere, the guest count, the regions that call to you. What moments matter most? What feelings should the day hold?</p>
+              <h3>{{ step.title }}</h3>
+              <p>{{ step.text }}</p>
             </div>
           </div>
-          <div class="process-step">
-            <div>
-              <h3>We Explore & Discover</h3>
-              <p>We search across our network, from renowned estates to hidden gems known only to locals. Each option is vetted, visited, and selected with your vision in mind.</p>
-            </div>
-          </div>
-          <div class="process-step">
-            <div>
-              <h3>Present & Refine</h3>
-              <p>Receive a curated selection of venues with detailed information, photos, and our honest perspective. We refine the search until something feels unmistakably right.</p>
-            </div>
-          </div>
-          <div class="process-step">
-            <div>
-              <h3>Secure Your Venue</h3>
-              <p>Once you decide, we handle negotiations, contracts, and coordination. You'll arrive in Italy knowing your venue is exactly as promised.</p>
-            </div>
-          </div>
+          {% endfor %}
         </div>
       </div>
     </section>
@@ -108,58 +99,45 @@ permalink: "weddings.html"
     <section class="section bg-gradient-ivory">
       <div class="container">
         <div class="section-header fade-in">
-          <span class="label label--olive">Venue Styles</span>
-          <h2>Every Dream, a Setting</h2>
+          <span class="label label--olive">{{ t.weddings.venueStyles.label }}</span>
+          <h2>{{ t.weddings.venueStyles.title }}</h2>
           <div class="gold-line"></div>
         </div>
         <div class="grid grid-3 stagger-children">
+          {% for type in t.weddings.venueStyles.types %}
           <div class="card">
             <div class="card-image">
-              <img src="https://images.unsplash.com/photo-1534445867742-43195f401b6c?w=800&q=80" alt="Tuscan villa wedding" loading="lazy">
+              {% if loop.index == 1 %}
+              <img src="https://images.unsplash.com/photo-1534445867742-43195f401b6c?w=800&q=80" alt="{{ type.imgAlt }}" loading="lazy">
+              {% elif loop.index == 2 %}
+              <img src="https://images.unsplash.com/photo-1533104816931-20fa691ff6ca?w=800&q=80" alt="{{ type.imgAlt }}" loading="lazy">
+              {% elif loop.index == 3 %}
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80" alt="{{ type.imgAlt }}" loading="lazy">
+              {% endif %}
             </div>
             <div class="card-content">
-              <h3>Tuscan Villas</h3>
-              <p>Rolling hills, cypress-lined drives, and Renaissance elegance. The quintessential Italian wedding, elevated beyond the expected.</p>
+              <h3>{{ type.title }}</h3>
+              <p>{{ type.text }}</p>
             </div>
           </div>
-          <div class="card">
-            <div class="card-image">
-              <img src="https://images.unsplash.com/photo-1533104816931-20fa691ff6ca?w=800&q=80" alt="Coastal wedding venue" loading="lazy">
-            </div>
-            <div class="card-content">
-              <h3>Coastal Estates</h3>
-              <p>Amalfi, Puglia, Sicily. Mediterranean blue, lemon groves, and terraces that cascade toward the sea.</p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-image">
-              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80" alt="Historic palazzo wedding" loading="lazy">
-            </div>
-            <div class="card-content">
-              <h3>Historic Palazzos</h3>
-              <p>Grand halls, frescoed ceilings, and gardens designed by masters. Architecture that has witnessed centuries of celebrations.</p>
-            </div>
-          </div>
+          {% endfor %}
         </div>
         <div class="grid grid-2 stagger-children mt-xl">
+          {% for type in t.weddings.venueStyles.typesRow2 %}
           <div class="card">
             <div class="card-image">
-              <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=800&q=80" alt="Vineyard wedding" loading="lazy">
+              {% if loop.index == 1 %}
+              <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=800&q=80" alt="{{ type.imgAlt }}" loading="lazy">
+              {% elif loop.index == 2 %}
+              <img src="https://images.unsplash.com/photo-1602524206684-fdf1fdb3dff2?w=800&q=80" alt="{{ type.imgAlt }}" loading="lazy">
+              {% endif %}
             </div>
             <div class="card-content">
-              <h3>Vineyard Estates</h3>
-              <p>Intimate celebrations among the vines. Local wines, rustic charm, and the gentle rhythm of wine country.</p>
+              <h3>{{ type.title }}</h3>
+              <p>{{ type.text }}</p>
             </div>
           </div>
-          <div class="card">
-            <div class="card-image">
-              <img src="https://images.unsplash.com/photo-1602524206684-fdf1fdb3dff2?w=800&q=80" alt="Garden wedding venue" loading="lazy">
-            </div>
-            <div class="card-content">
-              <h3>Secret Gardens</h3>
-              <p>Hidden courtyards, walled gardens, intimate spaces where every guest feels the magic of being somewhere special.</p>
-            </div>
-          </div>
+          {% endfor %}
         </div>
       </div>
     </section>
@@ -169,11 +147,11 @@ permalink: "weddings.html"
       <div class="container">
         <div class="testimonial fade-in">
           <p class="testimonial-quote">
-            We showed Aeterna one photo of a courtyard we'd seen online. They found us something even better: a family-owned villa in Umbria that wasn't on any wedding website. Our guests still talk about it years later.
+            {{ t.weddings.testimonial.quote }}
           </p>
           <div class="testimonial-author">
-            <strong>Emma & James</strong>
-            <span>Married in Umbria, 2024</span>
+            <strong>{{ t.weddings.testimonial.author }}</strong>
+            <span>{{ t.weddings.testimonial.role }}</span>
           </div>
         </div>
       </div>
@@ -183,43 +161,17 @@ permalink: "weddings.html"
     <section class="section">
       <div class="container">
         <div class="section-header text-center fade-in">
-          <span class="label">Across Italy</span>
-          <h2>Regions We Know</h2>
+          <span class="label">{{ t.weddings.regions.label }}</span>
+          <h2>{{ t.weddings.regions.title }}</h2>
           <div class="gold-line"></div>
         </div>
         <div class="grid grid-4 fade-in" style="text-align: center;">
+          {% for region in t.weddings.regions.list %}
           <div>
-            <h4 style="margin-bottom: var(--space-xs);">Tuscany</h4>
-            <p style="font-family: var(--font-sans); font-weight: 300; color: var(--text-secondary); font-size: var(--text-sm);">Rolling hills & Renaissance charm</p>
+            <h4 style="margin-bottom: var(--space-xs);">{{ region.name }}</h4>
+            <p style="font-family: var(--font-sans); font-weight: 300; color: var(--text-secondary); font-size: var(--text-sm);">{{ region.desc }}</p>
           </div>
-          <div>
-            <h4 style="margin-bottom: var(--space-xs);">Umbria</h4>
-            <p style="font-family: var(--font-sans); font-weight: 300; color: var(--text-secondary); font-size: var(--text-sm);">Italy's green heart, unspoiled</p>
-          </div>
-          <div>
-            <h4 style="margin-bottom: var(--space-xs);">Amalfi Coast</h4>
-            <p style="font-family: var(--font-sans); font-weight: 300; color: var(--text-secondary); font-size: var(--text-sm);">Dramatic cliffs & Mediterranean blue</p>
-          </div>
-          <div>
-            <h4 style="margin-bottom: var(--space-xs);">Puglia</h4>
-            <p style="font-family: var(--font-sans); font-weight: 300; color: var(--text-secondary); font-size: var(--text-sm);">White-washed trulli & olive groves</p>
-          </div>
-          <div>
-            <h4 style="margin-bottom: var(--space-xs);">Lake Como</h4>
-            <p style="font-family: var(--font-sans); font-weight: 300; color: var(--text-secondary); font-size: var(--text-sm);">Villas along legendary waters</p>
-          </div>
-          <div>
-            <h4 style="margin-bottom: var(--space-xs);">Sicily</h4>
-            <p style="font-family: var(--font-sans); font-weight: 300; color: var(--text-secondary); font-size: var(--text-sm);">Ancient history & island warmth</p>
-          </div>
-          <div>
-            <h4 style="margin-bottom: var(--space-xs);">Venice & Veneto</h4>
-            <p style="font-family: var(--font-sans); font-weight: 300; color: var(--text-secondary); font-size: var(--text-sm);">Palazzos & Palladian villas</p>
-          </div>
-          <div>
-            <h4 style="margin-bottom: var(--space-xs);">Piedmont</h4>
-            <p style="font-family: var(--font-sans); font-weight: 300; color: var(--text-secondary); font-size: var(--text-sm);">Wine country elegance</p>
-          </div>
+          {% endfor %}
         </div>
       </div>
     </section>
@@ -228,10 +180,10 @@ permalink: "weddings.html"
     <section class="section bg-gradient-warm">
       <div class="container">
         <div class="cta-section fade-in">
-          <span class="label">Your Story Begins</span>
-          <h2>Find Your Italian Wedding Venue</h2>
-          <p>Tell us about your vision. We'll begin the search for a venue that feels like it was always meant for you.</p>
-          <a href="/contact.html" class="btn btn-primary btn-lg">Start the Conversation</a>
+          <span class="label">{{ t.weddings.cta.label }}</span>
+          <h2>{{ t.weddings.cta.title }}</h2>
+          <p>{{ t.weddings.cta.text }}</p>
+          <a href="{{ prefix }}/contact.html" class="btn btn-primary btn-lg">{{ t.weddings.cta.button }}</a>
         </div>
       </div>
     </section>

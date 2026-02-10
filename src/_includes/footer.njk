@@ -1,3 +1,5 @@
+{% set t = en if lang == "en" else it %}
+{% set prefix = "" if lang == "en" else "/it" %}
 <!-- Footer -->
 <footer class="footer">
   <div class="container">
@@ -6,20 +8,20 @@
         <div class="footer-logo">
           <img src="/public/logos/Dark_logo.svg" alt="Aeterna Events">
         </div>
-        <p class="footer-tagline">Riveliamo il valore eterno del patrimonio culturale italiano attraverso location ed esperienze che trasformano le celebrazioni in momenti indimenticabili.</p>
+        <p class="footer-tagline">{{ t.footer.tagline }}</p>
       </div>
       <nav class="footer-nav">
-        <h4>Naviga</h4>
+        <h4>{{ t.footer.navigate }}</h4>
         <ul>
-          <li><a href="/it/corporate.html">Eventi Corporate</a></li>
-          <li><a href="/it/weddings.html">Matrimoni</a></li>
-          <li><a href="/it/services.html">Come Funziona</a></li>
-          <li><a href="/it/about.html">Chi Siamo</a></li>
-          <li><a href="/it/contact.html">Contatti</a></li>
+          <li><a href="{{ prefix }}/corporate.html">{{ t.footer.corporateEvents }}</a></li>
+          <li><a href="{{ prefix }}/weddings.html">{{ t.footer.weddings }}</a></li>
+          <li><a href="{{ prefix }}/services.html">{{ t.footer.services }}</a></li>
+          <li><a href="{{ prefix }}/about.html">{{ t.footer.aboutUs }}</a></li>
+          <li><a href="{{ prefix }}/contact.html">{{ t.footer.contactLink }}</a></li>
         </ul>
       </nav>
       <div class="footer-contact">
-        <h4>Connettiti</h4>
+        <h4>{{ t.footer.connect }}</h4>
         <a href="mailto:hello@aeternaevents.com" class="footer-email">hello@aeternaevents.com</a>
         <div class="footer-social">
           <a href="https://instagram.com/aeternaevents" aria-label="Instagram" target="_blank" rel="noopener">
@@ -45,10 +47,10 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; <span class="current-year">2026</span> Aeterna Events. Tutti i diritti riservati.</p>
+      <p>&copy; <span class="current-year">2026</span> Aeterna Events. {{ t.footer.rights }}</p>
       <div class="footer-legal">
-        <a href="/it/privacy.html">Privacy Policy</a>
-        <a href="/it/cookie-policy.html">Cookie Policy</a>
+        <a href="{{ prefix }}/privacy.html">{{ t.footer.privacyPolicy }}</a>
+        <a href="{{ prefix }}/cookie-policy.html">{{ t.footer.cookiePolicy }}</a>
       </div>
       <p>P.IVA 00000000000</p>
     </div>

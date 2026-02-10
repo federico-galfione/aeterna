@@ -1,29 +1,36 @@
 ---
+pagination:
+  data: languages
+  size: 1
+  alias: lang
+permalink: "{% if lang == 'it' %}it/{% endif %}about.html"
 layout: base.njk
-title: "About Us | Aeterna Events"
-description: "Learn about Aeterna Events, our story, and our passion for connecting international clients with exceptional Italian venues."
-canonical: "https://aeternaevents.com/about.html"
-hreflangEn: "https://aeternaevents.com/about.html"
-hreflangIt: "https://aeternaevents.com/it/about.html"
-ogTitle: "About Us | Aeterna Events"
-ogDescription: "Learn about Aeterna Events and our passion for Italian venue finding."
-ogUrl: "https://aeternaevents.com/about.html"
-lang: en
 pageName: "about.html"
-permalink: "about.html"
+eleventyComputed:
+  title: "{% if lang == 'it' %}{{ it.pages.about.title }}{% else %}{{ en.pages.about.title }}{% endif %}"
+  description: "{% if lang == 'it' %}{{ it.pages.about.description }}{% else %}{{ en.pages.about.description }}{% endif %}"
+  canonical: "https://aeternaevents.com/{% if lang == 'it' %}it/{% endif %}about.html"
+  hreflangEn: "https://aeternaevents.com/about.html"
+  hreflangIt: "https://aeternaevents.com/it/about.html"
+  ogTitle: "{% if lang == 'it' %}{{ it.pages.about.ogTitle }}{% else %}{{ en.pages.about.ogTitle }}{% endif %}"
+  ogDescription: "{% if lang == 'it' %}{{ it.pages.about.ogDescription }}{% else %}{{ en.pages.about.ogDescription }}{% endif %}"
+  ogUrl: "https://aeternaevents.com/{% if lang == 'it' %}it/{% endif %}about.html"
+  ogImage: "https://aeternaevents.com/images/og-image.jpg"
 ---
+{% set t = en if lang == "en" else it %}
+{% set prefix = "" if lang == "en" else "/it" %}
 
   <main>
     <!-- Hero Section -->
     <section class="hero" style="min-height: 70vh;">
       <div class="hero-bg">
-        <img src="https://images.unsplash.com/photo-1515859005217-8a1f08870f59?w=1920&q=80" alt="Italian countryside landscape" loading="eager">
+        <img src="https://images.unsplash.com/photo-1515859005217-8a1f08870f59?w=1920&q=80" alt="{{ t.about.hero.heroImgAlt }}" loading="eager">
       </div>
       <div class="hero-overlay"></div>
       <div class="hero-content">
-        <span class="label hero-anim">About Us</span>
-        <h1 class="hero-anim">Rooted in Italy,<br>Open to the World</h1>
-        <p class="subtitle hero-anim">We bridge the gap between international clients and Italy's extraordinary venues, sharing the places and traditions that make this country timeless.</p>
+        <span class="label hero-anim">{{ t.about.hero.label }}</span>
+        <h1 class="hero-anim">{{ t.about.hero.title | safe }}</h1>
+        <p class="subtitle hero-anim">{{ t.about.hero.subtitle }}</p>
       </div>
     </section>
 
@@ -32,20 +39,20 @@ permalink: "about.html"
       <div class="container">
         <div class="grid grid-asymmetric" style="align-items: center; gap: var(--space-4xl);">
           <div class="fade-in">
-            <span class="label label--olive">Our Story</span>
-            <h2 class="mt-md mb-lg">Born from a Simple Truth</h2>
+            <span class="label label--olive">{{ t.about.story.label }}</span>
+            <h2 class="mt-md mb-lg">{{ t.about.story.title }}</h2>
             <p style="font-family: var(--font-sans); font-weight: 300; color: var(--text-secondary); margin-bottom: var(--space-md);">
-              Italy holds some of the world's most remarkable venues, places where history lives in every stone and celebrations feel eternal. Yet many of these venues remain hidden from international clients, lacking the infrastructure to reach beyond Italy's borders.
+              {{ t.about.story.text1 }}
             </p>
             <p style="font-family: var(--font-sans); font-weight: 300; color: var(--text-secondary); margin-bottom: var(--space-md);">
-              Aeterna Events was founded to close this gap. We combine deep local knowledge with international understanding, connecting clients worldwide with venues that would otherwise remain undiscovered. No contracted lists, no commissions that influence our recommendations, just honest guidance toward places that deserve to be known.
+              {{ t.about.story.text2 }}
             </p>
             <p style="font-family: var(--font-sans); font-weight: 300; color: var(--text-secondary);">
-              The name "Aeterna" is Latin for "eternal," reflecting both Italy's timeless heritage and our belief that the right venue creates memories that last beyond any single celebration.
+              {{ t.about.story.text3 }}
             </p>
           </div>
           <div class="fade-in">
-            <img src="https://images.unsplash.com/photo-1543429257-3eb0b65d9c58?w=800&q=80" alt="Italian architecture detail" style="border-radius: var(--radius-lg);">
+            <img src="https://images.unsplash.com/photo-1543429257-3eb0b65d9c58?w=800&q=80" alt="{{ t.about.story.imgAlt }}" style="border-radius: var(--radius-lg);">
           </div>
         </div>
       </div>
@@ -56,17 +63,17 @@ permalink: "about.html"
       <div class="container container--narrow">
         <div class="grid grid-2 fade-in" style="gap: var(--space-4xl);">
           <div>
-            <span class="label">Vision</span>
-            <h3 class="mt-md mb-lg" style="color: var(--text-on-dark);">What We See</h3>
+            <span class="label">{{ t.about.vision.label }}</span>
+            <h3 class="mt-md mb-lg" style="color: var(--text-on-dark);">{{ t.about.vision.title }}</h3>
             <p style="font-family: var(--font-sans); font-weight: 300; color: rgba(250, 247, 240, 0.8);">
-              To reveal the eternal value of Italy's cultural heritage through venues and experiences that transform celebrations into unforgettable moments.
+              {{ t.about.vision.text }}
             </p>
           </div>
           <div>
-            <span class="label">Mission</span>
-            <h3 class="mt-md mb-lg" style="color: var(--text-on-dark);">What We Do</h3>
+            <span class="label">{{ t.about.mission.label }}</span>
+            <h3 class="mt-md mb-lg" style="color: var(--text-on-dark);">{{ t.about.mission.title }}</h3>
             <p style="font-family: var(--font-sans); font-weight: 300; color: rgba(250, 247, 240, 0.8);">
-              We guide international brands, organizations, and couples in discovering Italy beyond the expected, providing expert venue finding and refined event support for meaningful corporate events and private celebrations.
+              {{ t.about.mission.text }}
             </p>
           </div>
         </div>
@@ -77,59 +84,36 @@ permalink: "about.html"
     <section class="section">
       <div class="container">
         <div class="section-header text-center fade-in">
-          <span class="label">Our Values</span>
-          <h2>What Guides Us</h2>
+          <span class="label">{{ t.about.values.label }}</span>
+          <h2>{{ t.about.values.title }}</h2>
           <div class="gold-line"></div>
         </div>
         <div class="grid grid-4 stagger-children" style="text-align: center; gap: var(--space-3xl);">
+          {% for item in t.about.values.items %}
           <div>
             <div class="value-prop-icon" style="margin: 0 auto var(--space-lg);">
               <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                {% if loop.index == 1 %}
                 <circle cx="12" cy="12" r="10"/>
                 <path d="M12 6v6l4 2"/>
-              </svg>
-            </div>
-            <h4 style="margin-bottom: var(--space-sm);">Timeless</h4>
-            <p style="font-family: var(--font-sans); font-weight: 300; color: var(--text-secondary); font-size: var(--text-sm);">
-              Rooted in centuries of culture, not in trends. We value enduring quality over fleeting fashion.
-            </p>
-          </div>
-          <div>
-            <div class="value-prop-icon" style="margin: 0 auto var(--space-lg);">
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                {% elif loop.index == 2 %}
                 <path d="M12 2L2 7l10 5 10-5-10-5z"/>
                 <path d="M2 17l10 5 10-5"/>
                 <path d="M2 12l10 5 10-5"/>
-              </svg>
-            </div>
-            <h4 style="margin-bottom: var(--space-sm);">Refined</h4>
-            <p style="font-family: var(--font-sans); font-weight: 300; color: var(--text-secondary); font-size: var(--text-sm);">
-              Every detail curated with care and intention. Excellence in service, from first contact to final booking.
-            </p>
-          </div>
-          <div>
-            <div class="value-prop-icon" style="margin: 0 auto var(--space-lg);">
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                {% elif loop.index == 3 %}
                 <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
-              </svg>
-            </div>
-            <h4 style="margin-bottom: var(--space-sm);">Warm</h4>
-            <p style="font-family: var(--font-sans); font-weight: 300; color: var(--text-secondary); font-size: var(--text-sm);">
-              Approachable luxury, never cold or elitist. We're a trusted friend, not a distant service.
-            </p>
-          </div>
-          <div>
-            <div class="value-prop-icon" style="margin: 0 auto var(--space-lg);">
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                {% elif loop.index == 4 %}
                 <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
                 <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                {% endif %}
               </svg>
             </div>
-            <h4 style="margin-bottom: var(--space-sm);">Knowledgeable</h4>
+            <h4 style="margin-bottom: var(--space-sm);">{{ item.title }}</h4>
             <p style="font-family: var(--font-sans); font-weight: 300; color: var(--text-secondary); font-size: var(--text-sm);">
-              Deep expertise worn lightly, shared generously. We know Italy's venues because we've sought them ourselves.
+              {{ item.text }}
             </p>
           </div>
+          {% endfor %}
         </div>
       </div>
     </section>
@@ -138,42 +122,26 @@ permalink: "about.html"
     <section class="section bg-gradient-ivory">
       <div class="container container--narrow">
         <div class="section-header text-center fade-in">
-          <span class="label label--olive">Why Choose Us</span>
-          <h2>What Sets Us Apart</h2>
+          <span class="label label--olive">{{ t.about.whyUs.label }}</span>
+          <h2>{{ t.about.whyUs.title }}</h2>
           <div class="gold-line"></div>
         </div>
         <div class="fade-in">
           <div class="quote" style="max-width: 700px; margin: 0 auto;">
             <p>
-              Most agencies work from a contracted list of venues, venues that pay for placement. We work differently. Every search begins fresh, guided only by your vision. Our recommendations are honest because our only goal is finding the right venue for you, not the venue that pays us most.
+              {{ t.about.whyUs.quote }}
             </p>
           </div>
         </div>
         <div class="grid grid-2 fade-in mt-3xl" style="gap: var(--space-xl);">
+          {% for item in t.about.whyUs.items %}
           <div style="padding: var(--space-lg); border-left: 2px solid var(--accent-primary);">
-            <h4 style="margin-bottom: var(--space-sm);">Broad Network</h4>
+            <h4 style="margin-bottom: var(--space-sm);">{{ item.title }}</h4>
             <p style="font-family: var(--font-sans); font-weight: 300; color: var(--text-secondary); font-size: var(--text-sm);">
-              We've built relationships with venues across Italy, from famous estates to family-owned properties that rarely appear in international searches.
+              {{ item.text }}
             </p>
           </div>
-          <div style="padding: var(--space-lg); border-left: 2px solid var(--accent-primary);">
-            <h4 style="margin-bottom: var(--space-sm);">Local Understanding</h4>
-            <p style="font-family: var(--font-sans); font-weight: 300; color: var(--text-secondary); font-size: var(--text-sm);">
-              We speak the language, understand the culture, and navigate local requirements that would otherwise create friction.
-            </p>
-          </div>
-          <div style="padding: var(--space-lg); border-left: 2px solid var(--accent-primary);">
-            <h4 style="margin-bottom: var(--space-sm);">Tailored Approach</h4>
-            <p style="font-family: var(--font-sans); font-weight: 300; color: var(--text-secondary); font-size: var(--text-sm);">
-              No two clients receive the same venue list. Every search is customized to your specific vision, needs, and budget.
-            </p>
-          </div>
-          <div style="padding: var(--space-lg); border-left: 2px solid var(--accent-primary);">
-            <h4 style="margin-bottom: var(--space-sm);">End-to-End Support</h4>
-            <p style="font-family: var(--font-sans); font-weight: 300; color: var(--text-secondary); font-size: var(--text-sm);">
-              From initial search through contract signing, we handle the complexity so you can focus on your event.
-            </p>
-          </div>
+          {% endfor %}
         </div>
       </div>
     </section>
@@ -182,12 +150,12 @@ permalink: "about.html"
     <section class="section">
       <div class="container container--narrow text-center">
         <div class="section-header text-center fade-in">
-          <span class="label">The Team</span>
-          <h2>Who We Are</h2>
+          <span class="label">{{ t.about.team.label }}</span>
+          <h2>{{ t.about.team.title }}</h2>
           <div class="gold-line"></div>
         </div>
         <p class="fade-in" style="font-family: var(--font-sans); font-weight: 300; color: var(--text-secondary); max-width: 600px; margin: 0 auto var(--space-3xl);">
-          Aeterna Events is led by professionals with deep roots in Italy and extensive experience in hospitality, event planning, and destination services.
+          {{ t.about.team.text }}
         </p>
         <!-- Team member placeholder - to be replaced with actual photos/bios -->
         <div class="team-grid fade-in">
@@ -198,8 +166,8 @@ permalink: "about.html"
                 <circle cx="12" cy="7" r="4"/>
               </svg>
             </div>
-            <h4>Founder</h4>
-            <p class="team-member-role">Venue Finding & Client Relations</p>
+            <h4>{{ t.about.team.founderTitle }}</h4>
+            <p class="team-member-role">{{ t.about.team.founderRole }}</p>
           </div>
         </div>
       </div>
@@ -209,10 +177,10 @@ permalink: "about.html"
     <section class="section section--dark bg-gradient-dark">
       <div class="container">
         <div class="cta-section fade-in">
-          <span class="label">Ready to Start?</span>
-          <h2 style="color: var(--text-on-dark);">Let's Find Your Venue</h2>
-          <p style="color: rgba(250, 247, 240, 0.7);">Tell us about your event and let us show you what Italy can offer.</p>
-          <a href="/contact.html" class="btn btn-ghost btn-lg">Get in Touch</a>
+          <span class="label">{{ t.about.cta.label }}</span>
+          <h2 style="color: var(--text-on-dark);">{{ t.about.cta.title }}</h2>
+          <p style="color: rgba(250, 247, 240, 0.7);">{{ t.about.cta.text }}</p>
+          <a href="{{ prefix }}/contact.html" class="btn btn-ghost btn-lg">{{ t.about.cta.button }}</a>
         </div>
       </div>
     </section>

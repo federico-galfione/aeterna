@@ -42,20 +42,11 @@
   {% endif %}
 </head>
 <body>
-  {% if lang == "it" %}
-    {% include "header-it.njk" %}
-  {% else %}
-    {% include "header-en.njk" %}
-  {% endif %}
+  {% include "header.njk" %}
 
   {{ content | safe }}
 
-  {% if lang == "it" %}
-    {% include "footer-it.njk" %}
-    {% include "cookie-it.njk" %}
-  {% else %}
-    {% include "footer-en.njk" %}
-    {% include "cookie-en.njk" %}
-  {% endif %}
+  {% include "footer.njk" %}
+  {% include "cookie.njk" %}
 </body>
 </html>

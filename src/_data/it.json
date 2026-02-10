@@ -1,0 +1,604 @@
+{
+  "nav": {
+    "corporate": "Corporate",
+    "weddings": "Matrimoni",
+    "services": "Come Funziona",
+    "about": "Chi Siamo",
+    "contact": "Contattaci",
+    "home": "Home",
+    "mobileContact": "Contatti"
+  },
+  "footer": {
+    "tagline": "Riveliamo il valore eterno del patrimonio culturale italiano attraverso location ed esperienze che trasformano le celebrazioni in momenti indimenticabili.",
+    "navigate": "Naviga",
+    "corporateEvents": "Eventi Corporate",
+    "weddings": "Matrimoni",
+    "services": "Come Funziona",
+    "aboutUs": "Chi Siamo",
+    "contactLink": "Contatti",
+    "connect": "Connettiti",
+    "rights": "Tutti i diritti riservati.",
+    "privacyPolicy": "Privacy Policy",
+    "cookiePolicy": "Cookie Policy"
+  },
+  "cookie": {
+    "text": "Utilizziamo i cookie per garantire il corretto funzionamento del nostro sito web e per migliorare la tua esperienza. Continuando a utilizzare il nostro sito, accetti l'uso dei cookie.",
+    "learnMore": "Scopri di piu",
+    "accept": "Accetta"
+  },
+  "pages": {
+    "index": {
+      "title": "Aeterna Events | Ricerca Location in Italia",
+      "description": "Scopri location italiane eccezionali per retreat aziendali e matrimoni. Ricerca esperta di venue con profonda conoscenza locale in tutta Italia.",
+      "ogTitle": "Aeterna Events | Ricerca Location in Italia",
+      "ogDescription": "Scopri location italiane eccezionali per retreat aziendali e matrimoni."
+    },
+    "corporate": {
+      "title": "Retreat Aziendali in Italia | Aeterna Events",
+      "description": "Trova la location italiana perfetta per il tuo retreat aziendale o meeting di team. Ville storiche, boutique hotel e spazi unici che ispirano connessione.",
+      "ogTitle": "Retreat Aziendali in Italia | Aeterna Events",
+      "ogDescription": "Trova la location italiana perfetta per il tuo retreat aziendale."
+    },
+    "weddings": {
+      "title": "Matrimoni in Italia | Aeterna Events",
+      "description": "Scopri la location dei tuoi sogni per un matrimonio in Italia. Dalle ville toscane alle tenute della Costiera Amalfitana, troviamo luoghi destinati alla tua storia d'amore.",
+      "ogTitle": "Matrimoni in Italia | Aeterna Events",
+      "ogDescription": "Scopri la location dei tuoi sogni per un matrimonio in Italia."
+    },
+    "services": {
+      "title": "Come Funziona | Aeterna Events | Ricerca Location in Italia",
+      "description": "Scopri il nostro processo di ricerca location. Dalla consulenza iniziale al supporto per la prenotazione, ti guidiamo nella ricerca della location italiana perfetta.",
+      "ogTitle": "Come Funziona | Aeterna Events",
+      "ogDescription": "Scopri il nostro processo di ricerca location. Dalla consulenza alla prenotazione, ti guidiamo verso la location italiana perfetta."
+    },
+    "about": {
+      "title": "Chi Siamo | Aeterna Events",
+      "description": "Scopri Aeterna Events, la nostra storia e la passione per connettere clienti internazionali con location italiane eccezionali.",
+      "ogTitle": "Chi Siamo | Aeterna Events",
+      "ogDescription": "Scopri Aeterna Events e la nostra passione per la ricerca di location italiane."
+    },
+    "contact": {
+      "title": "Contatti | Aeterna Events",
+      "description": "Contatta Aeterna Events. Raccontaci del tuo retreat aziendale o matrimonio e lasciaci trovare la location italiana perfetta.",
+      "ogTitle": "Contatti | Aeterna Events",
+      "ogDescription": "Contatta Aeterna Events per la ricerca di location italiane."
+    },
+    "privacy": {
+      "title": "Privacy Policy | Aeterna Events",
+      "description": "Privacy Policy di Aeterna Events. Scopri come raccogliamo, utilizziamo e proteggiamo i tuoi dati personali.",
+      "ogTitle": "Privacy Policy | Aeterna Events",
+      "ogDescription": "Privacy Policy di Aeterna Events."
+    },
+    "cookiePolicy": {
+      "title": "Cookie Policy | Aeterna Events",
+      "description": "Cookie Policy di Aeterna Events. Scopri quali cookie utilizziamo sul nostro sito web.",
+      "ogTitle": "Cookie Policy | Aeterna Events",
+      "ogDescription": "Cookie Policy di Aeterna Events."
+    }
+  },
+  "home": {
+    "hero": {
+      "label": "Ricerca Location in Italia",
+      "title": "Dove Nascono<br>le Storie",
+      "subtitle": "Guidiamo clienti internazionali verso location italiane eccezionali per retreat aziendali e matrimoni. Conoscenza profonda. Servizio personale. Luoghi senza tempo.",
+      "cta": "Inizia la Ricerca",
+      "heroImgAlt": "Bellissimo cortile di villa italiana",
+      "scrollIndicator": "Scopri"
+    },
+    "intro": {
+      "label": "Il Nostro Approccio",
+      "title": "L'Italia Oltre le Aspettative",
+      "text": "Ogni celebrazione merita un ambiente che risuoni. Ti connettiamo con location che incarnano il patrimonio culturale italiano: palazzi storici, retreat costieri, cortili nascosti, tenute vitivinicole. Non i luoghi che tutti conoscono, ma quelli che vale la pena scoprire."
+    },
+    "servicesCorporate": {
+      "label": "Per i Team",
+      "title": "Retreat Aziendali",
+      "text": "Trasforma gli incontri di team in esperienze memorabili. Troviamo location che ispirano connessione, creativita e concentrazione in ambienti ricchi di patrimonio italiano.",
+      "cta": "Scopri Corporate",
+      "imgAlt": "Retreat aziendale in villa italiana"
+    },
+    "servicesWeddings": {
+      "label": "Per le Coppie",
+      "title": "Matrimoni",
+      "text": "La location del tuo matrimonio definisce tutto cio che segue. Scopriamo luoghi che sembrano destinati, posti dove la tua storia si svolge naturalmente.",
+      "cta": "Scopri Matrimoni",
+      "imgAlt": "Matrimonio in Italia"
+    },
+    "valueProps": [
+      {
+        "title": "Competenza Locale",
+        "text": "Connessioni profonde in tutta Italia, dalla Toscana alla Sicilia. Conosciamo location che le agenzie internazionali non raggiungono mai."
+      },
+      {
+        "title": "Servizio Su Misura",
+        "text": "Nessuna lista di location prefissata. Ogni ricerca inizia da zero, guidata dalla tua visione, dalle tue esigenze, dalla tua storia."
+      },
+      {
+        "title": "Processo Fluido",
+        "text": "Gestiamo la complessita delle prenotazioni internazionali, i requisiti locali e il coordinamento con i fornitori."
+      }
+    ],
+    "featured": {
+      "label": "Location in Evidenza",
+      "title": "Uno Sguardo sull'Italia",
+      "images": [
+        { "alt": "Villa toscana con cipressi" },
+        { "alt": "Cortile italiano con archi" },
+        { "alt": "Location costiera italiana" },
+        { "alt": "Interno di palazzo storico" },
+        { "alt": "Tenuta vitivinicola" }
+      ]
+    },
+    "testimonial": {
+      "quote": "Aeterna ci ha trovato una location che non avremmo mai scoperto da soli. Un monastero del XVI secolo in Umbria, ora boutique hotel, con viste che hanno lasciato il nostro team senza parole. Ha trasformato completamente il nostro retreat.",
+      "author": "Sarah Mitchell",
+      "role": "Head of People, Tech Startup"
+    },
+    "cta": {
+      "label": "Pronti a Iniziare?",
+      "title": "Troviamo la Tua Location",
+      "text": "Raccontaci del tuo evento e inizieremo la ricerca dell'ambientazione italiana perfetta.",
+      "button": "Contattaci"
+    }
+  },
+  "corporate": {
+    "hero": {
+      "label": "Eventi Corporate",
+      "title": "Dove i Team<br>si Connettono",
+      "subtitle": "Location italiane che trasformano i retreat aziendali in esperienze significative. Ambienti storici che ispirano concentrazione, creativita e connessione autentica.",
+      "cta": "Pianifica il Tuo Retreat",
+      "heroImgAlt": "Meeting aziendale in villa italiana",
+      "scrollIndicator": "Scopri"
+    },
+    "challenge": {
+      "label": "La Sfida",
+      "title": "Trovare location che ispirano non e semplice",
+      "text": "Vuoi piu di una sala conferenze con vista. Hai bisogno di un ambiente che unisca team remoti, stimoli conversazioni inaspettate e crei ricordi condivisi. Ma trovare queste location in Italia, superare le barriere linguistiche, comprendere i requisiti locali, coordinare la logistica dall'estero... assorbe tempo che non hai.",
+      "imgAlt": "Collaborazione di team"
+    },
+    "approach": {
+      "label": "Il Nostro Approccio",
+      "title": "Gestiamo Noi la Ricerca",
+      "text": "Condividi la tua visione, le dimensioni del team e gli obiettivi. Cerchiamo nella nostra rete, presentiamo opzioni su misura e ti guidiamo verso una decisione. Tu ti concentri sul tuo team; noi ci concentriamo sulla location.",
+      "steps": [
+        {
+          "title": "Condividi la Tua Visione",
+          "text": "Raccontaci del tuo team, dei tuoi obiettivi, dell'ambiente ideale. Quale atmosfera supporta la tua agenda? Quali esperienze contano di piu?"
+        },
+        {
+          "title": "Cerchiamo e Selezioniamo",
+          "text": "Esploriamo la nostra rete di location in tutta Italia, da ville storiche a retreat contemporanei, selezionando opzioni che corrispondono ai tuoi criteri."
+        },
+        {
+          "title": "Valuta e Decidi",
+          "text": "Ricevi una selezione curata con informazioni dettagliate, foto e le nostre opinioni sincere. Rispondiamo alle domande, organizziamo tour virtuali se necessario."
+        },
+        {
+          "title": "Coordiniamo Noi",
+          "text": "Una volta scelta la location, gestiamo trattative, contratti e coordinamento logistico. Arriva pronto a concentrarti sul tuo team."
+        }
+      ]
+    },
+    "venueTypes": {
+      "label": "Tipi di Location",
+      "title": "Ambienti che Ispirano",
+      "types": [
+        {
+          "title": "Ville Storiche",
+          "text": "Architettura rinascimentale, sale affrescate e giardini secolari. Esclusivita e grandezza per incontri significativi.",
+          "imgAlt": "Villa storica"
+        },
+        {
+          "title": "Boutique Hotel",
+          "text": "Proprieta intime con carattere e comfort moderno. Strutture professionali avvolte nell'autentica ospitalita italiana.",
+          "imgAlt": "Boutique hotel"
+        },
+        {
+          "title": "Tenute Vitivinicole",
+          "text": "Colline ondulate, cantine attive ed eleganza rustica. Combina sessioni strategiche con degustazioni e tranquillita rurale.",
+          "imgAlt": "Tenuta vitivinicola"
+        }
+      ]
+    },
+    "idealFor": {
+      "label": "Ideale Per",
+      "title": "Eventi che Supportiamo",
+      "items": [
+        {
+          "title": "Retreat di Team",
+          "text": "Team remoti che si riuniscono per strategia, team building e allineamento in ambienti ispiranti."
+        },
+        {
+          "title": "Offsite per Leadership",
+          "text": "Riunioni executive che richiedono privacy, comfort e un ambiente che favorisce il pensiero strategico."
+        },
+        {
+          "title": "Retreat per Creator",
+          "text": "Content creator e community leader che organizzano retreat per il loro pubblico in location distintive."
+        },
+        {
+          "title": "Eventi per Clienti",
+          "text": "Impressiona clienti e partner con location italiane esclusive per lanci di prodotto, viaggi incentive o celebrazioni."
+        }
+      ]
+    },
+    "testimonial": {
+      "quote": "Il nostro team di 30 persone non si era mai sentito cosi unito. La location in Puglia era perfetta, il cibo incredibile, e Aeterna ha gestito ogni dettaglio. Stiamo gia pianificando il prossimo anno.",
+      "author": "Marco Rossi",
+      "role": "COO, Startup Remote-First"
+    },
+    "cta": {
+      "label": "Pronti a Iniziare?",
+      "title": "Pianifica il Tuo Retreat Aziendale",
+      "text": "Raccontaci del tuo team e della tua visione. Troveremo location che superano le aspettative.",
+      "button": "Inizia la Conversazione"
+    }
+  },
+  "weddings": {
+    "hero": {
+      "label": "Matrimoni",
+      "title": "Dove l'Amore<br>si Svela",
+      "subtitle": "La location del tuo matrimonio plasma tutto cio che segue: le foto, i ricordi, l'emozione che resta. Troviamo location italiane dove la tua storia appartiene naturalmente.",
+      "cta": "Inizia la Ricerca",
+      "heroImgAlt": "Matrimonio in Italia",
+      "scrollIndicator": "Scopri"
+    },
+    "feeling": {
+      "label": "L'Emozione",
+      "title": "Piu di una Location",
+      "text": "L'hai immaginato: luce dorata che filtra tra gli ulivi, mura di pietra che hanno assistito a secoli di celebrazioni, il profumo del gelsomino nella brezza serale. L'Italia custodisce questi momenti, in attesa. La location del tuo matrimonio non e solo uno sfondo: e dove la tua storia mette radici in un luogo che sembra eterno."
+    },
+    "promise": {
+      "label": "La Nostra Promessa",
+      "title": "Trovare Cio che Senti Giusto",
+      "text1": "Non lavoriamo con una lista fissa di location. Ogni ricerca inizia da zero, guidata dalla tua visione, dai tuoi ospiti, dai tuoi sogni. Ville storiche, tenute costiere, monasteri nascosti, agriturismi rustici: esploriamo le possibilita fino a trovare quella che risuona.",
+      "text2": "Questa e l'Italia come dovrebbe essere scoperta: attraverso qualcuno che conosce i suoi angoli nascosti, parla la sua lingua e comprende cosa rende una celebrazione davvero indimenticabile.",
+      "imgAlt": "Celebrazione di matrimonio in giardino italiano"
+    },
+    "process": {
+      "label": "Il Percorso",
+      "title": "Come Lavoriamo Insieme",
+      "steps": [
+        {
+          "title": "Condividi la Tua Visione",
+          "text": "Raccontaci del matrimonio dei tuoi sogni. L'atmosfera, il numero di ospiti, le regioni che ti chiamano. Quali momenti contano di piu? Quali emozioni dovrebbe contenere il giorno?"
+        },
+        {
+          "title": "Esploriamo e Scopriamo",
+          "text": "Cerchiamo nella nostra rete, da tenute rinomate a gemme nascoste conosciute solo ai locali. Ogni opzione e verificata, visitata e selezionata con la tua visione in mente."
+        },
+        {
+          "title": "Presentiamo e Affiniamo",
+          "text": "Ricevi una selezione curata di location con informazioni dettagliate, foto e la nostra prospettiva sincera. Affiniamo la ricerca finche qualcosa non sembra inequivocabilmente giusto."
+        },
+        {
+          "title": "Assicura la Tua Location",
+          "text": "Una volta deciso, gestiamo trattative, contratti e coordinamento. Arriverai in Italia sapendo che la tua location e esattamente come promesso."
+        }
+      ]
+    },
+    "venueStyles": {
+      "label": "Stili di Location",
+      "title": "Ogni Sogno, un'Ambientazione",
+      "types": [
+        {
+          "title": "Ville Toscane",
+          "text": "Colline ondulate, viali di cipressi ed eleganza rinascimentale. Il matrimonio italiano per eccellenza, elevato oltre le aspettative.",
+          "imgAlt": "Matrimonio in villa toscana"
+        },
+        {
+          "title": "Tenute Costiere",
+          "text": "Amalfi, Puglia, Sicilia. Blu mediterraneo, limoneti e terrazze che digradano verso il mare.",
+          "imgAlt": "Location matrimonio costiera"
+        },
+        {
+          "title": "Palazzi Storici",
+          "text": "Sale grandiose, soffitti affrescati e giardini progettati da maestri. Architettura che ha assistito a secoli di celebrazioni.",
+          "imgAlt": "Matrimonio in palazzo storico"
+        }
+      ],
+      "typesRow2": [
+        {
+          "title": "Tenute Vitivinicole",
+          "text": "Celebrazioni intime tra le vigne. Vini locali, fascino rustico e il ritmo gentile della campagna.",
+          "imgAlt": "Matrimonio in vigna"
+        },
+        {
+          "title": "Giardini Segreti",
+          "text": "Cortili nascosti, giardini murati, spazi intimi dove ogni ospite sente la magia di essere in un luogo speciale.",
+          "imgAlt": "Location matrimonio giardino"
+        }
+      ]
+    },
+    "testimonial": {
+      "quote": "Abbiamo mostrato ad Aeterna una foto di un cortile visto online. Ci hanno trovato qualcosa di ancora meglio: una villa di famiglia in Umbria che non era su nessun sito di matrimoni. I nostri ospiti ne parlano ancora anni dopo.",
+      "author": "Emma e James",
+      "role": "Sposati in Umbria, 2024"
+    },
+    "regions": {
+      "label": "In Tutta Italia",
+      "title": "Regioni che Conosciamo",
+      "list": [
+        { "name": "Toscana", "desc": "Colline e fascino rinascimentale" },
+        { "name": "Umbria", "desc": "Il cuore verde d'Italia, incontaminato" },
+        { "name": "Costiera Amalfitana", "desc": "Scogliere drammatiche e blu mediterraneo" },
+        { "name": "Puglia", "desc": "Trulli bianchi e uliveti" },
+        { "name": "Lago di Como", "desc": "Ville lungo acque leggendarie" },
+        { "name": "Sicilia", "desc": "Storia antica e calore dell'isola" },
+        { "name": "Venezia e Veneto", "desc": "Palazzi e ville palladiane" },
+        { "name": "Piemonte", "desc": "Eleganza delle terre del vino" }
+      ]
+    },
+    "cta": {
+      "label": "La Tua Storia Inizia",
+      "title": "Trova la Location del Tuo Matrimonio",
+      "text": "Raccontaci della tua visione. Inizieremo la ricerca di una location che sembra fosse sempre destinata a te.",
+      "button": "Inizia la Conversazione"
+    }
+  },
+  "services": {
+    "hero": {
+      "label": "Il Nostro Processo",
+      "title": "Come Funziona",
+      "subtitle": "Dalla tua prima richiesta al momento in cui entri nella tua location, ti guidiamo in ogni passaggio con competenza e cura.",
+      "heroImgAlt": "Elegante location per eventi in Italia",
+      "scrollIndicator": "Scopri"
+    },
+    "intro": {
+      "label": "Cosa Facciamo",
+      "title": "Ricerca Location, Raffinata",
+      "text": "Siamo specializzati nel connettere clienti internazionali con location italiane eccezionali. La nostra profonda conoscenza delle gemme nascoste d'Italia, combinata con un approccio su misura per ogni ricerca, assicura che tu trovi un luogo che rispecchi davvero la tua visione.",
+      "items": [
+        {
+          "title": "Ricerca Curata",
+          "text": "Cerchiamo nella nostra vasta rete, non in una lista limitata di location convenzionate. Ogni raccomandazione e su misura per le tue esigenze specifiche."
+        },
+        {
+          "title": "Guida Personale",
+          "text": "Un contatto dedicato durante tutto il percorso. Impariamo le tue preferenze e ti rappresentiamo con le location."
+        },
+        {
+          "title": "Competenza Locale",
+          "text": "Naviga il paesaggio unico dell'Italia con sicurezza. Gestiamo barriere linguistiche, usanze locali e complessita logistiche."
+        }
+      ]
+    },
+    "timeline": {
+      "label": "Il Percorso",
+      "title": "Il Tuo Cammino Verso la Location Perfetta",
+      "steps": [
+        {
+          "title": "Consulenza Iniziale",
+          "text": "Iniziamo con una conversazione per comprendere la tua visione, requisiti, numero di ospiti, date preferite e budget. Questo ci aiuta a definire esattamente cosa stai cercando."
+        },
+        {
+          "title": "Ricerca Location",
+          "text": "Il nostro team cerca in tutta Italia, attingendo alla nostra rete di palazzi, ville, tenute e boutique hotel. Guardiamo oltre l'ovvio per trovare location che corrispondano ai tuoi criteri unici."
+        },
+        {
+          "title": "Presentazione Curata",
+          "text": "Presentiamo una selezione di 5-8 location accuratamente scelte, complete di foto, informazioni dettagliate, disponibilita e prezzi. Ogni opzione e selezionata a mano per soddisfare le tue esigenze."
+        },
+        {
+          "title": "Confronto e Selezione",
+          "text": "Ti guidiamo nel confrontare le opzioni, rispondendo alle domande e, se desiderato, organizzando visite in loco. Ti aiutiamo a valutare pro e contro per trovare la corrispondenza ideale."
+        },
+        {
+          "title": "Supporto alla Prenotazione",
+          "text": "Una volta scelta la location, ti assistiamo con negoziazioni, revisione del contratto e coordinamento con la venue. Assicuriamo una transizione fluida dalla selezione alla conferma."
+        }
+      ]
+    },
+    "servicesCards": {
+      "label": "I Nostri Servizi",
+      "title": "Su Misura per il Tuo Evento",
+      "corporate": {
+        "label": "Per i Team",
+        "title": "Retreat Aziendali",
+        "text": "Trova location ispiranti per offsite di team, retreat aziendali e incontri corporate. Ci concentriamo su luoghi che favoriscono connessione offrendo i servizi di cui il tuo team ha bisogno.",
+        "cta": "Scopri di Piu",
+        "imgAlt": "Location per retreat aziendale in Italia"
+      },
+      "weddings": {
+        "label": "Per le Coppie",
+        "title": "Destination Wedding",
+        "text": "Scopri la location dove la tua storia si svolgera. Dalle fughe romantiche intime alle grandi celebrazioni, troviamo ambientazioni che corrispondono alla tua visione e creano ricordi indelebili.",
+        "cta": "Scopri di Piu",
+        "imgAlt": "Location per matrimoni in Italia"
+      }
+    },
+    "included": {
+      "label": "Cosa Include",
+      "title": "Il Nostro Servizio in Sintesi",
+      "items": [
+        {
+          "title": "Consulenza Personale",
+          "text": "Discussione approfondita dei tuoi requisiti, preferenze e visione per l'evento."
+        },
+        {
+          "title": "Ricerca Completa",
+          "text": "Accesso alla nostra rete di location in tutte le regioni d'Italia."
+        },
+        {
+          "title": "Profili Location Dettagliati",
+          "text": "Foto, specifiche, disponibilita e prezzi per ogni location raccomandata."
+        },
+        {
+          "title": "Coordinamento Visite",
+          "text": "Assistenza nell'organizzare visite alle tue location preferite."
+        },
+        {
+          "title": "Supporto Negoziazione",
+          "text": "Ti rappresentiamo per ottenere i migliori termini e condizioni."
+        },
+        {
+          "title": "Assistenza Prenotazione",
+          "text": "Revisione contratto e coordinamento fino alla conferma."
+        }
+      ]
+    },
+    "pricing": {
+      "title": "Prezzi Semplici e Trasparenti",
+      "text": "Il nostro servizio di ricerca location e gratuito quando prenoti attraverso di noi. Riceviamo una piccola commissione dalla location, il che significa nessun costo aggiuntivo per te. Se preferisci utilizzare la nostra ricerca senza prenotare, si applica una tariffa di consulenza fissa.",
+      "contactText": "Contattaci",
+      "contactSuffix": " per discutere le tue esigenze specifiche."
+    },
+    "cta": {
+      "label": "Pronto a Iniziare?",
+      "title": "Troviamo la Tua Location",
+      "text": "Raccontaci del tuo evento e inizieremo la ricerca della tua ambientazione italiana perfetta.",
+      "button": "Contattaci"
+    }
+  },
+  "about": {
+    "hero": {
+      "label": "Chi Siamo",
+      "title": "Radicati in Italia,<br>Aperti al Mondo",
+      "subtitle": "Creiamo un ponte tra clienti internazionali e le straordinarie location italiane, condividendo i luoghi e le tradizioni che rendono questo paese senza tempo.",
+      "heroImgAlt": "Paesaggio della campagna italiana"
+    },
+    "story": {
+      "label": "La Nostra Storia",
+      "title": "Nata da una Semplice Verita",
+      "text1": "L'Italia custodisce alcune delle location piu straordinarie al mondo: luoghi dove la storia vive in ogni pietra e le celebrazioni sembrano eterne. Eppure molte di queste location rimangono nascoste ai clienti internazionali, prive dell'infrastruttura per raggiungere oltre i confini italiani.",
+      "text2": "Aeterna Events e nata per colmare questo divario. Combiniamo una profonda conoscenza locale con una comprensione internazionale, connettendo clienti di tutto il mondo con location che altrimenti rimarrebbero non scoperte. Nessuna lista contrattuale, nessuna commissione che influenza le nostre raccomandazioni: solo una guida onesta verso luoghi che meritano di essere conosciuti.",
+      "text3": "Il nome \"Aeterna\" e latino per \"eterna\", riflettendo sia il patrimonio senza tempo dell'Italia che la nostra convinzione che la location giusta crei ricordi che durano oltre ogni singola celebrazione.",
+      "imgAlt": "Dettaglio architettura italiana"
+    },
+    "vision": {
+      "label": "Visione",
+      "title": "Cosa Vediamo",
+      "text": "Rivelare il valore eterno del patrimonio culturale italiano attraverso location ed esperienze che trasformano le celebrazioni in momenti indimenticabili."
+    },
+    "mission": {
+      "label": "Missione",
+      "title": "Cosa Facciamo",
+      "text": "Guidiamo brand internazionali, organizzazioni e coppie nella scoperta dell'Italia oltre le aspettative, fornendo ricerca esperta di location e supporto raffinato per eventi corporate significativi e celebrazioni private."
+    },
+    "values": {
+      "label": "I Nostri Valori",
+      "title": "Cosa Ci Guida",
+      "items": [
+        {
+          "title": "Senza Tempo",
+          "text": "Radicati in secoli di cultura, non nelle tendenze. Valorizziamo la qualita duratura rispetto alla moda passeggera."
+        },
+        {
+          "title": "Raffinato",
+          "text": "Ogni dettaglio curato con cura e intenzione. Eccellenza nel servizio, dal primo contatto alla prenotazione finale."
+        },
+        {
+          "title": "Caloroso",
+          "text": "Lusso accessibile, mai freddo o elitario. Siamo un amico fidato, non un servizio distante."
+        },
+        {
+          "title": "Competente",
+          "text": "Competenza profonda portata con leggerezza, condivisa generosamente. Conosciamo le location italiane perche le abbiamo cercate noi stessi."
+        }
+      ]
+    },
+    "whyUs": {
+      "label": "Perche Sceglierci",
+      "title": "Cosa Ci Distingue",
+      "quote": "La maggior parte delle agenzie lavora con una lista contrattuale di location: location che pagano per essere presenti. Noi lavoriamo diversamente. Ogni ricerca inizia da zero, guidata solo dalla tua visione. Le nostre raccomandazioni sono oneste perche il nostro unico obiettivo e trovare la location giusta per te, non quella che ci paga di piu.",
+      "items": [
+        {
+          "title": "Rete Ampia",
+          "text": "Abbiamo costruito relazioni con location in tutta Italia, da tenute famose a proprieta a conduzione familiare che raramente appaiono nelle ricerche internazionali."
+        },
+        {
+          "title": "Comprensione Locale",
+          "text": "Parliamo la lingua, comprendiamo la cultura e navighiamo i requisiti locali che altrimenti creerebbero attrito."
+        },
+        {
+          "title": "Approccio Su Misura",
+          "text": "Nessun cliente riceve la stessa lista di location. Ogni ricerca e personalizzata per la tua visione specifica, esigenze e budget."
+        },
+        {
+          "title": "Supporto Completo",
+          "text": "Dalla ricerca iniziale alla firma del contratto, gestiamo la complessita cosi tu puoi concentrarti sul tuo evento."
+        }
+      ]
+    },
+    "team": {
+      "label": "Il Team",
+      "title": "Chi Siamo",
+      "text": "Aeterna Events e guidata da professionisti con radici profonde in Italia e vasta esperienza in ospitalita, organizzazione eventi e servizi per destinazioni.",
+      "founderTitle": "Fondatore",
+      "founderRole": "Ricerca Location & Relazioni Clienti"
+    },
+    "cta": {
+      "label": "Pronti a Iniziare?",
+      "title": "Troviamo la Tua Location",
+      "text": "Raccontaci del tuo evento e lasciaci mostrarti cosa puo offrire l'Italia.",
+      "button": "Contattaci"
+    }
+  },
+  "contact": {
+    "info": {
+      "label": "Contatti",
+      "title": "Iniziamo<br>una Conversazione",
+      "text": "Raccontaci del tuo evento. Che tu stia pianificando un retreat aziendale o un matrimonio, ci piacerebbe ascoltare la tua visione e aiutarti a scoprire la location italiana perfetta.",
+      "emailLabel": "Email",
+      "responseLabel": "Tempi di Risposta",
+      "responseText": "Di solito rispondiamo entro 24-48 ore.",
+      "followLabel": "Seguici"
+    },
+    "form": {
+      "nameLabel": "Nome *",
+      "emailLabel": "Email *",
+      "eventTypeLabel": "Tipo di Evento *",
+      "eventTypePlaceholder": "Seleziona un'opzione",
+      "eventTypeCorporate": "Retreat Aziendale",
+      "eventTypeWedding": "Matrimonio",
+      "eventTypeOther": "Altro",
+      "guestCountLabel": "Numero Stimato di Ospiti",
+      "guestCountPlaceholder": "es. 50-75",
+      "datesLabel": "Date Preferite",
+      "datesPlaceholder": "es. Giugno 2026",
+      "regionLabel": "Regione Preferita in Italia",
+      "regionPlaceholder": "es. Toscana, Costiera Amalfitana, o 'Aperto a suggerimenti'",
+      "messageLabel": "Raccontaci la Tua Visione *",
+      "messagePlaceholder": "Che tipo di location immagini? Quale atmosfera vuoi creare? Hai requisiti o sogni specifici?",
+      "consentText": "Acconsento al trattamento dei miei dati personali come descritto nella",
+      "consentLink": "Privacy Policy",
+      "submit": "Invia Messaggio"
+    },
+    "faq": {
+      "label": "Domande Frequenti",
+      "title": "Cosa Aspettarsi",
+      "items": [
+        {
+          "question": "Come funziona il vostro servizio?",
+          "answer": "Dopo che ci contatti, organizzeremo una chiamata per comprendere la tua visione, requisiti e budget. Poi cerchiamo nella nostra rete di location italiane e ti presentiamo una selezione curata. Una volta scelta, ti aiutiamo a coordinare il processo di prenotazione."
+        },
+        {
+          "question": "Quanto costa il servizio di ricerca location?",
+          "answer": "Il nostro servizio di ricerca location e gratuito se prenoti attraverso di noi. Riceviamo una commissione dalla location, che non influisce sul prezzo che paghi. Se utilizzi la nostra ricerca ma prenoti indipendentemente, si applica una tariffa di consulenza fissa."
+        },
+        {
+          "question": "Con quanto anticipo dovrei iniziare?",
+          "answer": "Per i matrimoni, raccomandiamo di iniziare 12-18 mesi prima, specialmente per regioni e date popolari. I retreat aziendali tipicamente richiedono 3-6 mesi di anticipo, anche se possiamo lavorare con tempistiche piu strette quando necessario."
+        },
+        {
+          "question": "Lavorate solo con location in certe regioni?",
+          "answer": "Abbiamo connessioni in tutta Italia, dai laghi del nord alla Sicilia. Mentre abbiamo reti particolarmente forti in Toscana, Umbria, Puglia e Costiera Amalfitana, possiamo cercare in qualsiasi regione in base alle tue preferenze."
+        },
+        {
+          "question": "Offrite organizzazione completa dell'evento?",
+          "answer": "Il nostro servizio principale e la ricerca di location. Una volta assicurata la location, possiamo raccomandare planner locali fidati, catering e fornitori se hai bisogno di coordinamento completo dell'evento. Molte location offrono anche i propri servizi di gestione eventi."
+        }
+      ]
+    }
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Ultimo aggiornamento: Febbraio 2026",
+    "content": "<p>Aeterna Events (\"noi\" o \"nostro\") si impegna a proteggere la tua privacy. Questa Privacy Policy spiega come raccogliamo, utilizziamo, divulghiamo e proteggiamo i tuoi dati personali quando visiti il nostro sito web o utilizzi i nostri servizi, in conformita con il Regolamento Generale sulla Protezione dei Dati (GDPR) dell'UE e le leggi italiane sulla protezione dei dati.</p><h2>1. Titolare del Trattamento</h2><p>Il titolare del trattamento responsabile dei tuoi dati personali e:</p><p><strong>Aeterna Events</strong><br>Email: <a href=\"mailto:hello@aeternaevents.com\">hello@aeternaevents.com</a><br>P.IVA: 00000000000</p><p>Per qualsiasi domanda riguardante questa Privacy Policy o i tuoi dati personali, contattaci all'indirizzo email sopra indicato.</p><h2>2. Dati Personali che Raccogliamo</h2><p>Raccogliamo i dati personali che ci fornisci volontariamente quando:</p><ul><li>Compili il nostro modulo di contatto</li><li>Ci invii un'email</li><li>Richiedi informazioni sui nostri servizi</li></ul><h3>Categorie di dati personali raccolti:</h3><ul><li><strong>Informazioni di contatto:</strong> Nome, indirizzo email</li><li><strong>Dettagli dell'evento:</strong> Tipo di evento (retreat aziendale, matrimonio, altro), numero stimato di ospiti, date preferite, regione preferita in Italia</li><li><strong>Contenuto delle comunicazioni:</strong> Messaggi e richieste che ci invii</li><li><strong>Dati tecnici:</strong> Indirizzo IP, tipo di browser e informazioni sul dispositivo (raccolti automaticamente tramite cookie)</li></ul><h2>3. Finalita del Trattamento</h2><p>Trattiamo i tuoi dati personali per le seguenti finalita:</p><ul><li><strong>Per rispondere alle tue richieste:</strong> Quando ci contatti tramite il nostro modulo o email, utilizziamo i tuoi dati per rispondere e fornire informazioni sui nostri servizi.</li><li><strong>Per fornire i nostri servizi:</strong> Se ci incarichi della ricerca di location, utilizziamo i dettagli del tuo evento per cercare e consigliare location adatte.</li><li><strong>Per migliorare il nostro sito web:</strong> Utilizziamo i dati tecnici per comprendere come i visitatori utilizzano il nostro sito e migliorare l'esperienza utente.</li><li><strong>Per adempiere agli obblighi legali:</strong> Potremmo trattare i tuoi dati quando richiesto dalla legge.</li></ul><h2>4. Base Giuridica del Trattamento</h2><p>Trattiamo i tuoi dati personali sulla base delle seguenti basi giuridiche ai sensi dell'Art. 6 del GDPR:</p><ul><li><strong>Consenso (Art. 6(1)(a)):</strong> Quando invii il nostro modulo di contatto, fornisci il consenso esplicito al trattamento dei tuoi dati selezionando la casella di consenso.</li><li><strong>Legittimo interesse (Art. 6(1)(f)):</strong> Abbiamo un legittimo interesse a rispondere alle richieste e migliorare i nostri servizi.</li><li><strong>Obbligo legale (Art. 6(1)(c)):</strong> Potremmo trattare i dati per adempiere a requisiti legali.</li></ul><h2>5. Responsabili del Trattamento di Terze Parti</h2><p>Condividiamo i tuoi dati personali con i seguenti fornitori di servizi terzi che trattano i dati per nostro conto:</p><h3>Formspree</h3><p>Le sottomissioni del nostro modulo di contatto sono elaborate da Formspree, Inc. Formspree agisce come responsabile del trattamento e gestisce le sottomissioni dei moduli in modo sicuro. Quando invii il nostro modulo di contatto, i tuoi dati vengono trasmessi ai server di Formspree negli Stati Uniti. Formspree rispetta le normative applicabili sulla protezione dei dati.</p><p>Per maggiori informazioni, consulta la <a href=\"https://formspree.io/legal/privacy-policy/\" target=\"_blank\" rel=\"noopener\">Privacy Policy di Formspree</a>.</p><h3>Google Fonts</h3><p>Il nostro sito web utilizza Google Fonts per visualizzare la tipografia. Quando visiti il nostro sito, il tuo browser carica i font dai server di Google, che potrebbero raccogliere il tuo indirizzo IP e informazioni sul browser. Per maggiori informazioni, consulta la <a href=\"https://policies.google.com/privacy\" target=\"_blank\" rel=\"noopener\">Privacy Policy di Google</a>.</p><h2>6. Conservazione dei Dati</h2><p>Conserviamo i tuoi dati personali solo per il tempo necessario a soddisfare le finalita per cui sono stati raccolti:</p><ul><li><strong>Sottomissioni del modulo di contatto:</strong> Conservate per 2 anni dall'ultimo contatto con noi, salvo richiesta di cancellazione anticipata.</li><li><strong>Corrispondenza email:</strong> Conservata per 2 anni dall'ultimo contatto con noi.</li><li><strong>Preferenze di consenso ai cookie:</strong> Memorizzate nella memoria locale del tuo browser fino a quando non la cancelli.</li></ul><p>Dopo il periodo di conservazione, i tuoi dati saranno cancellati in modo sicuro o anonimizzati.</p><h2>7. I Tuoi Diritti</h2><p>Ai sensi del GDPR, hai i seguenti diritti riguardo ai tuoi dati personali:</p><ul><li><strong>Diritto di accesso (Art. 15):</strong> Puoi richiedere una copia dei dati personali che deteniamo su di te.</li><li><strong>Diritto di rettifica (Art. 16):</strong> Puoi richiedere la correzione di dati inesatti o incompleti.</li><li><strong>Diritto alla cancellazione (Art. 17):</strong> Puoi richiedere la cancellazione dei tuoi dati personali (\"diritto all'oblio\").</li><li><strong>Diritto alla limitazione (Art. 18):</strong> Puoi richiedere che limitiamo il trattamento dei tuoi dati.</li><li><strong>Diritto alla portabilita dei dati (Art. 20):</strong> Puoi richiedere i tuoi dati in un formato strutturato e di uso comune.</li><li><strong>Diritto di opposizione (Art. 21):</strong> Puoi opporti al trattamento basato su interessi legittimi.</li><li><strong>Diritto di revocare il consenso (Art. 7):</strong> Puoi revocare il tuo consenso in qualsiasi momento, senza pregiudicare la liceita del trattamento precedente alla revoca.</li></ul><h2>8. Come Esercitare i Tuoi Diritti</h2><p>Per esercitare uno qualsiasi dei tuoi diritti, contattaci a:</p><p>Email: <a href=\"mailto:hello@aeternaevents.com\">hello@aeternaevents.com</a></p><p>Risponderemo alla tua richiesta entro 30 giorni. Potremmo chiederti di verificare la tua identita prima di elaborare la tua richiesta.</p><h2>9. Diritto di Presentare Reclamo</h2><p>Se ritieni che il nostro trattamento dei tuoi dati personali violi il GDPR o le leggi italiane sulla protezione dei dati, hai il diritto di presentare un reclamo a un'autorita di controllo.</p><p>L'autorita di controllo italiana e:</p><p><strong>Garante per la protezione dei dati personali</strong><br>Piazza Venezia 11, 00187 Roma<br>Sito web: <a href=\"https://www.garanteprivacy.it\" target=\"_blank\" rel=\"noopener\">www.garanteprivacy.it</a><br>Email: garante@gpdp.it</p><h2>10. Sicurezza dei Dati</h2><p>Implementiamo misure tecniche e organizzative appropriate per proteggere i tuoi dati personali da accesso, alterazione, divulgazione o distruzione non autorizzati. Tuttavia, nessun metodo di trasmissione su Internet o di archiviazione elettronica e sicuro al 100%.</p><h2>11. Trasferimenti Internazionali di Dati</h2><p>I tuoi dati personali potrebbero essere trasferiti e trattati in paesi al di fuori dello Spazio Economico Europeo (SEE), in particolare negli Stati Uniti (tramite Formspree). Tali trasferimenti sono effettuati in conformita con i requisiti del GDPR, incluse garanzie appropriate come le Clausole Contrattuali Standard.</p><h2>12. Modifiche a Questa Policy</h2><p>Potremmo aggiornare questa Privacy Policy di tanto in tanto. Eventuali modifiche saranno pubblicate su questa pagina con una data di \"Ultimo aggiornamento\" aggiornata. Ti incoraggiamo a rivedere periodicamente questa policy.</p><h2>13. Contattaci</h2><p>Se hai domande su questa Privacy Policy o sulle nostre pratiche relative ai dati, contattaci a:</p><p><strong>Aeterna Events</strong><br>Email: <a href=\"mailto:hello@aeternaevents.com\">hello@aeternaevents.com</a></p>"
+  },
+  "cookiePolicy": {
+    "title": "Cookie Policy",
+    "lastUpdated": "Ultimo aggiornamento: Febbraio 2026",
+    "content": "<p>Questa Cookie Policy spiega come Aeterna Events (\"noi\" o \"nostro\") utilizza i cookie e tecnologie simili quando visiti il nostro sito web aeternaevents.com. Questa policy deve essere letta insieme alla nostra <a href=\"/it/privacy.html\">Privacy Policy</a>.</p><h2>1. Cosa Sono i Cookie?</h2><p>I cookie sono piccoli file di testo che vengono memorizzati sul tuo dispositivo (computer, tablet o telefono cellulare) quando visiti un sito web. Aiutano i siti web a ricordare le tue preferenze e a migliorare la tua esperienza di navigazione. I cookie possono essere \"di sessione\" (che vengono eliminati quando chiudi il browser) o \"persistenti\" (che rimangono sul tuo dispositivo per un periodo stabilito o finche non li elimini).</p><h2>2. Cookie che Utilizziamo</h2><p>Il nostro sito web utilizza un numero minimo di cookie. Non utilizziamo cookie di analisi, cookie pubblicitari o pixel di tracciamento. Di seguito e riportato un elenco dettagliato dei cookie utilizzati sul nostro sito web:</p><table><thead><tr><th>Nome Cookie</th><th>Tipo</th><th>Scopo</th><th>Durata</th></tr></thead><tbody><tr><td>aeterna_cookie_consent</td><td>Prima parte, Necessario</td><td>Memorizza la tua preferenza di consenso ai cookie in modo che il banner non appaia ad ogni visita</td><td>Persistente (fino alla cancellazione)</td></tr></tbody></table><h2>3. Cookie di Terze Parti</h2><p>Il nostro sito web carica i font da Google Fonts. Quando visiti il nostro sito, il tuo browser effettua richieste ai server di Google per caricare questi font. Google puo impostare cookie o raccogliere informazioni come:</p><ul><li>Il tuo indirizzo IP</li><li>Tipo e versione del browser</li><li>Sistema operativo</li><li>La pagina che hai visitato</li></ul><p>Per informazioni dettagliate su come Google elabora questi dati, consulta la <a href=\"https://policies.google.com/privacy\" target=\"_blank\" rel=\"noopener\">Privacy Policy di Google</a>.</p><h2>4. Cookie che NON Utilizziamo</h2><p>Per proteggere la tua privacy, abbiamo scelto di non utilizzare:</p><ul><li><strong>Cookie di analisi:</strong> Non utilizziamo Google Analytics o strumenti di tracciamento simili.</li><li><strong>Cookie pubblicitari:</strong> Non visualizziamo pubblicita e non utilizziamo il retargeting.</li><li><strong>Cookie dei social media:</strong> Non incorporiamo plugin dei social media che tracciano la tua attivita.</li><li><strong>Pixel di marketing:</strong> Non utilizziamo Facebook Pixel, LinkedIn Insight Tag o tecnologie di tracciamento simili.</li></ul><h2>5. Local Storage</h2><p>Oltre ai cookie, utilizziamo il local storage del tuo browser per ricordare la tua preferenza di consenso ai cookie. Il local storage e simile ai cookie ma consente di memorizzare quantita maggiori di dati. I dati memorizzati nel local storage:</p><ul><li>Sono accessibili solo dal nostro sito web</li><li>Non vengono inviati ai nostri server</li><li>Rimangono fino a quando non cancelli i dati del browser</li></ul><h2>6. Gestione dei Cookie</h2><p>Hai diverse opzioni per gestire i cookie:</p><h3>Impostazioni del Browser</h3><p>La maggior parte dei browser web ti consente di controllare i cookie attraverso le loro impostazioni. Di solito puoi:</p><ul><li>Visualizzare i cookie memorizzati sul tuo dispositivo</li><li>Eliminare tutti o specifici cookie</li><li>Bloccare i cookie da tutti o specifici siti web</li><li>Impostare il browser per avvisarti quando viene impostato un cookie</li></ul><p>Ecco i link alle istruzioni per la gestione dei cookie per i browser piu diffusi:</p><ul><li><a href=\"https://support.google.com/chrome/answer/95647\" target=\"_blank\" rel=\"noopener\">Google Chrome</a></li><li><a href=\"https://support.mozilla.org/it/kb/Gestione%20dei%20cookie\" target=\"_blank\" rel=\"noopener\">Mozilla Firefox</a></li><li><a href=\"https://support.apple.com/it-it/guide/safari/sfri11471/mac\" target=\"_blank\" rel=\"noopener\">Safari</a></li><li><a href=\"https://support.microsoft.com/it-it/microsoft-edge/eliminare-i-cookie-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09\" target=\"_blank\" rel=\"noopener\">Microsoft Edge</a></li></ul><h3>Cancellazione del Local Storage</h3><p>Per cancellare la tua preferenza di consenso ai cookie, puoi cancellare il local storage del tuo browser. Questa opzione si trova generalmente nella stessa area delle impostazioni della gestione dei cookie.</p><h3>Impatto della Disabilitazione dei Cookie</h3><p>Poiche il nostro sito web utilizza pochissimi cookie, disabilitarli non dovrebbe influenzare significativamente la tua esperienza. Tuttavia, il banner di consenso ai cookie apparira ad ogni visita se i cookie sono disabilitati.</p><h2>7. Base Giuridica</h2><p>Ai sensi della Direttiva ePrivacy dell'UE e del GDPR:</p><ul><li><strong>Cookie strettamente necessari</strong> (come il nostro cookie di consenso) non richiedono consenso in quanto sono essenziali per il funzionamento del sito web.</li><li><strong>Cookie non essenziali</strong> richiedono il tuo consenso prima di essere impostati. Noi non utilizziamo cookie non essenziali.</li></ul><h2>8. Modifiche a Questa Policy</h2><p>Potremmo aggiornare questa Cookie Policy di tanto in tanto. Eventuali modifiche saranno pubblicate su questa pagina con una data di \"Ultimo aggiornamento\" aggiornata. Ti incoraggiamo a rivedere periodicamente questa policy.</p><h2>9. Contattaci</h2><p>Se hai domande su questa Cookie Policy o sul nostro utilizzo dei cookie, contattaci a:</p><p><strong>Aeterna Events</strong><br>Email: <a href=\"mailto:hello@aeternaevents.com\">hello@aeternaevents.com</a></p>"
+  }
+}

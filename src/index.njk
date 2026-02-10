@@ -1,17 +1,21 @@
 ---
+pagination:
+  data: languages
+  size: 1
+  alias: lang
+permalink: "{% if lang == 'it' %}it/{% endif %}index.html"
 layout: base.njk
-title: "Aeterna Events | Italian Venue Finding"
-description: "Discover exceptional Italian venues for corporate retreats and destination weddings. Expert venue finding with deep local knowledge across Italy."
-canonical: "https://aeternaevents.com/"
-hreflangEn: "https://aeternaevents.com/"
-hreflangIt: "https://aeternaevents.com/it/"
-ogTitle: "Aeterna Events | Italian Venue Finding"
-ogDescription: "Discover exceptional Italian venues for corporate retreats and destination weddings."
-ogUrl: "https://aeternaevents.com/"
-ogImage: "https://aeternaevents.com/images/og-image.jpg"
-lang: en
 pageName: "index.html"
-permalink: "index.html"
+eleventyComputed:
+  title: "{% if lang == 'it' %}{{ it.pages.index.title }}{% else %}{{ en.pages.index.title }}{% endif %}"
+  description: "{% if lang == 'it' %}{{ it.pages.index.description }}{% else %}{{ en.pages.index.description }}{% endif %}"
+  canonical: "https://aeternaevents.com/{% if lang == 'it' %}it/{% endif %}"
+  hreflangEn: "https://aeternaevents.com/"
+  hreflangIt: "https://aeternaevents.com/it/"
+  ogTitle: "{% if lang == 'it' %}{{ it.pages.index.ogTitle }}{% else %}{{ en.pages.index.ogTitle }}{% endif %}"
+  ogDescription: "{% if lang == 'it' %}{{ it.pages.index.ogDescription }}{% else %}{{ en.pages.index.ogDescription }}{% endif %}"
+  ogUrl: "https://aeternaevents.com/{% if lang == 'it' %}it/{% endif %}"
+  ogImage: "https://aeternaevents.com/images/og-image.jpg"
 structuredData: |
   {
     "@context": "https://schema.org",
@@ -34,22 +38,24 @@ structuredData: |
     ]
   }
 ---
+{% set t = en if lang == "en" else it %}
+{% set prefix = "" if lang == "en" else "/it" %}
 
   <main>
     <!-- Hero Section -->
     <section class="hero">
       <div class="hero-bg">
-        <img src="https://images.unsplash.com/photo-1523531294919-4bcd7c65e216?w=1920&q=80" alt="Beautiful Italian villa courtyard" loading="eager">
+        <img src="https://images.unsplash.com/photo-1523531294919-4bcd7c65e216?w=1920&q=80" alt="{{ t.home.hero.heroImgAlt }}" loading="eager">
       </div>
       <div class="hero-overlay"></div>
       <div class="hero-content">
-        <span class="label hero-anim">Venue Finding in Italy</span>
-        <h1 class="hero-anim">Where Stories<br>Begin</h1>
-        <p class="subtitle hero-anim">We guide international clients to exceptional Italian venues for corporate retreats and destination weddings. Deep knowledge. Personal service. Timeless locations.</p>
-        <a href="/contact.html" class="btn btn-ghost hero-anim">Start Your Search</a>
+        <span class="label hero-anim">{{ t.home.hero.label }}</span>
+        <h1 class="hero-anim">{{ t.home.hero.title | safe }}</h1>
+        <p class="subtitle hero-anim">{{ t.home.hero.subtitle }}</p>
+        <a href="{{ prefix }}/contact.html" class="btn btn-ghost hero-anim">{{ t.home.hero.cta }}</a>
       </div>
       <div class="scroll-indicator">
-        <span>Discover</span>
+        <span>{{ t.home.hero.scrollIndicator }}</span>
         <div class="scroll-indicator-line"></div>
       </div>
     </section>
@@ -58,12 +64,12 @@ structuredData: |
     <section class="section bg-gradient-warm">
       <div class="container container--narrow text-center">
         <div class="section-header text-center fade-in">
-          <span class="label">Our Approach</span>
-          <h2>Italy Beyond the Expected</h2>
+          <span class="label">{{ t.home.intro.label }}</span>
+          <h2>{{ t.home.intro.title }}</h2>
           <div class="gold-line"></div>
         </div>
         <p class="fade-in" style="font-size: var(--text-lg); max-width: 700px; margin: 0 auto;">
-          Every celebration deserves a setting that resonates. We connect you with venues that embody Italy's cultural heritage, from historic palazzos to coastal retreats, hidden courtyards to vineyard estates. Not the venues everyone knows, but the ones worth discovering.
+          {{ t.home.intro.text }}
         </p>
       </div>
     </section>
@@ -72,24 +78,24 @@ structuredData: |
     <section class="services-split">
       <div class="services-split-item">
         <div class="services-split-bg">
-          <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1200&q=80" alt="Corporate retreat in Italian villa" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1200&q=80" alt="{{ t.home.servicesCorporate.imgAlt }}" loading="lazy">
         </div>
         <div class="services-split-content fade-in">
-          <span class="label">For Teams</span>
-          <h3>Corporate Retreats</h3>
-          <p>Transform team gatherings into memorable experiences. We find venues that inspire connection, creativity, and focus in settings rich with Italian heritage.</p>
-          <a href="/corporate.html" class="btn btn-ghost">Explore Corporate</a>
+          <span class="label">{{ t.home.servicesCorporate.label }}</span>
+          <h3>{{ t.home.servicesCorporate.title }}</h3>
+          <p>{{ t.home.servicesCorporate.text }}</p>
+          <a href="{{ prefix }}/corporate.html" class="btn btn-ghost">{{ t.home.servicesCorporate.cta }}</a>
         </div>
       </div>
       <div class="services-split-item">
         <div class="services-split-bg">
-          <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=1200&q=80" alt="Italian destination wedding" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=1200&q=80" alt="{{ t.home.servicesWeddings.imgAlt }}" loading="lazy">
         </div>
         <div class="services-split-content fade-in">
-          <span class="label">For Couples</span>
-          <h3>Destination Weddings</h3>
-          <p>Your wedding venue sets the tone for everything that follows. We discover locations that feel destined, places where your story naturally unfolds.</p>
-          <a href="/weddings.html" class="btn btn-ghost">Explore Weddings</a>
+          <span class="label">{{ t.home.servicesWeddings.label }}</span>
+          <h3>{{ t.home.servicesWeddings.title }}</h3>
+          <p>{{ t.home.servicesWeddings.text }}</p>
+          <a href="{{ prefix }}/weddings.html" class="btn btn-ghost">{{ t.home.servicesWeddings.cta }}</a>
         </div>
       </div>
     </section>
@@ -98,35 +104,29 @@ structuredData: |
     <section class="section section--ivory">
       <div class="container">
         <div class="value-props stagger-children">
+          {% for prop in t.home.valueProps %}
           <div class="value-prop">
             <div class="value-prop-icon">
+              {% if loop.index == 1 %}
               <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
                 <circle cx="12" cy="10" r="3"/>
               </svg>
-            </div>
-            <h4>Local Expertise</h4>
-            <p>Deep connections across Italy, from Tuscany to Sicily. We know venues that international agencies never reach.</p>
-          </div>
-          <div class="value-prop">
-            <div class="value-prop-icon">
+              {% elif loop.index == 2 %}
               <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
               </svg>
-            </div>
-            <h4>Tailored Service</h4>
-            <p>No contracted venue lists. Every search begins fresh, guided by your vision, your needs, your story.</p>
-          </div>
-          <div class="value-prop">
-            <div class="value-prop-icon">
+              {% elif loop.index == 3 %}
               <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="12" cy="12" r="10"/>
                 <polyline points="12 6 12 12 16 14"/>
               </svg>
+              {% endif %}
             </div>
-            <h4>Seamless Process</h4>
-            <p>We handle the complexity of international bookings, local requirements, and vendor coordination.</p>
+            <h4>{{ prop.title }}</h4>
+            <p>{{ prop.text }}</p>
           </div>
+          {% endfor %}
         </div>
       </div>
     </section>
@@ -135,25 +135,25 @@ structuredData: |
     <section class="section">
       <div class="container">
         <div class="section-header fade-in">
-          <span class="label label--olive">Featured Locations</span>
-          <h2>A Glimpse of Italy</h2>
+          <span class="label label--olive">{{ t.home.featured.label }}</span>
+          <h2>{{ t.home.featured.title }}</h2>
           <div class="gold-line"></div>
         </div>
         <div class="image-grid fade-in">
           <div class="image-grid-item image-grid-item--large">
-            <img src="https://images.unsplash.com/photo-1534445867742-43195f401b6c?w=1200&q=80" alt="Tuscan villa with cypress trees" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1534445867742-43195f401b6c?w=1200&q=80" alt="{{ t.home.featured.images[0].alt }}" loading="lazy">
           </div>
           <div class="image-grid-item">
-            <img src="https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=600&q=80" alt="Italian courtyard with archways" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=600&q=80" alt="{{ t.home.featured.images[1].alt }}" loading="lazy">
           </div>
           <div class="image-grid-item">
-            <img src="https://images.unsplash.com/photo-1504893524553-b855bce32c67?w=600&q=80" alt="Coastal Italian venue" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1504893524553-b855bce32c67?w=600&q=80" alt="{{ t.home.featured.images[2].alt }}" loading="lazy">
           </div>
           <div class="image-grid-item">
-            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Historic palazzo interior" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="{{ t.home.featured.images[3].alt }}" loading="lazy">
           </div>
           <div class="image-grid-item">
-            <img src="https://images.unsplash.com/photo-1598135753163-6167c1a1ad65?w=600&q=80" alt="Vineyard estate" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1598135753163-6167c1a1ad65?w=600&q=80" alt="{{ t.home.featured.images[4].alt }}" loading="lazy">
           </div>
         </div>
       </div>
@@ -164,11 +164,11 @@ structuredData: |
       <div class="container">
         <div class="testimonial fade-in">
           <p class="testimonial-quote">
-            Aeterna found us a venue we never would have discovered on our own. A 16th-century monastery in Umbria, now a boutique hotel, with views that made our team speechless. It transformed our retreat entirely.
+            {{ t.home.testimonial.quote }}
           </p>
           <div class="testimonial-author">
-            <strong>Sarah Mitchell</strong>
-            <span>Head of People, Tech Startup</span>
+            <strong>{{ t.home.testimonial.author }}</strong>
+            <span>{{ t.home.testimonial.role }}</span>
           </div>
         </div>
       </div>
@@ -178,10 +178,10 @@ structuredData: |
     <section class="section bg-gradient-ivory">
       <div class="container">
         <div class="cta-section fade-in">
-          <span class="label">Ready to Begin?</span>
-          <h2>Let's Find Your Venue</h2>
-          <p>Tell us about your event, and we'll start the search for the perfect Italian setting.</p>
-          <a href="/contact.html" class="btn btn-primary btn-lg">Get in Touch</a>
+          <span class="label">{{ t.home.cta.label }}</span>
+          <h2>{{ t.home.cta.title }}</h2>
+          <p>{{ t.home.cta.text }}</p>
+          <a href="{{ prefix }}/contact.html" class="btn btn-primary btn-lg">{{ t.home.cta.button }}</a>
         </div>
       </div>
     </section>

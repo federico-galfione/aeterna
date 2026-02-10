@@ -1,0 +1,44 @@
+{% set t = en if lang == "en" else it %}
+{% set prefix = "" if lang == "en" else "/it" %}
+<!-- Navigation -->
+<header class="navbar{% if navbarScrolled %} navbar--scrolled{% endif %}" id="navbar">
+  <div class="container navbar-inner">
+    <a href="{{ prefix }}/index.html" class="navbar-logo">
+      <img src="/public/logos/Light_logo.svg" alt="Aeterna Events" class="logo-light">
+      <img src="/public/logos/Dark_logo.svg" alt="Aeterna Events" class="logo-dark">
+      <img src="/public/logos/Hero_logo.svg" alt="Aeterna Events" class="logo-hero">
+    </a>
+    <nav class="navbar-links">
+      <a href="{{ prefix }}/corporate.html">{{ t.nav.corporate }}</a>
+      <a href="{{ prefix }}/weddings.html">{{ t.nav.weddings }}</a>
+      <a href="{{ prefix }}/services.html">{{ t.nav.services }}</a>
+      <a href="{{ prefix }}/about.html">{{ t.nav.about }}</a>
+      <a href="{{ prefix }}/contact.html" class="btn btn-primary btn-sm">{{ t.nav.contact }}</a>
+      <div class="navbar-lang">
+        <a href="/{{ pageName }}"{% if lang == "en" %} class="active"{% endif %}>EN</a>
+        <span>|</span>
+        <a href="/it/{{ pageName }}"{% if lang == "it" %} class="active"{% endif %}>IT</a>
+      </div>
+    </nav>
+    <button class="navbar-hamburger" aria-label="Menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" aria-hidden="true">
+  <a href="{{ prefix }}/index.html">{{ t.nav.home }}</a>
+  <a href="{{ prefix }}/corporate.html">{{ t.nav.corporate }}</a>
+  <a href="{{ prefix }}/weddings.html">{{ t.nav.weddings }}</a>
+  <a href="{{ prefix }}/services.html">{{ t.nav.services }}</a>
+  <a href="{{ prefix }}/about.html">{{ t.nav.about }}</a>
+  <a href="{{ prefix }}/contact.html">{{ t.nav.mobileContact }}</a>
+  <div class="mobile-lang">
+    <a href="/{{ pageName }}"{% if lang == "en" %} class="active"{% endif %}>EN</a>
+    <span>|</span>
+    <a href="/it/{{ pageName }}"{% if lang == "it" %} class="active"{% endif %}>IT</a>
+  </div>
+</div>

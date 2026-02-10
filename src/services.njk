@@ -1,33 +1,39 @@
 ---
+pagination:
+  data: languages
+  size: 1
+  alias: lang
+permalink: "{% if lang == 'it' %}it/{% endif %}services.html"
 layout: base.njk
-title: "How It Works | Aeterna Events | Italian Venue Finding"
-description: "Discover our venue finding process. From initial consultation to booking support, we guide you through finding the perfect Italian venue for your event."
-canonical: "https://aeternaevents.com/services.html"
-hreflangEn: "https://aeternaevents.com/services.html"
-hreflangIt: "https://aeternaevents.com/it/services.html"
-ogTitle: "How It Works | Aeterna Events"
-ogDescription: "Discover our venue finding process. From consultation to booking, we guide you to the perfect Italian venue."
-ogUrl: "https://aeternaevents.com/services.html"
-ogImage: "https://aeternaevents.com/images/og-image.jpg"
-lang: en
 pageName: "services.html"
-permalink: "services.html"
+eleventyComputed:
+  title: "{% if lang == 'it' %}{{ it.pages.services.title }}{% else %}{{ en.pages.services.title }}{% endif %}"
+  description: "{% if lang == 'it' %}{{ it.pages.services.description }}{% else %}{{ en.pages.services.description }}{% endif %}"
+  canonical: "https://aeternaevents.com/{% if lang == 'it' %}it/{% endif %}services.html"
+  hreflangEn: "https://aeternaevents.com/services.html"
+  hreflangIt: "https://aeternaevents.com/it/services.html"
+  ogTitle: "{% if lang == 'it' %}{{ it.pages.services.ogTitle }}{% else %}{{ en.pages.services.ogTitle }}{% endif %}"
+  ogDescription: "{% if lang == 'it' %}{{ it.pages.services.ogDescription }}{% else %}{{ en.pages.services.ogDescription }}{% endif %}"
+  ogUrl: "https://aeternaevents.com/{% if lang == 'it' %}it/{% endif %}services.html"
+  ogImage: "https://aeternaevents.com/images/og-image.jpg"
 ---
+{% set t = en if lang == "en" else it %}
+{% set prefix = "" if lang == "en" else "/it" %}
 
   <main>
     <!-- Hero Section -->
     <section class="hero hero--services">
       <div class="hero-bg">
-        <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=1920&q=80" alt="Elegant Italian event venue" loading="eager">
+        <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=1920&q=80" alt="{{ t.services.hero.heroImgAlt }}" loading="eager">
       </div>
       <div class="hero-overlay"></div>
       <div class="hero-content">
-        <span class="label hero-anim">Our Process</span>
-        <h1 class="hero-anim">How It Works</h1>
-        <p class="subtitle hero-anim">From your first inquiry to the moment you step into your venue, we guide every step with expertise and care.</p>
+        <span class="label hero-anim">{{ t.services.hero.label }}</span>
+        <h1 class="hero-anim">{{ t.services.hero.title }}</h1>
+        <p class="subtitle hero-anim">{{ t.services.hero.subtitle }}</p>
       </div>
       <div class="scroll-indicator">
-        <span>Discover</span>
+        <span>{{ t.services.hero.scrollIndicator }}</span>
         <div class="scroll-indicator-line"></div>
       </div>
     </section>
@@ -36,47 +42,41 @@ permalink: "services.html"
     <section class="section bg-gradient-warm">
       <div class="container">
         <div class="section-header text-center fade-in">
-          <span class="label">What We Do</span>
-          <h2>Venue Finding, Refined</h2>
+          <span class="label">{{ t.services.intro.label }}</span>
+          <h2>{{ t.services.intro.title }}</h2>
           <div class="gold-line"></div>
         </div>
         <p class="fade-in text-center" style="font-size: var(--text-lg); max-width: 700px; margin: 0 auto var(--space-3xl);">
-          We specialize in connecting international clients with exceptional Italian venues. Our deep knowledge of Italy's hidden gems, combined with a bespoke approach to every search, ensures you find a location that truly fits your vision.
+          {{ t.services.intro.text }}
         </p>
 
         <!-- 3 Value Props -->
         <div class="services-intro stagger-children">
+          {% for item in t.services.intro.items %}
           <div class="services-intro-item">
             <div class="services-intro-icon">
+              {% if loop.index == 1 %}
               <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="11" cy="11" r="8"/>
                 <path d="m21 21-4.35-4.35"/>
               </svg>
-            </div>
-            <h4>Curated Search</h4>
-            <p>We search across our extensive network, not a limited list of contracted venues. Every recommendation is tailored to your specific needs.</p>
-          </div>
-          <div class="services-intro-item">
-            <div class="services-intro-icon">
+              {% elif loop.index == 2 %}
               <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
                 <circle cx="9" cy="7" r="4"/>
                 <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
                 <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
               </svg>
-            </div>
-            <h4>Personal Guidance</h4>
-            <p>One dedicated contact throughout your journey. We learn your preferences and advocate on your behalf with venues.</p>
-          </div>
-          <div class="services-intro-item">
-            <div class="services-intro-icon">
+              {% elif loop.index == 3 %}
               <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
               </svg>
+              {% endif %}
             </div>
-            <h4>Local Expertise</h4>
-            <p>Navigate Italy's unique landscape with confidence. We handle language barriers, local customs, and logistical complexities.</p>
+            <h4>{{ item.title }}</h4>
+            <p>{{ item.text }}</p>
           </div>
+          {% endfor %}
         </div>
       </div>
     </section>
@@ -85,47 +85,22 @@ permalink: "services.html"
     <section class="section section--ivory">
       <div class="container">
         <div class="section-header text-center fade-in">
-          <span class="label label--olive">The Journey</span>
-          <h2>Your Path to the Perfect Venue</h2>
+          <span class="label label--olive">{{ t.services.timeline.label }}</span>
+          <h2>{{ t.services.timeline.title }}</h2>
           <div class="gold-line"></div>
         </div>
 
         <div class="timeline">
-          <!-- Step 1 -->
+          {% for step in t.services.timeline.steps %}
           <div class="timeline-item">
+            {% if loop.index % 2 == 1 %}
             <div class="timeline-content">
               <div class="timeline-content-icon">
+                {% if loop.index == 1 %}
                 <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
                 </svg>
-              </div>
-              <h3>Initial Consultation</h3>
-              <p>We begin with a conversation to understand your vision, requirements, guest count, preferred dates, and budget. This helps us define exactly what you're looking for.</p>
-            </div>
-            <div class="timeline-marker">01</div>
-            <div class="timeline-spacer"></div>
-          </div>
-
-          <!-- Step 2 -->
-          <div class="timeline-item">
-            <div class="timeline-spacer"></div>
-            <div class="timeline-marker">02</div>
-            <div class="timeline-content">
-              <div class="timeline-content-icon">
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="11" cy="11" r="8"/>
-                  <path d="m21 21-4.35-4.35"/>
-                </svg>
-              </div>
-              <h3>Venue Research</h3>
-              <p>Our team searches across Italy, tapping into our network of palazzos, villas, estates, and boutique hotels. We look beyond the obvious to find venues that match your unique criteria.</p>
-            </div>
-          </div>
-
-          <!-- Step 3 -->
-          <div class="timeline-item">
-            <div class="timeline-content">
-              <div class="timeline-content-icon">
+                {% elif loop.index == 3 %}
                 <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
                   <polyline points="14 2 14 8 20 8"/>
@@ -133,45 +108,41 @@ permalink: "services.html"
                   <line x1="16" y1="17" x2="8" y2="17"/>
                   <polyline points="10 9 9 9 8 9"/>
                 </svg>
-              </div>
-              <h3>Curated Presentation</h3>
-              <p>We present a shortlist of 5-8 carefully selected venues, complete with photos, detailed information, availability, and pricing. Each option is handpicked to suit your needs.</p>
-            </div>
-            <div class="timeline-marker">03</div>
-            <div class="timeline-spacer"></div>
-          </div>
-
-          <!-- Step 4 -->
-          <div class="timeline-item">
-            <div class="timeline-spacer"></div>
-            <div class="timeline-marker">04</div>
-            <div class="timeline-content">
-              <div class="timeline-content-icon">
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <polyline points="9 11 12 14 22 4"/>
-                  <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
-                </svg>
-              </div>
-              <h3>Comparison & Selection</h3>
-              <p>We guide you through comparing options, answering questions, and if desired, arranging site visits. We help you weigh the pros and cons to find your ideal match.</p>
-            </div>
-          </div>
-
-          <!-- Step 5 -->
-          <div class="timeline-item">
-            <div class="timeline-content">
-              <div class="timeline-content-icon">
+                {% elif loop.index == 5 %}
                 <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
                   <path d="m9 12 2 2 4-4"/>
                 </svg>
+                {% endif %}
               </div>
-              <h3>Booking Support</h3>
-              <p>Once you've chosen, we assist with negotiations, contract review, and coordination with the venue. We ensure a smooth transition from selection to confirmation.</p>
+              <h3>{{ step.title }}</h3>
+              <p>{{ step.text }}</p>
             </div>
-            <div class="timeline-marker">05</div>
+            <div class="timeline-marker">0{{ loop.index }}</div>
             <div class="timeline-spacer"></div>
+            {% else %}
+            <div class="timeline-spacer"></div>
+            <div class="timeline-marker">0{{ loop.index }}</div>
+            <div class="timeline-content">
+              <div class="timeline-content-icon">
+                {% if loop.index == 2 %}
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="11" cy="11" r="8"/>
+                  <path d="m21 21-4.35-4.35"/>
+                </svg>
+                {% elif loop.index == 4 %}
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <polyline points="9 11 12 14 22 4"/>
+                  <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
+                </svg>
+                {% endif %}
+              </div>
+              <h3>{{ step.title }}</h3>
+              <p>{{ step.text }}</p>
+            </div>
+            {% endif %}
           </div>
+          {% endfor %}
         </div>
       </div>
     </section>
@@ -180,32 +151,32 @@ permalink: "services.html"
     <section class="section">
       <div class="container">
         <div class="section-header text-center fade-in">
-          <span class="label">Our Services</span>
-          <h2>Tailored to Your Event</h2>
+          <span class="label">{{ t.services.servicesCards.label }}</span>
+          <h2>{{ t.services.servicesCards.title }}</h2>
           <div class="gold-line"></div>
         </div>
 
         <div class="services-cards">
           <div class="services-card fade-in">
             <div class="services-card-image">
-              <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80" alt="Corporate retreat venue in Italy" loading="lazy">
+              <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80" alt="{{ t.services.servicesCards.corporate.imgAlt }}" loading="lazy">
             </div>
             <div class="services-card-content">
-              <span class="label label--olive">For Teams</span>
-              <h3>Corporate Retreats</h3>
-              <p>Find inspiring venues for team offsites, company retreats, and corporate gatherings. We focus on locations that foster connection while offering the amenities your team needs.</p>
-              <a href="/corporate.html" class="btn btn-secondary">Learn More</a>
+              <span class="label label--olive">{{ t.services.servicesCards.corporate.label }}</span>
+              <h3>{{ t.services.servicesCards.corporate.title }}</h3>
+              <p>{{ t.services.servicesCards.corporate.text }}</p>
+              <a href="{{ prefix }}/corporate.html" class="btn btn-secondary">{{ t.services.servicesCards.corporate.cta }}</a>
             </div>
           </div>
           <div class="services-card fade-in">
             <div class="services-card-image">
-              <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=800&q=80" alt="Wedding venue in Italy" loading="lazy">
+              <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=800&q=80" alt="{{ t.services.servicesCards.weddings.imgAlt }}" loading="lazy">
             </div>
             <div class="services-card-content">
-              <span class="label label--olive">For Couples</span>
-              <h3>Destination Weddings</h3>
-              <p>Discover the venue where your story unfolds. From intimate elopements to grand celebrations, we find settings that match your vision and create lasting memories.</p>
-              <a href="/weddings.html" class="btn btn-secondary">Learn More</a>
+              <span class="label label--olive">{{ t.services.servicesCards.weddings.label }}</span>
+              <h3>{{ t.services.servicesCards.weddings.title }}</h3>
+              <p>{{ t.services.servicesCards.weddings.text }}</p>
+              <a href="{{ prefix }}/weddings.html" class="btn btn-secondary">{{ t.services.servicesCards.weddings.cta }}</a>
             </div>
           </div>
         </div>
@@ -216,84 +187,53 @@ permalink: "services.html"
     <section class="section section--ivory">
       <div class="container">
         <div class="section-header text-center fade-in">
-          <span class="label">What's Included</span>
-          <h2>Our Service at a Glance</h2>
+          <span class="label">{{ t.services.included.label }}</span>
+          <h2>{{ t.services.included.title }}</h2>
           <div class="gold-line"></div>
         </div>
 
         <div class="included-grid stagger-children">
+          {% for item in t.services.included.items %}
           <div class="included-item">
             <div class="included-icon">
+              {% if loop.index == 1 %}
               <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
               </svg>
-            </div>
-            <div class="included-text">
-              <h4>Personal Consultation</h4>
-              <p>In-depth discussion of your requirements, preferences, and vision for the event.</p>
-            </div>
-          </div>
-          <div class="included-item">
-            <div class="included-icon">
+              {% elif loop.index == 2 %}
               <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="11" cy="11" r="8"/>
                 <path d="m21 21-4.35-4.35"/>
               </svg>
-            </div>
-            <div class="included-text">
-              <h4>Comprehensive Search</h4>
-              <p>Access to our network of venues across all regions of Italy.</p>
-            </div>
-          </div>
-          <div class="included-item">
-            <div class="included-icon">
+              {% elif loop.index == 3 %}
               <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
                 <polyline points="14 2 14 8 20 8"/>
               </svg>
-            </div>
-            <div class="included-text">
-              <h4>Detailed Venue Profiles</h4>
-              <p>Photos, specifications, availability, and pricing for each recommended venue.</p>
-            </div>
-          </div>
-          <div class="included-item">
-            <div class="included-icon">
+              {% elif loop.index == 4 %}
               <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
                 <line x1="16" y1="2" x2="16" y2="6"/>
                 <line x1="8" y1="2" x2="8" y2="6"/>
                 <line x1="3" y1="10" x2="21" y2="10"/>
               </svg>
-            </div>
-            <div class="included-text">
-              <h4>Site Visit Coordination</h4>
-              <p>Assistance arranging visits to your top venue choices.</p>
-            </div>
-          </div>
-          <div class="included-item">
-            <div class="included-icon">
+              {% elif loop.index == 5 %}
               <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
               </svg>
-            </div>
-            <div class="included-text">
-              <h4>Negotiation Support</h4>
-              <p>We advocate on your behalf for the best terms and conditions.</p>
-            </div>
-          </div>
-          <div class="included-item">
-            <div class="included-icon">
+              {% elif loop.index == 6 %}
               <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
                 <polyline points="22 4 12 14.01 9 11.01"/>
               </svg>
+              {% endif %}
             </div>
             <div class="included-text">
-              <h4>Booking Assistance</h4>
-              <p>Contract review and coordination through to confirmation.</p>
+              <h4>{{ item.title }}</h4>
+              <p>{{ item.text }}</p>
             </div>
           </div>
+          {% endfor %}
         </div>
       </div>
     </section>
@@ -302,9 +242,9 @@ permalink: "services.html"
     <section class="section">
       <div class="container">
         <div class="pricing-note fade-in">
-          <h3>Simple, Transparent Pricing</h3>
-          <p>Our venue finding service is free when you book through us. We receive a small commission from the venue, which means no additional cost to you. If you prefer to use our research without booking, a flat consultation fee applies.</p>
-          <p style="margin-top: var(--space-lg);"><a href="/contact.html" style="color: var(--accent-primary); text-decoration: underline;">Contact us</a> to discuss your specific needs.</p>
+          <h3>{{ t.services.pricing.title }}</h3>
+          <p>{{ t.services.pricing.text }}</p>
+          <p style="margin-top: var(--space-lg);"><a href="{{ prefix }}/contact.html" style="color: var(--accent-primary); text-decoration: underline;">{{ t.services.pricing.contactText }}</a>{{ t.services.pricing.contactSuffix }}</p>
         </div>
       </div>
     </section>
@@ -313,10 +253,10 @@ permalink: "services.html"
     <section class="section section--dark bg-gradient-dark">
       <div class="container">
         <div class="cta-section fade-in">
-          <span class="label">Ready to Start?</span>
-          <h2>Let's Find Your Venue</h2>
-          <p>Tell us about your event and we'll begin the search for your perfect Italian setting.</p>
-          <a href="/contact.html" class="btn btn-ghost btn-lg">Get in Touch</a>
+          <span class="label">{{ t.services.cta.label }}</span>
+          <h2>{{ t.services.cta.title }}</h2>
+          <p>{{ t.services.cta.text }}</p>
+          <a href="{{ prefix }}/contact.html" class="btn btn-ghost btn-lg">{{ t.services.cta.button }}</a>
         </div>
       </div>
     </section>

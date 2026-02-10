@@ -1,0 +1,604 @@
+{
+  "nav": {
+    "corporate": "Corporate",
+    "weddings": "Weddings",
+    "services": "How It Works",
+    "about": "About",
+    "contact": "Get in Touch",
+    "home": "Home",
+    "mobileContact": "Contact"
+  },
+  "footer": {
+    "tagline": "Revealing the eternal value of Italy's cultural heritage through venues and experiences that transform celebrations into unforgettable moments.",
+    "navigate": "Navigate",
+    "corporateEvents": "Corporate Events",
+    "weddings": "Weddings",
+    "services": "How It Works",
+    "aboutUs": "About Us",
+    "contactLink": "Contact",
+    "connect": "Connect",
+    "rights": "All rights reserved.",
+    "privacyPolicy": "Privacy Policy",
+    "cookiePolicy": "Cookie Policy"
+  },
+  "cookie": {
+    "text": "We use cookies to ensure our website functions properly and to improve your experience. By continuing to use our site, you accept our use of cookies.",
+    "learnMore": "Learn more",
+    "accept": "Accept"
+  },
+  "pages": {
+    "index": {
+      "title": "Aeterna Events | Italian Venue Finding",
+      "description": "Discover exceptional Italian venues for corporate retreats and destination weddings. Expert venue finding with deep local knowledge across Italy.",
+      "ogTitle": "Aeterna Events | Italian Venue Finding",
+      "ogDescription": "Discover exceptional Italian venues for corporate retreats and destination weddings."
+    },
+    "corporate": {
+      "title": "Corporate Retreats in Italy | Aeterna Events",
+      "description": "Find the perfect Italian venue for your corporate retreat or team meeting. Historic villas, boutique hotels, and unique spaces that inspire connection.",
+      "ogTitle": "Corporate Retreats in Italy | Aeterna Events",
+      "ogDescription": "Find the perfect Italian venue for your corporate retreat or team meeting."
+    },
+    "weddings": {
+      "title": "Destination Weddings in Italy | Aeterna Events",
+      "description": "Discover your dream Italian wedding venue. From Tuscan villas to Amalfi Coast estates, we find venues that feel destined for your love story.",
+      "ogTitle": "Destination Weddings in Italy | Aeterna Events",
+      "ogDescription": "Discover your dream Italian wedding venue."
+    },
+    "services": {
+      "title": "How It Works | Aeterna Events | Italian Venue Finding",
+      "description": "Discover our venue finding process. From initial consultation to booking support, we guide you through finding the perfect Italian venue for your event.",
+      "ogTitle": "How It Works | Aeterna Events",
+      "ogDescription": "Discover our venue finding process. From consultation to booking, we guide you to the perfect Italian venue."
+    },
+    "about": {
+      "title": "About Us | Aeterna Events",
+      "description": "Learn about Aeterna Events, our story, and our passion for connecting international clients with exceptional Italian venues.",
+      "ogTitle": "About Us | Aeterna Events",
+      "ogDescription": "Learn about Aeterna Events and our passion for Italian venue finding."
+    },
+    "contact": {
+      "title": "Contact Us | Aeterna Events",
+      "description": "Get in touch with Aeterna Events. Tell us about your corporate retreat or destination wedding, and let us find the perfect Italian venue.",
+      "ogTitle": "Contact Us | Aeterna Events",
+      "ogDescription": "Get in touch with Aeterna Events for Italian venue finding."
+    },
+    "privacy": {
+      "title": "Privacy Policy | Aeterna Events",
+      "description": "Privacy Policy for Aeterna Events. Learn how we collect, use, and protect your personal data.",
+      "ogTitle": "Privacy Policy | Aeterna Events",
+      "ogDescription": "Privacy Policy for Aeterna Events."
+    },
+    "cookiePolicy": {
+      "title": "Cookie Policy | Aeterna Events",
+      "description": "Cookie Policy for Aeterna Events. Learn about the cookies we use on our website.",
+      "ogTitle": "Cookie Policy | Aeterna Events",
+      "ogDescription": "Cookie Policy for Aeterna Events."
+    }
+  },
+  "home": {
+    "hero": {
+      "label": "Venue Finding in Italy",
+      "title": "Where Stories<br>Begin",
+      "subtitle": "We guide international clients to exceptional Italian venues for corporate retreats and destination weddings. Deep knowledge. Personal service. Timeless locations.",
+      "cta": "Start Your Search",
+      "heroImgAlt": "Beautiful Italian villa courtyard",
+      "scrollIndicator": "Discover"
+    },
+    "intro": {
+      "label": "Our Approach",
+      "title": "Italy Beyond the Expected",
+      "text": "Every celebration deserves a setting that resonates. We connect you with venues that embody Italy's cultural heritage, from historic palazzos to coastal retreats, hidden courtyards to vineyard estates. Not the venues everyone knows, but the ones worth discovering."
+    },
+    "servicesCorporate": {
+      "label": "For Teams",
+      "title": "Corporate Retreats",
+      "text": "Transform team gatherings into memorable experiences. We find venues that inspire connection, creativity, and focus in settings rich with Italian heritage.",
+      "cta": "Explore Corporate",
+      "imgAlt": "Corporate retreat in Italian villa"
+    },
+    "servicesWeddings": {
+      "label": "For Couples",
+      "title": "Destination Weddings",
+      "text": "Your wedding venue sets the tone for everything that follows. We discover locations that feel destined, places where your story naturally unfolds.",
+      "cta": "Explore Weddings",
+      "imgAlt": "Italian destination wedding"
+    },
+    "valueProps": [
+      {
+        "title": "Local Expertise",
+        "text": "Deep connections across Italy, from Tuscany to Sicily. We know venues that international agencies never reach."
+      },
+      {
+        "title": "Tailored Service",
+        "text": "No contracted venue lists. Every search begins fresh, guided by your vision, your needs, your story."
+      },
+      {
+        "title": "Seamless Process",
+        "text": "We handle the complexity of international bookings, local requirements, and vendor coordination."
+      }
+    ],
+    "featured": {
+      "label": "Featured Locations",
+      "title": "A Glimpse of Italy",
+      "images": [
+        { "alt": "Tuscan villa with cypress trees" },
+        { "alt": "Italian courtyard with archways" },
+        { "alt": "Coastal Italian venue" },
+        { "alt": "Historic palazzo interior" },
+        { "alt": "Vineyard estate" }
+      ]
+    },
+    "testimonial": {
+      "quote": "Aeterna found us a venue we never would have discovered on our own. A 16th-century monastery in Umbria, now a boutique hotel, with views that made our team speechless. It transformed our retreat entirely.",
+      "author": "Sarah Mitchell",
+      "role": "Head of People, Tech Startup"
+    },
+    "cta": {
+      "label": "Ready to Begin?",
+      "title": "Let's Find Your Venue",
+      "text": "Tell us about your event, and we'll start the search for the perfect Italian setting.",
+      "button": "Get in Touch"
+    }
+  },
+  "corporate": {
+    "hero": {
+      "label": "Corporate Events",
+      "title": "Where Teams<br>Connect",
+      "subtitle": "Italian venues that transform corporate retreats into meaningful experiences. Historic settings that inspire focus, creativity, and genuine connection.",
+      "cta": "Plan Your Retreat",
+      "heroImgAlt": "Corporate team meeting in Italian villa",
+      "scrollIndicator": "Discover"
+    },
+    "challenge": {
+      "label": "The Challenge",
+      "title": "Finding venues that inspire isn't simple",
+      "text": "You want more than a conference room with a view. You need a setting that draws remote teams together, sparks unexpected conversations, and creates shared memories. But finding these venues in Italy, navigating language barriers, understanding local requirements, coordinating logistics from abroad, it absorbs time you don't have.",
+      "imgAlt": "Team collaboration"
+    },
+    "approach": {
+      "label": "Our Approach",
+      "title": "We Handle the Search",
+      "text": "Share your vision, team size, and goals. We search our network, present tailored options, and guide you to a decision. You focus on your team; we focus on the venue.",
+      "steps": [
+        {
+          "title": "Share Your Vision",
+          "text": "Tell us about your team, your goals, your ideal setting. What atmosphere supports your agenda? What experiences matter most?"
+        },
+        {
+          "title": "We Search & Curate",
+          "text": "We explore our network of venues across Italy, from historic villas to contemporary retreats, selecting options that match your criteria."
+        },
+        {
+          "title": "Review & Decide",
+          "text": "Receive a curated selection with detailed information, photos, and our honest insights. We answer questions, arrange virtual tours if needed."
+        },
+        {
+          "title": "We Coordinate",
+          "text": "Once you choose, we handle negotiations, contracts, and logistics coordination. Arrive ready to focus on your team."
+        }
+      ]
+    },
+    "venueTypes": {
+      "label": "Venue Types",
+      "title": "Settings That Inspire",
+      "types": [
+        {
+          "title": "Historic Villas",
+          "text": "Renaissance architecture, frescoed halls, and gardens centuries in the making. Exclusivity and grandeur for meaningful gatherings.",
+          "imgAlt": "Historic villa"
+        },
+        {
+          "title": "Boutique Hotels",
+          "text": "Intimate properties with character and modern comfort. Professional facilities wrapped in authentic Italian hospitality.",
+          "imgAlt": "Boutique hotel"
+        },
+        {
+          "title": "Vineyard Estates",
+          "text": "Rolling hills, working wineries, and rustic elegance. Combine strategic sessions with tastings and rural tranquility.",
+          "imgAlt": "Vineyard estate"
+        }
+      ]
+    },
+    "idealFor": {
+      "label": "Ideal For",
+      "title": "Events We Support",
+      "items": [
+        {
+          "title": "Team Retreats",
+          "text": "Remote teams coming together for strategy, bonding, and alignment in inspiring settings."
+        },
+        {
+          "title": "Leadership Offsites",
+          "text": "Executive gatherings requiring privacy, comfort, and an environment that fosters strategic thinking."
+        },
+        {
+          "title": "Creator Retreats",
+          "text": "Content creators and community leaders hosting retreats for their audiences in distinctive locations."
+        },
+        {
+          "title": "Client Events",
+          "text": "Impress clients and partners with exclusive Italian venues for product launches, incentive trips, or celebrations."
+        }
+      ]
+    },
+    "testimonial": {
+      "quote": "Our team of 30 had never felt more connected. The venue in Puglia was perfect, the food incredible, and Aeterna handled every detail. We're already planning next year.",
+      "author": "Marco Rossi",
+      "role": "COO, Remote-First Startup"
+    },
+    "cta": {
+      "label": "Ready to Begin?",
+      "title": "Plan Your Corporate Retreat",
+      "text": "Tell us about your team and vision. We'll find venues that exceed expectations.",
+      "button": "Start the Conversation"
+    }
+  },
+  "weddings": {
+    "hero": {
+      "label": "Destination Weddings",
+      "title": "Where Love<br>Unfolds",
+      "subtitle": "Your wedding venue shapes everything that follows, the photos, the memories, the feeling that lingers. We find Italian venues where your story naturally belongs.",
+      "cta": "Begin Your Search",
+      "heroImgAlt": "Italian destination wedding",
+      "scrollIndicator": "Discover"
+    },
+    "feeling": {
+      "label": "The Feeling",
+      "title": "More Than a Venue",
+      "text": "You've imagined it: golden light falling through olive trees, stone walls that have witnessed centuries of celebrations, the scent of jasmine on an evening breeze. Italy holds these moments, waiting. Your wedding venue isn't just a backdrop, it's where your story takes root in a place that feels eternal."
+    },
+    "promise": {
+      "label": "Our Promise",
+      "title": "Finding What Feels Right",
+      "text1": "We don't work from a fixed list of venues. Every search begins fresh, guided by your vision, your guests, your dreams. Historic villas, coastal estates, hidden monasteries, rustic agriturismi, we explore possibilities until we find the one that resonates.",
+      "text2": "This is Italy as it should be discovered: through someone who knows its hidden corners, speaks its language, and understands what makes a celebration truly unforgettable.",
+      "imgAlt": "Wedding celebration in Italian garden"
+    },
+    "process": {
+      "label": "The Journey",
+      "title": "How We Work Together",
+      "steps": [
+        {
+          "title": "Share Your Vision",
+          "text": "Tell us about your dream wedding. The atmosphere, the guest count, the regions that call to you. What moments matter most? What feelings should the day hold?"
+        },
+        {
+          "title": "We Explore & Discover",
+          "text": "We search across our network, from renowned estates to hidden gems known only to locals. Each option is vetted, visited, and selected with your vision in mind."
+        },
+        {
+          "title": "Present & Refine",
+          "text": "Receive a curated selection of venues with detailed information, photos, and our honest perspective. We refine the search until something feels unmistakably right."
+        },
+        {
+          "title": "Secure Your Venue",
+          "text": "Once you decide, we handle negotiations, contracts, and coordination. You'll arrive in Italy knowing your venue is exactly as promised."
+        }
+      ]
+    },
+    "venueStyles": {
+      "label": "Venue Styles",
+      "title": "Every Dream, a Setting",
+      "types": [
+        {
+          "title": "Tuscan Villas",
+          "text": "Rolling hills, cypress-lined drives, and Renaissance elegance. The quintessential Italian wedding, elevated beyond the expected.",
+          "imgAlt": "Tuscan villa wedding"
+        },
+        {
+          "title": "Coastal Estates",
+          "text": "Amalfi, Puglia, Sicily. Mediterranean blue, lemon groves, and terraces that cascade toward the sea.",
+          "imgAlt": "Coastal wedding venue"
+        },
+        {
+          "title": "Historic Palazzos",
+          "text": "Grand halls, frescoed ceilings, and gardens designed by masters. Architecture that has witnessed centuries of celebrations.",
+          "imgAlt": "Historic palazzo wedding"
+        }
+      ],
+      "typesRow2": [
+        {
+          "title": "Vineyard Estates",
+          "text": "Intimate celebrations among the vines. Local wines, rustic charm, and the gentle rhythm of wine country.",
+          "imgAlt": "Vineyard wedding"
+        },
+        {
+          "title": "Secret Gardens",
+          "text": "Hidden courtyards, walled gardens, intimate spaces where every guest feels the magic of being somewhere special.",
+          "imgAlt": "Garden wedding venue"
+        }
+      ]
+    },
+    "testimonial": {
+      "quote": "We showed Aeterna one photo of a courtyard we'd seen online. They found us something even better: a family-owned villa in Umbria that wasn't on any wedding website. Our guests still talk about it years later.",
+      "author": "Emma & James",
+      "role": "Married in Umbria, 2024"
+    },
+    "regions": {
+      "label": "Across Italy",
+      "title": "Regions We Know",
+      "list": [
+        { "name": "Tuscany", "desc": "Rolling hills & Renaissance charm" },
+        { "name": "Umbria", "desc": "Italy's green heart, unspoiled" },
+        { "name": "Amalfi Coast", "desc": "Dramatic cliffs & Mediterranean blue" },
+        { "name": "Puglia", "desc": "White-washed trulli & olive groves" },
+        { "name": "Lake Como", "desc": "Villas along legendary waters" },
+        { "name": "Sicily", "desc": "Ancient history & island warmth" },
+        { "name": "Venice & Veneto", "desc": "Palazzos & Palladian villas" },
+        { "name": "Piedmont", "desc": "Wine country elegance" }
+      ]
+    },
+    "cta": {
+      "label": "Your Story Begins",
+      "title": "Find Your Italian Wedding Venue",
+      "text": "Tell us about your vision. We'll begin the search for a venue that feels like it was always meant for you.",
+      "button": "Start the Conversation"
+    }
+  },
+  "services": {
+    "hero": {
+      "label": "Our Process",
+      "title": "How It Works",
+      "subtitle": "From your first inquiry to the moment you step into your venue, we guide every step with expertise and care.",
+      "heroImgAlt": "Elegant Italian event venue",
+      "scrollIndicator": "Discover"
+    },
+    "intro": {
+      "label": "What We Do",
+      "title": "Venue Finding, Refined",
+      "text": "We specialize in connecting international clients with exceptional Italian venues. Our deep knowledge of Italy's hidden gems, combined with a bespoke approach to every search, ensures you find a location that truly fits your vision.",
+      "items": [
+        {
+          "title": "Curated Search",
+          "text": "We search across our extensive network, not a limited list of contracted venues. Every recommendation is tailored to your specific needs."
+        },
+        {
+          "title": "Personal Guidance",
+          "text": "One dedicated contact throughout your journey. We learn your preferences and advocate on your behalf with venues."
+        },
+        {
+          "title": "Local Expertise",
+          "text": "Navigate Italy's unique landscape with confidence. We handle language barriers, local customs, and logistical complexities."
+        }
+      ]
+    },
+    "timeline": {
+      "label": "The Journey",
+      "title": "Your Path to the Perfect Venue",
+      "steps": [
+        {
+          "title": "Initial Consultation",
+          "text": "We begin with a conversation to understand your vision, requirements, guest count, preferred dates, and budget. This helps us define exactly what you're looking for."
+        },
+        {
+          "title": "Venue Research",
+          "text": "Our team searches across Italy, tapping into our network of palazzos, villas, estates, and boutique hotels. We look beyond the obvious to find venues that match your unique criteria."
+        },
+        {
+          "title": "Curated Presentation",
+          "text": "We present a shortlist of 5-8 carefully selected venues, complete with photos, detailed information, availability, and pricing. Each option is handpicked to suit your needs."
+        },
+        {
+          "title": "Comparison & Selection",
+          "text": "We guide you through comparing options, answering questions, and if desired, arranging site visits. We help you weigh the pros and cons to find your ideal match."
+        },
+        {
+          "title": "Booking Support",
+          "text": "Once you've chosen, we assist with negotiations, contract review, and coordination with the venue. We ensure a smooth transition from selection to confirmation."
+        }
+      ]
+    },
+    "servicesCards": {
+      "label": "Our Services",
+      "title": "Tailored to Your Event",
+      "corporate": {
+        "label": "For Teams",
+        "title": "Corporate Retreats",
+        "text": "Find inspiring venues for team offsites, company retreats, and corporate gatherings. We focus on locations that foster connection while offering the amenities your team needs.",
+        "cta": "Learn More",
+        "imgAlt": "Corporate retreat venue in Italy"
+      },
+      "weddings": {
+        "label": "For Couples",
+        "title": "Destination Weddings",
+        "text": "Discover the venue where your story unfolds. From intimate elopements to grand celebrations, we find settings that match your vision and create lasting memories.",
+        "cta": "Learn More",
+        "imgAlt": "Wedding venue in Italy"
+      }
+    },
+    "included": {
+      "label": "What's Included",
+      "title": "Our Service at a Glance",
+      "items": [
+        {
+          "title": "Personal Consultation",
+          "text": "In-depth discussion of your requirements, preferences, and vision for the event."
+        },
+        {
+          "title": "Comprehensive Search",
+          "text": "Access to our network of venues across all regions of Italy."
+        },
+        {
+          "title": "Detailed Venue Profiles",
+          "text": "Photos, specifications, availability, and pricing for each recommended venue."
+        },
+        {
+          "title": "Site Visit Coordination",
+          "text": "Assistance arranging visits to your top venue choices."
+        },
+        {
+          "title": "Negotiation Support",
+          "text": "We advocate on your behalf for the best terms and conditions."
+        },
+        {
+          "title": "Booking Assistance",
+          "text": "Contract review and coordination through to confirmation."
+        }
+      ]
+    },
+    "pricing": {
+      "title": "Simple, Transparent Pricing",
+      "text": "Our venue finding service is free when you book through us. We receive a small commission from the venue, which means no additional cost to you. If you prefer to use our research without booking, a flat consultation fee applies.",
+      "contactText": "Contact us",
+      "contactSuffix": " to discuss your specific needs."
+    },
+    "cta": {
+      "label": "Ready to Start?",
+      "title": "Let's Find Your Venue",
+      "text": "Tell us about your event and we'll begin the search for your perfect Italian setting.",
+      "button": "Get in Touch"
+    }
+  },
+  "about": {
+    "hero": {
+      "label": "About Us",
+      "title": "Rooted in Italy,<br>Open to the World",
+      "subtitle": "We bridge the gap between international clients and Italy's extraordinary venues, sharing the places and traditions that make this country timeless.",
+      "heroImgAlt": "Italian countryside landscape"
+    },
+    "story": {
+      "label": "Our Story",
+      "title": "Born from a Simple Truth",
+      "text1": "Italy holds some of the world's most remarkable venues, places where history lives in every stone and celebrations feel eternal. Yet many of these venues remain hidden from international clients, lacking the infrastructure to reach beyond Italy's borders.",
+      "text2": "Aeterna Events was founded to close this gap. We combine deep local knowledge with international understanding, connecting clients worldwide with venues that would otherwise remain undiscovered. No contracted lists, no commissions that influence our recommendations, just honest guidance toward places that deserve to be known.",
+      "text3": "The name \"Aeterna\" is Latin for \"eternal,\" reflecting both Italy's timeless heritage and our belief that the right venue creates memories that last beyond any single celebration.",
+      "imgAlt": "Italian architecture detail"
+    },
+    "vision": {
+      "label": "Vision",
+      "title": "What We See",
+      "text": "To reveal the eternal value of Italy's cultural heritage through venues and experiences that transform celebrations into unforgettable moments."
+    },
+    "mission": {
+      "label": "Mission",
+      "title": "What We Do",
+      "text": "We guide international brands, organizations, and couples in discovering Italy beyond the expected, providing expert venue finding and refined event support for meaningful corporate events and private celebrations."
+    },
+    "values": {
+      "label": "Our Values",
+      "title": "What Guides Us",
+      "items": [
+        {
+          "title": "Timeless",
+          "text": "Rooted in centuries of culture, not in trends. We value enduring quality over fleeting fashion."
+        },
+        {
+          "title": "Refined",
+          "text": "Every detail curated with care and intention. Excellence in service, from first contact to final booking."
+        },
+        {
+          "title": "Warm",
+          "text": "Approachable luxury, never cold or elitist. We're a trusted friend, not a distant service."
+        },
+        {
+          "title": "Knowledgeable",
+          "text": "Deep expertise worn lightly, shared generously. We know Italy's venues because we've sought them ourselves."
+        }
+      ]
+    },
+    "whyUs": {
+      "label": "Why Choose Us",
+      "title": "What Sets Us Apart",
+      "quote": "Most agencies work from a contracted list of venues, venues that pay for placement. We work differently. Every search begins fresh, guided only by your vision. Our recommendations are honest because our only goal is finding the right venue for you, not the venue that pays us most.",
+      "items": [
+        {
+          "title": "Broad Network",
+          "text": "We've built relationships with venues across Italy, from famous estates to family-owned properties that rarely appear in international searches."
+        },
+        {
+          "title": "Local Understanding",
+          "text": "We speak the language, understand the culture, and navigate local requirements that would otherwise create friction."
+        },
+        {
+          "title": "Tailored Approach",
+          "text": "No two clients receive the same venue list. Every search is customized to your specific vision, needs, and budget."
+        },
+        {
+          "title": "End-to-End Support",
+          "text": "From initial search through contract signing, we handle the complexity so you can focus on your event."
+        }
+      ]
+    },
+    "team": {
+      "label": "The Team",
+      "title": "Who We Are",
+      "text": "Aeterna Events is led by professionals with deep roots in Italy and extensive experience in hospitality, event planning, and destination services.",
+      "founderTitle": "Founder",
+      "founderRole": "Venue Finding & Client Relations"
+    },
+    "cta": {
+      "label": "Ready to Start?",
+      "title": "Let's Find Your Venue",
+      "text": "Tell us about your event and let us show you what Italy can offer.",
+      "button": "Get in Touch"
+    }
+  },
+  "contact": {
+    "info": {
+      "label": "Get in Touch",
+      "title": "Let's Start<br>a Conversation",
+      "text": "Tell us about your event. Whether you're planning a corporate retreat or a destination wedding, we'd love to hear your vision and help you discover the perfect Italian venue.",
+      "emailLabel": "Email",
+      "responseLabel": "Response Time",
+      "responseText": "We typically respond within 24-48 hours.",
+      "followLabel": "Follow Us"
+    },
+    "form": {
+      "nameLabel": "Name *",
+      "emailLabel": "Email *",
+      "eventTypeLabel": "Event Type *",
+      "eventTypePlaceholder": "Select an option",
+      "eventTypeCorporate": "Corporate Retreat",
+      "eventTypeWedding": "Destination Wedding",
+      "eventTypeOther": "Other",
+      "guestCountLabel": "Estimated Guest Count",
+      "guestCountPlaceholder": "e.g., 50-75",
+      "datesLabel": "Preferred Dates",
+      "datesPlaceholder": "e.g., June 2026",
+      "regionLabel": "Preferred Region in Italy",
+      "regionPlaceholder": "e.g., Tuscany, Amalfi Coast, or 'Open to suggestions'",
+      "messageLabel": "Tell Us About Your Vision *",
+      "messagePlaceholder": "What kind of venue are you imagining? What atmosphere do you want to create? Any specific requirements or dreams?",
+      "consentText": "I agree to the processing of my personal data as described in the",
+      "consentLink": "Privacy Policy",
+      "submit": "Send Message"
+    },
+    "faq": {
+      "label": "Common Questions",
+      "title": "What to Expect",
+      "items": [
+        {
+          "question": "How does your service work?",
+          "answer": "After you reach out, we'll schedule a call to understand your vision, requirements, and budget. We then search our network of Italian venues and present you with a curated selection. Once you choose, we help coordinate the booking process."
+        },
+        {
+          "question": "What does the venue finding service cost?",
+          "answer": "Our venue finding service is free if you book through us. We receive a commission from the venue, which doesn't affect the price you pay. If you use our research but book independently, a flat consultation fee applies."
+        },
+        {
+          "question": "How far in advance should I start?",
+          "answer": "For weddings, we recommend starting 12-18 months ahead, especially for popular regions and dates. Corporate retreats typically need 3-6 months lead time, though we can work with shorter timelines when needed."
+        },
+        {
+          "question": "Do you only work with venues in certain regions?",
+          "answer": "We have connections across all of Italy, from the northern lakes to Sicily. While we have particularly strong networks in Tuscany, Umbria, Puglia, and the Amalfi Coast, we can search any region based on your preferences."
+        },
+        {
+          "question": "Do you provide full event planning?",
+          "answer": "Our core service is venue finding. Once you've secured your venue, we can recommend trusted local planners, caterers, and vendors if you need full event coordination. Many venues also offer their own event management services."
+        }
+      ]
+    }
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: February 2026",
+    "content": "<p>Aeterna Events (\"we,\" \"us,\" or \"our\") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your personal data when you visit our website or use our services, in accordance with the EU General Data Protection Regulation (GDPR) and Italian data protection laws.</p><h2>1. Data Controller</h2><p>The data controller responsible for your personal data is:</p><p><strong>Aeterna Events</strong><br>Email: <a href=\"mailto:hello@aeternaevents.com\">hello@aeternaevents.com</a><br>P.IVA: 00000000000</p><p>For any questions regarding this Privacy Policy or your personal data, please contact us at the email address above.</p><h2>2. Personal Data We Collect</h2><p>We collect personal data that you voluntarily provide to us when you:</p><ul><li>Fill out our contact form</li><li>Send us an email</li><li>Request information about our services</li></ul><h3>Categories of personal data collected:</h3><ul><li><strong>Contact information:</strong> Name, email address</li><li><strong>Event details:</strong> Event type (corporate retreat, wedding, other), estimated guest count, preferred dates, preferred region in Italy</li><li><strong>Communication content:</strong> Messages and inquiries you send us</li><li><strong>Technical data:</strong> IP address, browser type, and device information (collected automatically through cookies)</li></ul><h2>3. Purpose of Processing</h2><p>We process your personal data for the following purposes:</p><ul><li><strong>To respond to your inquiries:</strong> When you contact us through our form or email, we use your data to respond and provide information about our services.</li><li><strong>To provide our services:</strong> If you engage us for venue finding, we use your event details to search for and recommend suitable venues.</li><li><strong>To improve our website:</strong> We use technical data to understand how visitors use our website and improve user experience.</li><li><strong>To comply with legal obligations:</strong> We may process your data when required by law.</li></ul><h2>4. Legal Basis for Processing</h2><p>We process your personal data based on the following legal grounds under GDPR Article 6:</p><ul><li><strong>Consent (Art. 6(1)(a)):</strong> When you submit our contact form, you provide explicit consent to the processing of your data by checking the consent checkbox.</li><li><strong>Legitimate interests (Art. 6(1)(f)):</strong> We have a legitimate interest in responding to inquiries and improving our services.</li><li><strong>Legal obligation (Art. 6(1)(c)):</strong> We may process data to comply with legal requirements.</li></ul><h2>5. Third-Party Data Processors</h2><p>We share your personal data with the following third-party service providers who process data on our behalf:</p><h3>Formspree</h3><p>Our contact form submissions are processed by Formspree, Inc. Formspree acts as a data processor and handles form submissions securely. When you submit our contact form, your data is transmitted to Formspree's servers in the United States. Formspree complies with applicable data protection regulations.</p><p>For more information, see <a href=\"https://formspree.io/legal/privacy-policy/\" target=\"_blank\" rel=\"noopener\">Formspree's Privacy Policy</a>.</p><h3>Google Fonts</h3><p>Our website uses Google Fonts to display typography. When you visit our website, your browser loads fonts from Google's servers, which may collect your IP address and browser information. For more information, see <a href=\"https://policies.google.com/privacy\" target=\"_blank\" rel=\"noopener\">Google's Privacy Policy</a>.</p><h2>6. Data Retention</h2><p>We retain your personal data only for as long as necessary to fulfill the purposes for which it was collected:</p><ul><li><strong>Contact form submissions:</strong> Retained for 2 years after your last contact with us, unless you request earlier deletion.</li><li><strong>Email correspondence:</strong> Retained for 2 years after your last contact with us.</li><li><strong>Cookie consent preferences:</strong> Stored in your browser's local storage until you clear it.</li></ul><p>After the retention period, your data will be securely deleted or anonymized.</p><h2>7. Your Rights</h2><p>Under the GDPR, you have the following rights regarding your personal data:</p><ul><li><strong>Right of access (Art. 15):</strong> You can request a copy of the personal data we hold about you.</li><li><strong>Right to rectification (Art. 16):</strong> You can request correction of inaccurate or incomplete data.</li><li><strong>Right to erasure (Art. 17):</strong> You can request deletion of your personal data (\"right to be forgotten\").</li><li><strong>Right to restriction (Art. 18):</strong> You can request that we limit the processing of your data.</li><li><strong>Right to data portability (Art. 20):</strong> You can request your data in a structured, commonly used format.</li><li><strong>Right to object (Art. 21):</strong> You can object to processing based on legitimate interests.</li><li><strong>Right to withdraw consent (Art. 7):</strong> You can withdraw your consent at any time, without affecting the lawfulness of processing before withdrawal.</li></ul><h2>8. How to Exercise Your Rights</h2><p>To exercise any of your rights, please contact us at:</p><p>Email: <a href=\"mailto:hello@aeternaevents.com\">hello@aeternaevents.com</a></p><p>We will respond to your request within 30 days. We may ask you to verify your identity before processing your request.</p><h2>9. Right to Lodge a Complaint</h2><p>If you believe that our processing of your personal data violates the GDPR or Italian data protection laws, you have the right to lodge a complaint with a supervisory authority.</p><p>The Italian supervisory authority is:</p><p><strong>Garante per la protezione dei dati personali</strong><br>Piazza Venezia 11, 00187 Roma<br>Website: <a href=\"https://www.garanteprivacy.it\" target=\"_blank\" rel=\"noopener\">www.garanteprivacy.it</a><br>Email: garante@gpdp.it</p><h2>10. Data Security</h2><p>We implement appropriate technical and organizational measures to protect your personal data against unauthorized access, alteration, disclosure, or destruction. However, no method of transmission over the Internet or electronic storage is 100% secure.</p><h2>11. International Data Transfers</h2><p>Your personal data may be transferred to and processed in countries outside the European Economic Area (EEA), specifically the United States (through Formspree). Such transfers are made in compliance with GDPR requirements, including appropriate safeguards such as Standard Contractual Clauses.</p><h2>12. Changes to This Policy</h2><p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated \"Last updated\" date. We encourage you to review this policy periodically.</p><h2>13. Contact Us</h2><p>If you have any questions about this Privacy Policy or our data practices, please contact us at:</p><p><strong>Aeterna Events</strong><br>Email: <a href=\"mailto:hello@aeternaevents.com\">hello@aeternaevents.com</a></p>"
+  },
+  "cookiePolicy": {
+    "title": "Cookie Policy",
+    "lastUpdated": "Last updated: February 2026",
+    "content": "<p>This Cookie Policy explains how Aeterna Events (\"we,\" \"us,\" or \"our\") uses cookies and similar technologies when you visit our website at aeternaevents.com. This policy should be read alongside our <a href=\"/privacy.html\">Privacy Policy</a>.</p><h2>1. What Are Cookies?</h2><p>Cookies are small text files that are stored on your device (computer, tablet, or mobile phone) when you visit a website. They help websites remember your preferences and improve your browsing experience. Cookies can be \"session\" cookies (which are deleted when you close your browser) or \"persistent\" cookies (which remain on your device for a set period or until you delete them).</p><h2>2. Cookies We Use</h2><p>Our website uses a minimal number of cookies. We do not use analytics cookies, advertising cookies, or tracking pixels. Below is a detailed list of the cookies used on our website:</p><table><thead><tr><th>Cookie Name</th><th>Type</th><th>Purpose</th><th>Duration</th></tr></thead><tbody><tr><td>aeterna_cookie_consent</td><td>First-party, Necessary</td><td>Stores your cookie consent preference so the banner doesn't appear on every visit</td><td>Persistent (until cleared)</td></tr></tbody></table><h2>3. Third-Party Cookies</h2><p>Our website loads fonts from Google Fonts. When you visit our site, your browser makes requests to Google's servers to load these fonts. Google may set cookies or collect information such as:</p><ul><li>Your IP address</li><li>Browser type and version</li><li>Operating system</li><li>The page you visited</li></ul><p>For detailed information about how Google processes this data, please see <a href=\"https://policies.google.com/privacy\" target=\"_blank\" rel=\"noopener\">Google's Privacy Policy</a>.</p><h2>4. Cookies We Do NOT Use</h2><p>To protect your privacy, we have chosen not to use:</p><ul><li><strong>Analytics cookies:</strong> We do not use Google Analytics or similar tracking tools.</li><li><strong>Advertising cookies:</strong> We do not display advertisements or use retargeting.</li><li><strong>Social media cookies:</strong> We do not embed social media plugins that track your activity.</li><li><strong>Marketing pixels:</strong> We do not use Facebook Pixel, LinkedIn Insight Tag, or similar tracking technologies.</li></ul><h2>5. Local Storage</h2><p>In addition to cookies, we use your browser's local storage to remember your cookie consent preference. Local storage is similar to cookies but allows for larger amounts of data to be stored. The data stored in local storage:</p><ul><li>Is only accessible by our website</li><li>Is not sent to our servers</li><li>Remains until you clear your browser data</li></ul><h2>6. Managing Cookies</h2><p>You have several options to manage cookies:</p><h3>Browser Settings</h3><p>Most web browsers allow you to control cookies through their settings. You can typically:</p><ul><li>View cookies stored on your device</li><li>Delete all or specific cookies</li><li>Block cookies from all or specific websites</li><li>Set your browser to notify you when a cookie is set</li></ul><p>Here are links to cookie management instructions for popular browsers:</p><ul><li><a href=\"https://support.google.com/chrome/answer/95647\" target=\"_blank\" rel=\"noopener\">Google Chrome</a></li><li><a href=\"https://support.mozilla.org/en-US/kb/cookies-information-websites-store-on-your-computer\" target=\"_blank\" rel=\"noopener\">Mozilla Firefox</a></li><li><a href=\"https://support.apple.com/guide/safari/manage-cookies-sfri11471/mac\" target=\"_blank\" rel=\"noopener\">Safari</a></li><li><a href=\"https://support.microsoft.com/en-us/microsoft-edge/delete-cookies-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09\" target=\"_blank\" rel=\"noopener\">Microsoft Edge</a></li></ul><h3>Clearing Local Storage</h3><p>To clear your cookie consent preference, you can clear your browser's local storage. This is typically found in the same settings area as cookie management.</p><h3>Impact of Disabling Cookies</h3><p>Since our website uses very few cookies, disabling cookies should not significantly affect your experience. However, the cookie consent banner will appear on every visit if cookies are disabled.</p><h2>7. Legal Basis</h2><p>Under the EU ePrivacy Directive and GDPR:</p><ul><li><strong>Strictly necessary cookies</strong> (like our consent cookie) do not require consent as they are essential for the website to function.</li><li><strong>Non-essential cookies</strong> require your consent before being set. We do not use non-essential cookies.</li></ul><h2>8. Changes to This Policy</h2><p>We may update this Cookie Policy from time to time. Any changes will be posted on this page with an updated \"Last updated\" date. We encourage you to review this policy periodically.</p><h2>9. Contact Us</h2><p>If you have any questions about this Cookie Policy or our use of cookies, please contact us at:</p><p><strong>Aeterna Events</strong><br>Email: <a href=\"mailto:hello@aeternaevents.com\">hello@aeternaevents.com</a></p>"
+  }
+}

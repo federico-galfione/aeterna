@@ -1,33 +1,40 @@
 ---
+pagination:
+  data: languages
+  size: 1
+  alias: lang
+permalink: "{% if lang == 'it' %}it/{% endif %}corporate.html"
 layout: base.njk
-title: "Corporate Retreats in Italy | Aeterna Events"
-description: "Find the perfect Italian venue for your corporate retreat or team meeting. Historic villas, boutique hotels, and unique spaces that inspire connection."
-canonical: "https://aeternaevents.com/corporate.html"
-hreflangEn: "https://aeternaevents.com/corporate.html"
-hreflangIt: "https://aeternaevents.com/it/corporate.html"
-ogTitle: "Corporate Retreats in Italy | Aeterna Events"
-ogDescription: "Find the perfect Italian venue for your corporate retreat or team meeting."
-ogUrl: "https://aeternaevents.com/corporate.html"
-lang: en
 pageName: "corporate.html"
-permalink: "corporate.html"
+eleventyComputed:
+  title: "{% if lang == 'it' %}{{ it.pages.corporate.title }}{% else %}{{ en.pages.corporate.title }}{% endif %}"
+  description: "{% if lang == 'it' %}{{ it.pages.corporate.description }}{% else %}{{ en.pages.corporate.description }}{% endif %}"
+  canonical: "https://aeternaevents.com/{% if lang == 'it' %}it/{% endif %}corporate.html"
+  hreflangEn: "https://aeternaevents.com/corporate.html"
+  hreflangIt: "https://aeternaevents.com/it/corporate.html"
+  ogTitle: "{% if lang == 'it' %}{{ it.pages.corporate.ogTitle }}{% else %}{{ en.pages.corporate.ogTitle }}{% endif %}"
+  ogDescription: "{% if lang == 'it' %}{{ it.pages.corporate.ogDescription }}{% else %}{{ en.pages.corporate.ogDescription }}{% endif %}"
+  ogUrl: "https://aeternaevents.com/{% if lang == 'it' %}it/{% endif %}corporate.html"
+  ogImage: "https://aeternaevents.com/images/og-image.jpg"
 ---
+{% set t = en if lang == "en" else it %}
+{% set prefix = "" if lang == "en" else "/it" %}
 
   <main>
     <!-- Hero Section -->
     <section class="hero">
       <div class="hero-bg">
-        <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1920&q=80" alt="Corporate team meeting in Italian villa" loading="eager">
+        <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1920&q=80" alt="{{ t.corporate.hero.heroImgAlt }}" loading="eager">
       </div>
       <div class="hero-overlay"></div>
       <div class="hero-content">
-        <span class="label hero-anim">Corporate Events</span>
-        <h1 class="hero-anim">Where Teams<br>Connect</h1>
-        <p class="subtitle hero-anim">Italian venues that transform corporate retreats into meaningful experiences. Historic settings that inspire focus, creativity, and genuine connection.</p>
-        <a href="/contact.html" class="btn btn-ghost hero-anim">Plan Your Retreat</a>
+        <span class="label hero-anim">{{ t.corporate.hero.label }}</span>
+        <h1 class="hero-anim">{{ t.corporate.hero.title | safe }}</h1>
+        <p class="subtitle hero-anim">{{ t.corporate.hero.subtitle }}</p>
+        <a href="{{ prefix }}/contact.html" class="btn btn-ghost hero-anim">{{ t.corporate.hero.cta }}</a>
       </div>
       <div class="scroll-indicator">
-        <span>Discover</span>
+        <span>{{ t.corporate.hero.scrollIndicator }}</span>
         <div class="scroll-indicator-line"></div>
       </div>
     </section>
@@ -37,14 +44,14 @@ permalink: "corporate.html"
       <div class="container">
         <div class="grid grid-asymmetric" style="align-items: center; gap: var(--space-4xl);">
           <div class="fade-in">
-            <span class="label label--olive">The Challenge</span>
-            <h2 class="mt-md mb-lg">Finding venues that inspire isn't simple</h2>
+            <span class="label label--olive">{{ t.corporate.challenge.label }}</span>
+            <h2 class="mt-md mb-lg">{{ t.corporate.challenge.title }}</h2>
             <p style="font-family: var(--font-sans); font-weight: 300; color: var(--text-secondary);">
-              You want more than a conference room with a view. You need a setting that draws remote teams together, sparks unexpected conversations, and creates shared memories. But finding these venues in Italy, navigating language barriers, understanding local requirements, coordinating logistics from abroad, it absorbs time you don't have.
+              {{ t.corporate.challenge.text }}
             </p>
           </div>
           <div class="fade-in">
-            <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=800&q=80" alt="Team collaboration" style="border-radius: var(--radius-lg);">
+            <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=800&q=80" alt="{{ t.corporate.challenge.imgAlt }}" style="border-radius: var(--radius-lg);">
           </div>
         </div>
       </div>
@@ -54,39 +61,23 @@ permalink: "corporate.html"
     <section class="section section--ivory">
       <div class="container container--narrow">
         <div class="section-header text-center fade-in">
-          <span class="label">Our Approach</span>
-          <h2>We Handle the Search</h2>
+          <span class="label">{{ t.corporate.approach.label }}</span>
+          <h2>{{ t.corporate.approach.title }}</h2>
           <div class="gold-line"></div>
         </div>
         <p class="text-center fade-in" style="font-size: var(--text-lg); max-width: 700px; margin: 0 auto var(--space-3xl);">
-          Share your vision, team size, and goals. We search our network, present tailored options, and guide you to a decision. You focus on your team; we focus on the venue.
+          {{ t.corporate.approach.text }}
         </p>
 
         <div class="process-steps fade-in">
+          {% for step in t.corporate.approach.steps %}
           <div class="process-step">
             <div>
-              <h3>Share Your Vision</h3>
-              <p>Tell us about your team, your goals, your ideal setting. What atmosphere supports your agenda? What experiences matter most?</p>
+              <h3>{{ step.title }}</h3>
+              <p>{{ step.text }}</p>
             </div>
           </div>
-          <div class="process-step">
-            <div>
-              <h3>We Search & Curate</h3>
-              <p>We explore our network of venues across Italy, from historic villas to contemporary retreats, selecting options that match your criteria.</p>
-            </div>
-          </div>
-          <div class="process-step">
-            <div>
-              <h3>Review & Decide</h3>
-              <p>Receive a curated selection with detailed information, photos, and our honest insights. We answer questions, arrange virtual tours if needed.</p>
-            </div>
-          </div>
-          <div class="process-step">
-            <div>
-              <h3>We Coordinate</h3>
-              <p>Once you choose, we handle negotiations, contracts, and logistics coordination. Arrive ready to focus on your team.</p>
-            </div>
-          </div>
+          {% endfor %}
         </div>
       </div>
     </section>
@@ -95,38 +86,28 @@ permalink: "corporate.html"
     <section class="section">
       <div class="container">
         <div class="section-header fade-in">
-          <span class="label label--olive">Venue Types</span>
-          <h2>Settings That Inspire</h2>
+          <span class="label label--olive">{{ t.corporate.venueTypes.label }}</span>
+          <h2>{{ t.corporate.venueTypes.title }}</h2>
           <div class="gold-line"></div>
         </div>
         <div class="grid grid-3 stagger-children">
+          {% for type in t.corporate.venueTypes.types %}
           <div class="card">
             <div class="card-image">
-              <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&q=80" alt="Historic villa" loading="lazy">
+              {% if loop.index == 1 %}
+              <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&q=80" alt="{{ type.imgAlt }}" loading="lazy">
+              {% elif loop.index == 2 %}
+              <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80" alt="{{ type.imgAlt }}" loading="lazy">
+              {% elif loop.index == 3 %}
+              <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=800&q=80" alt="{{ type.imgAlt }}" loading="lazy">
+              {% endif %}
             </div>
             <div class="card-content">
-              <h3>Historic Villas</h3>
-              <p>Renaissance architecture, frescoed halls, and gardens centuries in the making. Exclusivity and grandeur for meaningful gatherings.</p>
+              <h3>{{ type.title }}</h3>
+              <p>{{ type.text }}</p>
             </div>
           </div>
-          <div class="card">
-            <div class="card-image">
-              <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80" alt="Boutique hotel" loading="lazy">
-            </div>
-            <div class="card-content">
-              <h3>Boutique Hotels</h3>
-              <p>Intimate properties with character and modern comfort. Professional facilities wrapped in authentic Italian hospitality.</p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-image">
-              <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=800&q=80" alt="Vineyard estate" loading="lazy">
-            </div>
-            <div class="card-content">
-              <h3>Vineyard Estates</h3>
-              <p>Rolling hills, working wineries, and rustic elegance. Combine strategic sessions with tastings and rural tranquility.</p>
-            </div>
-          </div>
+          {% endfor %}
         </div>
       </div>
     </section>
@@ -135,27 +116,17 @@ permalink: "corporate.html"
     <section class="section bg-gradient-ivory">
       <div class="container container--narrow">
         <div class="section-header text-center fade-in">
-          <span class="label">Ideal For</span>
-          <h2>Events We Support</h2>
+          <span class="label">{{ t.corporate.idealFor.label }}</span>
+          <h2>{{ t.corporate.idealFor.title }}</h2>
           <div class="gold-line"></div>
         </div>
         <div class="grid grid-2 fade-in" style="gap: var(--space-lg);">
+          {% for item in t.corporate.idealFor.items %}
           <div style="padding: var(--space-lg); border-left: 2px solid var(--accent-primary);">
-            <h4 style="margin-bottom: var(--space-sm);">Team Retreats</h4>
-            <p style="font-family: var(--font-sans); font-weight: 300; color: var(--text-secondary); font-size: var(--text-sm);">Remote teams coming together for strategy, bonding, and alignment in inspiring settings.</p>
+            <h4 style="margin-bottom: var(--space-sm);">{{ item.title }}</h4>
+            <p style="font-family: var(--font-sans); font-weight: 300; color: var(--text-secondary); font-size: var(--text-sm);">{{ item.text }}</p>
           </div>
-          <div style="padding: var(--space-lg); border-left: 2px solid var(--accent-primary);">
-            <h4 style="margin-bottom: var(--space-sm);">Leadership Offsites</h4>
-            <p style="font-family: var(--font-sans); font-weight: 300; color: var(--text-secondary); font-size: var(--text-sm);">Executive gatherings requiring privacy, comfort, and an environment that fosters strategic thinking.</p>
-          </div>
-          <div style="padding: var(--space-lg); border-left: 2px solid var(--accent-primary);">
-            <h4 style="margin-bottom: var(--space-sm);">Creator Retreats</h4>
-            <p style="font-family: var(--font-sans); font-weight: 300; color: var(--text-secondary); font-size: var(--text-sm);">Content creators and community leaders hosting retreats for their audiences in distinctive locations.</p>
-          </div>
-          <div style="padding: var(--space-lg); border-left: 2px solid var(--accent-primary);">
-            <h4 style="margin-bottom: var(--space-sm);">Client Events</h4>
-            <p style="font-family: var(--font-sans); font-weight: 300; color: var(--text-secondary); font-size: var(--text-sm);">Impress clients and partners with exclusive Italian venues for product launches, incentive trips, or celebrations.</p>
-          </div>
+          {% endfor %}
         </div>
       </div>
     </section>
@@ -165,11 +136,11 @@ permalink: "corporate.html"
       <div class="container">
         <div class="testimonial fade-in">
           <p class="testimonial-quote">
-            Our team of 30 had never felt more connected. The venue in Puglia was perfect, the food incredible, and Aeterna handled every detail. We're already planning next year.
+            {{ t.corporate.testimonial.quote }}
           </p>
           <div class="testimonial-author">
-            <strong>Marco Rossi</strong>
-            <span>COO, Remote-First Startup</span>
+            <strong>{{ t.corporate.testimonial.author }}</strong>
+            <span>{{ t.corporate.testimonial.role }}</span>
           </div>
         </div>
       </div>
@@ -179,10 +150,10 @@ permalink: "corporate.html"
     <section class="section bg-gradient-warm">
       <div class="container">
         <div class="cta-section fade-in">
-          <span class="label">Ready to Begin?</span>
-          <h2>Plan Your Corporate Retreat</h2>
-          <p>Tell us about your team and vision. We'll find venues that exceed expectations.</p>
-          <a href="/contact.html" class="btn btn-primary btn-lg">Start the Conversation</a>
+          <span class="label">{{ t.corporate.cta.label }}</span>
+          <h2>{{ t.corporate.cta.title }}</h2>
+          <p>{{ t.corporate.cta.text }}</p>
+          <a href="{{ prefix }}/contact.html" class="btn btn-primary btn-lg">{{ t.corporate.cta.button }}</a>
         </div>
       </div>
     </section>
