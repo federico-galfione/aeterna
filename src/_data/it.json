@@ -1,6 +1,6 @@
 {
   "nav": {
-    "corporate": "Corporate",
+    "corporate": "Aziende",
     "weddings": "Matrimoni",
     "services": "Come Funziona",
     "about": "Chi Siamo",
@@ -9,9 +9,9 @@
     "mobileContact": "Contatti"
   },
   "footer": {
-    "tagline": "Riveliamo il valore eterno del patrimonio culturale italiano attraverso location ed esperienze che trasformano le celebrazioni in momenti indimenticabili.",
+    "tagline": "Sveliamo l'eterno valore del patrimonio culturale italiano attraverso location ed esperienze che trasformano le celebrazioni in momenti indimenticabili.",
     "navigate": "Naviga",
-    "corporateEvents": "Eventi Corporate",
+    "corporateEvents": "Eventi Aziendali",
     "weddings": "Matrimoni",
     "services": "Come Funziona",
     "aboutUs": "Chi Siamo",
@@ -23,21 +23,21 @@
   },
   "cookie": {
     "text": "Utilizziamo i cookie per garantire il corretto funzionamento del nostro sito web e per migliorare la tua esperienza. Continuando a utilizzare il nostro sito, accetti l'uso dei cookie.",
-    "learnMore": "Scopri di piu",
+    "learnMore": "Scopri di più",
     "accept": "Accetta"
   },
   "pages": {
     "index": {
-      "title": "Aeterna Events | Ricerca Location in Italia",
-      "description": "Scopri location italiane eccezionali per retreat aziendali e matrimoni. Ricerca esperta di venue con profonda conoscenza locale in tutta Italia.",
-      "ogTitle": "Aeterna Events | Ricerca Location in Italia",
-      "ogDescription": "Scopri location italiane eccezionali per retreat aziendali e matrimoni."
+      "title": "Aeterna Events | Ricerca location e organizzazione eventi in Italia",
+      "description": "Scopri location italiane eccezionali per eventi aziendali e matrimoni. Ricerca personalizzata di location con profonda conoscenza locale in tutta Italia.",
+      "ogTitle": "Aeterna Events | Ricerca location e organizzazione eventi in Italia",
+      "ogDescription": "Scopri location italiane eccezionali per eventi aziendali e matrimoni."
     },
     "corporate": {
-      "title": "Retreat Aziendali in Italia | Aeterna Events",
-      "description": "Trova la location italiana perfetta per il tuo retreat aziendale o meeting di team. Ville storiche, boutique hotel e spazi unici che ispirano connessione.",
-      "ogTitle": "Retreat Aziendali in Italia | Aeterna Events",
-      "ogDescription": "Trova la location italiana perfetta per il tuo retreat aziendale."
+      "title": "Eventi aziendali in Italia | Aeterna Events",
+      "description": "Trova la location italiana perfetta per il tuo evento aziendale o per il tuo meeting. Ville storiche, boutique hotel e spazi unici che ispirano connessione.",
+      "ogTitle": "Eventi aziendali in Italia | Aeterna Events",
+      "ogDescription": "Trova la location italiana perfetta per il tuo evento aziendale."
     },
     "weddings": {
       "title": "Matrimoni in Italia | Aeterna Events",
@@ -46,81 +46,81 @@
       "ogDescription": "Scopri la location dei tuoi sogni per un matrimonio in Italia."
     },
     "services": {
-      "title": "Come Funziona | Aeterna Events | Ricerca Location in Italia",
+      "title": "Come funziona | Aeterna Events | Ricerca location in Italia",
       "description": "Scopri il nostro processo di ricerca location. Dalla consulenza iniziale al supporto per la prenotazione, ti guidiamo nella ricerca della location italiana perfetta.",
-      "ogTitle": "Come Funziona | Aeterna Events",
+      "ogTitle": "Come funziona | Aeterna Events",
       "ogDescription": "Scopri il nostro processo di ricerca location. Dalla consulenza alla prenotazione, ti guidiamo verso la location italiana perfetta."
     },
     "about": {
-      "title": "Chi Siamo | Aeterna Events",
-      "description": "Scopri Aeterna Events, la nostra storia e la passione per connettere clienti internazionali con location italiane eccezionali.",
-      "ogTitle": "Chi Siamo | Aeterna Events",
-      "ogDescription": "Scopri Aeterna Events e la nostra passione per la ricerca di location italiane."
+      "title": "Chi siamo | Aeterna Events",
+      "description": "Scopri Aeterna Events, la nostra storia e la passione per la ricerca di location italiane eccezionali che rappresentino la tua storia.",
+      "ogTitle": "Chi siamo | Aeterna Events",
+      "ogDescription": "Scopri Aeterna Events e la nostra passione per la ricerca di location italiane che ti rappresentino."
     },
     "contact": {
       "title": "Contatti | Aeterna Events",
-      "description": "Contatta Aeterna Events. Raccontaci del tuo retreat aziendale o matrimonio e lasciaci trovare la location italiana perfetta.",
+      "description": "Contatta Aeterna Events. Raccontaci del tuo evento aziendale o del tuo matrimonio e permettici di trovare la location italiana perfetta.",
       "ogTitle": "Contatti | Aeterna Events",
       "ogDescription": "Contatta Aeterna Events per la ricerca di location italiane."
     },
     "privacy": {
-      "title": "Privacy Policy | Aeterna Events",
-      "description": "Privacy Policy di Aeterna Events. Scopri come raccogliamo, utilizziamo e proteggiamo i tuoi dati personali.",
-      "ogTitle": "Privacy Policy | Aeterna Events",
-      "ogDescription": "Privacy Policy di Aeterna Events."
+      "title": "Privacy policy | Aeterna Events",
+      "description": "Privacy policy di Aeterna Events. Scopri come raccogliamo, utilizziamo e proteggiamo i tuoi dati personali.",
+      "ogTitle": "Privacy policy | Aeterna Events",
+      "ogDescription": "Privacy policy di Aeterna Events."
     },
     "cookiePolicy": {
-      "title": "Cookie Policy | Aeterna Events",
-      "description": "Cookie Policy di Aeterna Events. Scopri quali cookie utilizziamo sul nostro sito web.",
-      "ogTitle": "Cookie Policy | Aeterna Events",
-      "ogDescription": "Cookie Policy di Aeterna Events."
+      "title": "Cookie policy | Aeterna Events",
+      "description": "Cookie policy di Aeterna Events. Scopri quali cookie utilizziamo sul nostro sito web.",
+      "ogTitle": "Cookie policy di Aeterna Events",
+      "ogDescription": "Cookie policy di Aeterna Events."
     }
   },
   "home": {
     "hero": {
-      "label": "Ricerca Location in Italia",
-      "title": "Dove Nascono<br>le Storie",
-      "subtitle": "Guidiamo clienti internazionali verso location italiane eccezionali per retreat aziendali e matrimoni. Conoscenza profonda. Servizio personale. Luoghi senza tempo.",
-      "cta": "Inizia la Ricerca",
+      "label": "Ricerca location e organizzazione eventi in Italia",
+      "title": "Dove nascono<br>esperienze indimenticabili",
+      "subtitle": "Guidiamo i nostri clienti verso location italiane eccezionali per eventi aziendali e matrimoni. Esperienza consolidata. Servizio personalizzato. Luoghi senza tempo.",
+      "cta": "Raccontaci del tuo evento",
       "heroImgAlt": "Bellissimo cortile di villa italiana",
       "scrollIndicator": "Scopri"
     },
     "intro": {
-      "label": "Il Nostro Approccio",
-      "title": "L'Italia Oltre le Aspettative",
-      "text": "Ogni celebrazione merita un ambiente che risuoni. Ti connettiamo con location che incarnano il patrimonio culturale italiano: palazzi storici, retreat costieri, cortili nascosti, tenute vitivinicole. Non i luoghi che tutti conoscono, ma quelli che vale la pena scoprire."
+      "label": "La nostra filosofia",
+      "title": "Italia, oltre ogni aspettativa",
+      "text": "Ogni celebrazione merita una cornice che la valorizzi. Ti mettiamo in contatto con location che incarnano il patrimonio culturale italiano, dai palazzi storici ai resort costieri, dai cortili nascosti alle tenute vitivinicole. Non i luoghi che tutti conoscono, ma quelli che vale la pena scoprire."
     },
     "servicesCorporate": {
-      "label": "Per i Team",
-      "title": "Retreat Aziendali",
-      "text": "Trasforma gli incontri di team in esperienze memorabili. Troviamo location che ispirano connessione, creativita e concentrazione in ambienti ricchi di patrimonio italiano.",
-      "cta": "Scopri Corporate",
+      "label": "Per le aziende",
+      "title": "Eventi aziendali",
+      "text": "Trasforma i tuoi ritiri aziendali in esperienze memorabili. Presenta i tuoi nuovi prodotti in scenari mozzafiato. Organizza conferenze e incontri con i clienti in contesti sorprendenti, di cui tutti parleranno a lungo. Troviamo location che ispirano connessione, creatività e stupore in ambienti ricchi di tradizione italiana.",
+      "cta": "Scopri di più",
       "imgAlt": "Retreat aziendale in villa italiana"
     },
     "servicesWeddings": {
-      "label": "Per le Coppie",
-      "title": "Matrimoni",
-      "text": "La location del tuo matrimonio definisce tutto cio che segue. Scopriamo luoghi che sembrano destinati, posti dove la tua storia si svolge naturalmente.",
-      "cta": "Scopri Matrimoni",
+      "label": "Per le coppie",
+      "title": "Matrimoni in Italia",
+      "text": "Il luogo del vostro matrimonio dovrebbe esprimere il vostro amore, la vostra storia e il vostro mondo. Scegliere il posto giusto darà il tono all’intera giornata. Scopriamo luoghi che sembrano destinati a voi, luoghi che sembrano raccontare naturalmente la vostra storia.",
+      "cta": "Scopri di più",
       "imgAlt": "Matrimonio in Italia"
     },
     "valueProps": [
       {
-        "title": "Competenza Locale",
-        "text": "Connessioni profonde in tutta Italia, dalla Toscana alla Sicilia. Conosciamo location che le agenzie internazionali non raggiungono mai."
+        "title": "Rete locale",
+        "text": "Abbiamo connessioni profonde su tutto il territorio italiano, da nord a sud. Siamo in contatto con location uniche nel loro genere, lontane dalle classiche proposte preconfezionate."
       },
       {
-        "title": "Servizio Su Misura",
-        "text": "Nessuna lista di location prefissata. Ogni ricerca inizia da zero, guidata dalla tua visione, dalle tue esigenze, dalla tua storia."
+        "title": "Servizio su misura",
+        "text": "Nessuna lista di location prestabilita. Ogni ricerca inizia da zero, guidata dalla tua visione, dalle tue esigenze, dalla tua storia."
       },
       {
-        "title": "Processo Fluido",
-        "text": "Gestiamo la complessita delle prenotazioni internazionali, i requisiti locali e il coordinamento con i fornitori."
+        "title": "Pianificazione senza sorprese",
+        "text": "Gestiamo la complessità burocratica e contrattuale al posto tuo, assicurandoci le migliori condizioni per il tuo evento."
       }
     ],
     "featured": {
-      "label": "Location in Evidenza",
-      "title": "Uno Sguardo sull'Italia",
+      "label": "Location in evidenza",
+      "title": "Uno sguardo sull'Italia",
       "images": [
         { "alt": "Villa toscana con cipressi" },
         { "alt": "Cortile italiano con archi" },
@@ -135,8 +135,8 @@
       "role": "Head of People, Tech Startup"
     },
     "cta": {
-      "label": "Pronti a Iniziare?",
-      "title": "Troviamo la Tua Location",
+      "label": "Pronti a iniziare?",
+      "title": "Troviamo la tua location",
       "text": "Raccontaci del tuo evento e inizieremo la ricerca dell'ambientazione italiana perfetta.",
       "button": "Contattaci"
     }
@@ -144,81 +144,89 @@
   "corporate": {
     "hero": {
       "label": "Eventi Corporate",
-      "title": "Dove i Team<br>si Connettono",
-      "subtitle": "Location italiane che trasformano i retreat aziendali in esperienze significative. Ambienti storici che ispirano concentrazione, creativita e connessione autentica.",
-      "cta": "Pianifica il Tuo Retreat",
+      "title": "Luoghi di incontro<br>e connessione strategica",
+      "subtitle": "Location italiane che trasformano gli eventi aziendali in esperienze di valore. Ambienti storici che ispirano stupore, creatività e connessione autentica.",
+      "cta": "Pianifica il tuo evento",
       "heroImgAlt": "Meeting aziendale in villa italiana",
       "scrollIndicator": "Scopri"
     },
     "challenge": {
       "label": "La Sfida",
-      "title": "Trovare location che ispirano non e semplice",
-      "text": "Vuoi piu di una sala conferenze con vista. Hai bisogno di un ambiente che unisca team remoti, stimoli conversazioni inaspettate e crei ricordi condivisi. Ma trovare queste location in Italia, superare le barriere linguistiche, comprendere i requisiti locali, coordinare la logistica dall'estero... assorbe tempo che non hai.",
+      "title": "Trovare la location giusta non è semplice",
+      "text": "Vuoi più di una sala conferenze con vista. Hai bisogno di un ambiente che unisca, stimoli conversazioni inattese e crei ricordi condivisi. Ma la ricerca, la negoziazione e la contrattazione... richiedono tempo che non hai.",
       "imgAlt": "Collaborazione di team"
     },
     "approach": {
-      "label": "Il Nostro Approccio",
-      "title": "Gestiamo Noi la Ricerca",
-      "text": "Condividi la tua visione, le dimensioni del team e gli obiettivi. Cerchiamo nella nostra rete, presentiamo opzioni su misura e ti guidiamo verso una decisione. Tu ti concentri sul tuo team; noi ci concentriamo sulla location.",
+      "label": "Il nostro approccio",
+      "title": "Gestiamo noi la ricerca",
+      "text": "Tu condividi la tua visione e i tuoi obiettivi. Noi cerchiamo nella nostra rete, ti presentiamo opzioni su misura e ti guidiamo verso una decisione.",
       "steps": [
         {
-          "title": "Condividi la Tua Visione",
-          "text": "Raccontaci del tuo team, dei tuoi obiettivi, dell'ambiente ideale. Quale atmosfera supporta la tua agenda? Quali esperienze contano di piu?"
+          "title": "Condividi la tua visione",
+          "text": "Raccontaci del tuo team, dei tuoi obiettivi, dell'ambiente ideale per te. Quale ambientazione si adatta al meglio alla tua idea? Quali sono gli aspetti dell'evento che contano di più per te?"
         },
         {
-          "title": "Cerchiamo e Selezioniamo",
-          "text": "Esploriamo la nostra rete di location in tutta Italia, da ville storiche a retreat contemporanei, selezionando opzioni che corrispondono ai tuoi criteri."
+          "title": "Ci occupiamo noi della selezione",
+          "text": "Esploriamo la nostra rete di strutture in tutta Italia, da ville storiche a resort contemporanei, selezionando opzioni che corrispondono alle tue richieste."
         },
         {
-          "title": "Valuta e Decidi",
-          "text": "Ricevi una selezione curata con informazioni dettagliate, foto e le nostre opinioni sincere. Rispondiamo alle domande, organizziamo tour virtuali se necessario."
+          "title": "Valuta le opzioni e prendi una decisione",
+          "text": "Ricevi una selezione curata e personalizzata con informazioni dettagliate, foto e le nostre opinioni sincere. Rispondiamo alle domande e organizziamo tour (fisici o virtuali) se necessario."
         },
         {
-          "title": "Coordiniamo Noi",
-          "text": "Una volta scelta la location, gestiamo trattative, contratti e coordinamento logistico. Arriva pronto a concentrarti sul tuo team."
+          "title": "Ci occupiamo noi di finalizzare",
+          "text": "Una volta scelta la location, gestiamo noi le trattative e la revisione del contratto."
+        }
+        {
+          "title": "Hai bisogno di ulteriore assistenza dopo la prenotazione della location?",
+          "text": "Siamo un team di organizzatori di eventi professionisti, con una rete di fornitori diversi per ogni esigenza. Hai bisogno di servizi aggiuntivi in loco e di coordinamento? Non esitare a inviarci una richiesta, saremo lieti di aiutarti."
         }
       ]
     },
     "venueTypes": {
       "label": "Tipi di Location",
-      "title": "Ambienti che Ispirano",
+      "title": "Ambienti che lasciano a bocca aperta",
       "types": [
         {
-          "title": "Ville Storiche",
-          "text": "Architettura rinascimentale, sale affrescate e giardini secolari. Esclusivita e grandezza per incontri significativi.",
+          "title": "Ville storiche",
+          "text": "Architettura rinascimentale, sale affrescate e giardini secolari. Esclusività e grandeur per eventi di carattere.",
           "imgAlt": "Villa storica"
         },
         {
           "title": "Boutique Hotel",
-          "text": "Proprieta intime con carattere e comfort moderno. Strutture professionali avvolte nell'autentica ospitalita italiana.",
+          "text": "Proprietà dall'atmosfera intima, ma con tutti i comfort moderni. Strutture professionali intrise di autentica ospitalità italiana.",
           "imgAlt": "Boutique hotel"
         },
         {
           "title": "Tenute Vitivinicole",
-          "text": "Colline ondulate, cantine attive ed eleganza rustica. Combina sessioni strategiche con degustazioni e tranquillita rurale.",
+          "text": "Dolci colline, aziende vinicole ed eleganza rustica. Combina sessioni strategiche con degustazioni e tranquillità rurale.",
           "imgAlt": "Tenuta vitivinicola"
         }
       ]
     },
     "idealFor": {
       "label": "Ideale Per",
-      "title": "Eventi che Supportiamo",
+      "title": "Eventi che supportiamo",
       "items": [
         {
-          "title": "Retreat di Team",
-          "text": "Team remoti che si riuniscono per strategia, team building e allineamento in ambienti ispiranti."
+          "title": "Ritiri aziendali",
+          "text": "Team aziendali che si riuniscono per definire strategie, consolidare i rapporti e allinearsi in contesti dinamici e arricchenti."
         },
         {
-          "title": "Offsite per Leadership",
-          "text": "Riunioni executive che richiedono privacy, comfort e un ambiente che favorisce il pensiero strategico."
+          "title": "Offsite per leadership",
+          "text": "Riunioni esecutive che richiedono privacy, comfort e un ambiente che favorisce il pensiero strategico."
         },
         {
-          "title": "Retreat per Creator",
+          "title": "Retreat per creator",
           "text": "Content creator e community leader che organizzano retreat per il loro pubblico in location distintive."
         },
         {
           "title": "Eventi per Clienti",
-          "text": "Impressiona clienti e partner con location italiane esclusive per lanci di prodotto, viaggi incentive o celebrazioni."
+          "text": "Stupisci i tuoi clienti e partner con location italiane esclusive per lanci di prodotto, viaggi incentive o celebrazioni."
+        },
+        {
+          "title": "Conferenze e congressi",
+          "text": "Eventi su larga scala che richiedono una logistica impeccabile, sedi di alto livello, attrezzature tecniche all'avanguardia e un coordinamento perfetto per garantire un'esperienza indimenticabile ai partecipanti."
         }
       ]
     },
@@ -228,84 +236,88 @@
       "role": "COO, Startup Remote-First"
     },
     "cta": {
-      "label": "Pronti a Iniziare?",
-      "title": "Pianifica il Tuo Retreat Aziendale",
+      "label": "Pronti a iniziare?",
+      "title": "Pianifica il tuo evento aziendale",
       "text": "Raccontaci del tuo team e della tua visione. Troveremo location che superano le aspettative.",
-      "button": "Inizia la Conversazione"
+      "button": "Contattaci"
     }
   },
   "weddings": {
     "hero": {
       "label": "Matrimoni",
-      "title": "Dove l'Amore<br>si Svela",
-      "subtitle": "La location del tuo matrimonio plasma tutto cio che segue: le foto, i ricordi, l'emozione che resta. Troviamo location italiane dove la tua storia appartiene naturalmente.",
-      "cta": "Inizia la Ricerca",
+      "title": "I luoghi<br>in cui celebrare l'amore",
+      "subtitle": "La location del vostro matrimonio plasma tutto ciò che segue: le foto, i ricordi, l'emozione che resta. Troviamo location dove la vostra storia si incastona perfettamente.",
+      "cta": "Raccontateci il vostro sogno",
       "heroImgAlt": "Matrimonio in Italia",
       "scrollIndicator": "Scopri"
     },
     "feeling": {
-      "label": "L'Emozione",
-      "title": "Piu di una Location",
-      "text": "L'hai immaginato: luce dorata che filtra tra gli ulivi, mura di pietra che hanno assistito a secoli di celebrazioni, il profumo del gelsomino nella brezza serale. L'Italia custodisce questi momenti, in attesa. La location del tuo matrimonio non e solo uno sfondo: e dove la tua storia mette radici in un luogo che sembra eterno."
+      "label": "L'emozione",
+      "title": "Più di una location",
+      "text": "L'avete immaginato: luce dorata che filtra tra gli ulivi, mura di pietra che hanno assistito a secoli di celebrazioni, il profumo del gelsomino nella brezza serale. L'Italia custodisce questi momenti, in attesa. La location del vostro matrimonio non è solo uno sfondo: è dove la vostra storia mette radici in un luogo che sembra eterno."
     },
     "promise": {
-      "label": "La Nostra Promessa",
-      "title": "Trovare Cio che Senti Giusto",
-      "text1": "Non lavoriamo con una lista fissa di location. Ogni ricerca inizia da zero, guidata dalla tua visione, dai tuoi ospiti, dai tuoi sogni. Ville storiche, tenute costiere, monasteri nascosti, agriturismi rustici: esploriamo le possibilita fino a trovare quella che risuona.",
-      "text2": "Questa e l'Italia come dovrebbe essere scoperta: attraverso qualcuno che conosce i suoi angoli nascosti, parla la sua lingua e comprende cosa rende una celebrazione davvero indimenticabile.",
+      "label": "La nostra promessa",
+      "title": "Trovare il luogo perfetto",
+      "text1": "Non lavoriamo con una lista fissa di location. Ogni ricerca inizia da zero, guidata dalla vostra visione, dai vostri ospiti, dai vostri sogni. Ville storiche, tenute costiere, monasteri nascosti, agriturismi rustici: esploriamo le possibilità fino a trovare quella che si adatta perfettamente al vostro sogno.",
+      "text2": "Questa è l'Italia come dovrebbe essere scoperta: attraverso qualcuno che conosce i suoi angoli nascosti e comprende cosa rende una celebrazione davvero indimenticabile.",
       "imgAlt": "Celebrazione di matrimonio in giardino italiano"
     },
     "process": {
-      "label": "Il Percorso",
-      "title": "Come Lavoriamo Insieme",
+      "label": "Il percorso",
+      "title": "Come lavoriamo insieme",
       "steps": [
         {
-          "title": "Condividi la Tua Visione",
-          "text": "Raccontaci del matrimonio dei tuoi sogni. L'atmosfera, il numero di ospiti, le regioni che ti chiamano. Quali momenti contano di piu? Quali emozioni dovrebbe contenere il giorno?"
+          "title": "Voi condividete la vostra visione",
+          "text": "Raccontateci del matrimonio dei vostri sogni. L'atmosfera, il numero di ospiti, i momenti che dovrebbe contenere la vostra giornata. Cosa conta di più per voi? Quali emozioni dovrebbe esprimere il giorno più importante?"
         },
         {
-          "title": "Esploriamo e Scopriamo",
-          "text": "Cerchiamo nella nostra rete, da tenute rinomate a gemme nascoste conosciute solo ai locali. Ogni opzione e verificata, visitata e selezionata con la tua visione in mente."
+          "title": "Scoviamo le opzioni che fanno per voi",
+          "text": "Cerchiamo nella nostra rete, da tenute rinomate a gemme nascoste conosciute solo ai locali. Ogni opzione viene verificata, visitata e selezionata con la vostra visione in mente."
         },
         {
-          "title": "Presentiamo e Affiniamo",
-          "text": "Ricevi una selezione curata di location con informazioni dettagliate, foto e la nostra prospettiva sincera. Affiniamo la ricerca finche qualcosa non sembra inequivocabilmente giusto."
+          "title": "Vi presentiamo la nostra selezione e ne discutiamo insieme",
+          "text": "Ricevete una selezione curata e personalizzata di location con informazioni dettagliate, foto e il nostro sincero parere. Affiniamo la ricerca fino a trovare il luogo che fa per voi."
         },
         {
-          "title": "Assicura la Tua Location",
-          "text": "Una volta deciso, gestiamo trattative, contratti e coordinamento. Arriverai in Italia sapendo che la tua location e esattamente come promesso."
+          "title": "Confermate la vostra location",
+          "text": "Una volta presa una decisione, gestiamo noi le trattative e la revisione del contratto."
+        },
+                {
+          "title": "Avete bisogno di ulteriore assistenza dopo la prenotazione della location?",
+          "text": "Siamo un team di organizzatori di eventi professionisti, con una rete di fornitori diversi per ogni esigenza. Avete bisogno di servizi aggiuntivi in loco e di coordinamento? Non esitate a inviarci una richiesta, saremo lieti di aiutarvi."
         }
       ]
     },
     "venueStyles": {
-      "label": "Stili di Location",
-      "title": "Ogni Sogno, un'Ambientazione",
+      "label": "Location diverse",
+      "title": "Ad ogni sogno, la sua ambientazione",
       "types": [
         {
-          "title": "Ville Toscane",
-          "text": "Colline ondulate, viali di cipressi ed eleganza rinascimentale. Il matrimonio italiano per eccellenza, elevato oltre le aspettative.",
+          "title": "Ville rurali",
+          "text": "Dolci colline, viali di cipressi ed eleganza rinascimentale. Il matrimonio italiano per eccellenza, elevato oltre le aspettative.",
           "imgAlt": "Matrimonio in villa toscana"
         },
         {
-          "title": "Tenute Costiere",
-          "text": "Amalfi, Puglia, Sicilia. Blu mediterraneo, limoneti e terrazze che digradano verso il mare.",
+          "title": "Tenute costiere",
+          "text": "Amalfi, Puglia, Sicilia. Blu mediterraneo, limoneti e terrazze che affacciano sul mare.",
           "imgAlt": "Location matrimonio costiera"
         },
         {
-          "title": "Palazzi Storici",
+          "title": "Palazzi storici",
           "text": "Sale grandiose, soffitti affrescati e giardini progettati da maestri. Architettura che ha assistito a secoli di celebrazioni.",
           "imgAlt": "Matrimonio in palazzo storico"
         }
       ],
       "typesRow2": [
         {
-          "title": "Tenute Vitivinicole",
+          "title": "Tenute vitivinicole",
           "text": "Celebrazioni intime tra le vigne. Vini locali, fascino rustico e il ritmo gentile della campagna.",
           "imgAlt": "Matrimonio in vigna"
         },
         {
           "title": "Giardini Segreti",
-          "text": "Cortili nascosti, giardini murati, spazi intimi dove ogni ospite sente la magia di essere in un luogo speciale.",
+          "text": "Cortili nascosti, giardini murati, spazi intimi dove ogni ospite percepisce la magia di un luogo speciale.",
           "imgAlt": "Location matrimonio giardino"
         }
       ]
@@ -320,33 +332,35 @@
       "title": "Regioni che Conosciamo",
       "list": [
         { "name": "Toscana", "desc": "Colline e fascino rinascimentale" },
-        { "name": "Umbria", "desc": "Il cuore verde d'Italia, incontaminato" },
+        { "name": "Umbria e Marche", "desc": "Il cuore verde d'Italia, incontaminato" },
         { "name": "Costiera Amalfitana", "desc": "Scogliere drammatiche e blu mediterraneo" },
         { "name": "Puglia", "desc": "Trulli bianchi e uliveti" },
-        { "name": "Lago di Como", "desc": "Ville lungo acque leggendarie" },
+        { "name": "Laghi del nord", "desc": "Ville lungo acque leggendarie" },
         { "name": "Sicilia", "desc": "Storia antica e calore dell'isola" },
         { "name": "Venezia e Veneto", "desc": "Palazzi e ville palladiane" },
-        { "name": "Piemonte", "desc": "Eleganza delle terre del vino" }
+        { "name": "Dolomiti", "desc": "Cattedrali di pietra e maestosità naturale" },
+        { "name": "Piemonte", "desc": "Eleganza nelle terre del vino" },
+        { "name": "Ma non ci fermiamo qui", "desc": "Esploriamo nuovi luoghi e strutture ogni giorno" },
       ]
     },
     "cta": {
-      "label": "La Tua Storia Inizia",
-      "title": "Trova la Location del Tuo Matrimonio",
-      "text": "Raccontaci della tua visione. Inizieremo la ricerca di una location che sembra fosse sempre destinata a te.",
-      "button": "Inizia la Conversazione"
+      "label": "Il vostro sogno inizia qui",
+      "title": "Trovate la location per il vostro matrimonio",
+      "text": "Raccontateci della vostra visione, troveremo il luogo che racconta al meglio la vostra storia.",
+      "button": "Contattaci"
     }
   },
   "services": {
     "hero": {
-      "label": "Il Nostro Processo",
-      "title": "Come Funziona",
+      "label": "Il nostro lavoro",
+      "title": "Come funziona",
       "subtitle": "Dalla tua prima richiesta al momento in cui entri nella tua location, ti guidiamo in ogni passaggio con competenza e cura.",
       "heroImgAlt": "Elegante location per eventi in Italia",
       "scrollIndicator": "Scopri"
     },
     "intro": {
-      "label": "Cosa Facciamo",
-      "title": "Ricerca Location, Raffinata",
+      "label": "Cosa facciamo",
+      "title": "Ricerca location, personalizzata",
       "text": "Siamo specializzati nel connettere clienti internazionali con location italiane eccezionali. La nostra profonda conoscenza delle gemme nascoste d'Italia, combinata con un approccio su misura per ogni ricerca, assicura che tu trovi un luogo che rispecchi davvero la tua visione.",
       "items": [
         {
