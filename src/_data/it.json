@@ -176,7 +176,7 @@
         {
           "title": "Ci occupiamo noi di finalizzare",
           "text": "Una volta scelta la location, gestiamo noi le trattative e la revisione del contratto."
-        }
+        },
         {
           "title": "Hai bisogno di ulteriore assistenza dopo la prenotazione della location?",
           "text": "Siamo un team di organizzatori di eventi professionisti, con una rete di fornitori diversi per ogni esigenza. Hai bisogno di servizi aggiuntivi in loco e di coordinamento? Non esitare a inviarci una richiesta, saremo lieti di aiutarti."
@@ -340,7 +340,7 @@
         { "name": "Venezia e Veneto", "desc": "Palazzi e ville palladiane" },
         { "name": "Dolomiti", "desc": "Cattedrali di pietra e maestosità naturale" },
         { "name": "Piemonte", "desc": "Eleganza nelle terre del vino" },
-        { "name": "Ma non ci fermiamo qui", "desc": "Esploriamo nuovi luoghi e strutture ogni giorno" },
+        { "name": "Ma non ci fermiamo qui", "desc": "Esploriamo nuovi luoghi e strutture ogni giorno" }
       ]
     },
     "cta": {
