@@ -193,12 +193,12 @@
           "imgAlt": "Villa storica"
         },
         {
-          "title": "Boutique Hotel",
+          "title": "Boutique hotel",
           "text": "Proprietà dall'atmosfera intima, ma con tutti i comfort moderni. Strutture professionali intrise di autentica ospitalità italiana.",
           "imgAlt": "Boutique hotel"
         },
         {
-          "title": "Tenute Vitivinicole",
+          "title": "Tenute vitivinicole",
           "text": "Dolci colline, aziende vinicole ed eleganza rustica. Combina sessioni strategiche con degustazioni e tranquillità rurale.",
           "imgAlt": "Tenuta vitivinicola"
         }
@@ -221,7 +221,7 @@
           "text": "Content creator e community leader che organizzano retreat per il loro pubblico in location distintive."
         },
         {
-          "title": "Eventi per Clienti",
+          "title": "Eventi per clienti",
           "text": "Stupisci i tuoi clienti e partner con location italiane esclusive per lanci di prodotto, viaggi incentive o celebrazioni."
         },
         {
@@ -236,7 +236,7 @@
       "role": "COO, Startup Remote-First"
     },
     "cta": {
-      "label": "Pronti a iniziare?",
+      "label": "Pronto a iniziare?",
       "title": "Pianifica il tuo evento aziendale",
       "text": "Raccontaci del tuo team e della tua visione. Troveremo location che superano le aspettative.",
       "button": "Contattaci"
@@ -245,7 +245,7 @@
   "weddings": {
     "hero": {
       "label": "Matrimoni",
-      "title": "I luoghi<br>in cui celebrare l'amore",
+      "title": "I luoghi in cui<br>celebrare l'amore",
       "subtitle": "La location del vostro matrimonio plasma tutto ciò che segue: le foto, i ricordi, l'emozione che resta. Troviamo location dove la vostra storia si incastona perfettamente.",
       "cta": "Raccontateci il vostro sogno",
       "heroImgAlt": "Matrimonio in Italia",
@@ -316,7 +316,7 @@
           "imgAlt": "Matrimonio in vigna"
         },
         {
-          "title": "Giardini Segreti",
+          "title": "Giardini segreti",
           "text": "Cortili nascosti, giardini murati, spazi intimi dove ogni ospite percepisce la magia di un luogo speciale.",
           "imgAlt": "Location matrimonio giardino"
         }
@@ -329,7 +329,7 @@
     },
     "regions": {
       "label": "In Tutta Italia",
-      "title": "Regioni che Conosciamo",
+      "title": "Regioni che conosciamo",
       "list": [
         { "name": "Toscana", "desc": "Colline e fascino rinascimentale" },
         { "name": "Umbria e Marche", "desc": "Il cuore verde d'Italia, incontaminato" },
@@ -340,7 +340,7 @@
         { "name": "Venezia e Veneto", "desc": "Palazzi e ville palladiane" },
         { "name": "Dolomiti", "desc": "Cattedrali di pietra e maestosità naturale" },
         { "name": "Piemonte", "desc": "Eleganza nelle terre del vino" },
-        { "name": "Ma non ci fermiamo qui", "desc": "Esploriamo nuovi luoghi e strutture ogni giorno" }
+        { "name": "Ma non finisce qui", "desc": "Esploriamo nuovi luoghi e strutture ogni giorno" }
       ]
     },
     "cta": {
@@ -361,246 +361,254 @@
     "intro": {
       "label": "Cosa facciamo",
       "title": "Ricerca location, personalizzata",
-      "text": "Siamo specializzati nel connettere clienti internazionali con location italiane eccezionali. La nostra profonda conoscenza delle gemme nascoste d'Italia, combinata con un approccio su misura per ogni ricerca, assicura che tu trovi un luogo che rispecchi davvero la tua visione.",
+      "text": "Siamo specializzati nel connettere i nostri internazionali con location eccezionali. La nostra profonda conoscenza delle gemme nascoste d'Italia, combinata con un approccio su misura per ogni ricerca, assicura che tu trovi un luogo che rispecchi davvero la tua visione.",
       "items": [
         {
-          "title": "Ricerca Curata",
-          "text": "Cerchiamo nella nostra vasta rete, non in una lista limitata di location convenzionate. Ogni raccomandazione e su misura per le tue esigenze specifiche."
+          "title": "Ricerca curata",
+          "text": "Cerchiamo nella nostra vasta rete, non in una lista limitata di location convenzionate. Ogni raccomandazione avviene su misura ed è legata alle tue esigenze specifiche."
         },
         {
-          "title": "Guida Personale",
-          "text": "Un contatto dedicato durante tutto il percorso. Impariamo le tue preferenze e ti rappresentiamo con le location."
+          "title": "Consulenza personalizzata",
+          "text": "Un referente dedicato durante tutto il percorso. Impareremo a conoscere le tue preferenze e ti assisteremo nella scelta delle location."
         },
         {
-          "title": "Competenza Locale",
-          "text": "Naviga il paesaggio unico dell'Italia con sicurezza. Gestiamo barriere linguistiche, usanze locali e complessita logistiche."
+          "title": "Rete locale",
+          "text": "Abbiamo connessioni profonde su tutto il territorio italiano, da nord a sud. Siamo in contatto con location uniche nel loro genere, lontane dalle classiche proposte preconfezionate."
+        },
+        {
+          "title": "Gestione e coordinamento di eventi",
+          "text": "Possiamo assistervi nell'organizzazione del vostro evento, mettendovi in contatto con fornitori locali oltre alla sede dell'evento, e coordinare la giornata, così che voi possiate esclusivamente pensare a godervi la vostra giornata."
         }
       ]
     },
     "timeline": {
       "label": "Il Percorso",
-      "title": "Il Tuo Cammino Verso la Location Perfetta",
+      "title": "Il tuo cammino verso la location perfetta",
       "steps": [
         {
-          "title": "Consulenza Iniziale",
-          "text": "Iniziamo con una conversazione per comprendere la tua visione, requisiti, numero di ospiti, date preferite e budget. Questo ci aiuta a definire esattamente cosa stai cercando."
+          "title": "Consulenza iniziale",
+          "text": "Iniziamo con una conversazione, completamente gratuita, per approfondire ciò che facciamo e comprendere la vostra visione, i vostri requisiti, il numero di ospiti, le date preferite e il budget. Questo ci aiuta a definire esattamente cosa state cercando."
         },
         {
-          "title": "Ricerca Location",
+          "title": "Ricerca location",
           "text": "Il nostro team cerca in tutta Italia, attingendo alla nostra rete di palazzi, ville, tenute e boutique hotel. Guardiamo oltre l'ovvio per trovare location che corrispondano ai tuoi criteri unici."
         },
         {
-          "title": "Presentazione Curata",
-          "text": "Presentiamo una selezione di 5-8 location accuratamente scelte, complete di foto, informazioni dettagliate, disponibilita e prezzi. Ogni opzione e selezionata a mano per soddisfare le tue esigenze."
+          "title": "Presentazione curata",
+          "text": "Presentiamo una lista di location accuratamente selezionate, complete di foto, informazioni dettagliate, disponibilità e prezzi. Ogni opzione viene specificatamente scelta tenendo conto delle vostre esigenze."
         },
         {
-          "title": "Confronto e Selezione",
-          "text": "Ti guidiamo nel confrontare le opzioni, rispondendo alle domande e, se desiderato, organizzando visite in loco. Ti aiutiamo a valutare pro e contro per trovare la corrispondenza ideale."
+          "title": "Confronto e selezione",
+          "text": "Ti guidiamo nel confrontare le opzioni, rispondendo a tutte le tue domande e, se desiderato, organizziamo visite in loco. Ti aiutiamo a valutare pro e contro per trovare la location perfetta."
         },
         {
-          "title": "Supporto alla Prenotazione",
+          "title": "Supporto alla prenotazione",
           "text": "Una volta scelta la location, ti assistiamo con negoziazioni, revisione del contratto e coordinamento con la venue. Assicuriamo una transizione fluida dalla selezione alla conferma."
+        },
+        {
+          "title": "Ma non finisce qui…",
+          "text": "Se hai bisogno di ulteriore supporto nell’organizzazione del tuo evento, il nostro team di esperti event manager preparerà un’offerta personalizzata per ogni tua esigenza."
         }
       ]
     },
     "servicesCards": {
-      "label": "I Nostri Servizi",
-      "title": "Su Misura per il Tuo Evento",
+      "label": "I nostri Servizi",
+      "title": "Su misura per il tuo evento",
       "corporate": {
-        "label": "Per i Team",
-        "title": "Retreat Aziendali",
-        "text": "Trova location ispiranti per offsite di team, retreat aziendali e incontri corporate. Ci concentriamo su luoghi che favoriscono connessione offrendo i servizi di cui il tuo team ha bisogno.",
-        "cta": "Scopri di Piu",
+        "label": "Per i team",
+        "title": "Eventi aziendali",
+        "text": "Trova location d'ispirazione per team retreat, ritiri aziendali e incontri corporate. Ci concentriamo su luoghi che favoriscono connessione offrendo i servizi di cui la tua azienda ha bisogno.",
+        "cta": "Scopri di più",
         "imgAlt": "Location per retreat aziendale in Italia"
       },
       "weddings": {
-        "label": "Per le Coppie",
-        "title": "Destination Wedding",
-        "text": "Scopri la location dove la tua storia si svolgera. Dalle fughe romantiche intime alle grandi celebrazioni, troviamo ambientazioni che corrispondono alla tua visione e creano ricordi indelebili.",
-        "cta": "Scopri di Piu",
+        "label": "Per le coppie",
+        "title": "Matrimoni",
+        "text": "Scopri la location nella quale il tuo sogno prenderà vita. Dalle fughe romantiche alle grandi celebrazioni, troviamo ambientazioni che corrispondono alla tua visione e creano ricordi indelebili.",
+        "cta": "Scopri di più",
         "imgAlt": "Location per matrimoni in Italia"
       }
     },
     "included": {
-      "label": "Cosa Include",
-      "title": "Il Nostro Servizio in Sintesi",
+      "label": "Cosa offriamo",
+      "title": "I nostri servizi in breve",
       "items": [
         {
-          "title": "Consulenza Personale",
-          "text": "Discussione approfondita dei tuoi requisiti, preferenze e visione per l'evento."
+          "title": "Consulenza personalizzata",
+          "text": "Discussione approfondita dei tuoi requisiti, delle tue preferenze e la tua visione per l'evento."
         },
         {
-          "title": "Ricerca Completa",
+          "title": "Ricerca completa",
           "text": "Accesso alla nostra rete di location in tutte le regioni d'Italia."
         },
         {
-          "title": "Profili Location Dettagliati",
-          "text": "Foto, specifiche, disponibilita e prezzi per ogni location raccomandata."
+          "title": "Profili location dettagliati",
+          "text": "Foto, specifiche, disponibilità e prezzi per ogni location raccomandata."
         },
         {
-          "title": "Coordinamento Visite",
+          "title": "Coordinamento visite",
           "text": "Assistenza nell'organizzare visite alle tue location preferite."
         },
         {
-          "title": "Supporto Negoziazione",
-          "text": "Ti rappresentiamo per ottenere i migliori termini e condizioni."
+          "title": "Supporto negoziazione",
+          "text": "Ti assistiamo nelle negoziazioni per ottenere i migliori termini e condizioni."
         },
         {
-          "title": "Assistenza Prenotazione",
+          "title": "Assistenza prenotazione",
           "text": "Revisione contratto e coordinamento fino alla conferma."
         }
       ]
     },
     "pricing": {
-      "title": "Prezzi Semplici e Trasparenti",
-      "text": "Il nostro servizio di ricerca location e gratuito quando prenoti attraverso di noi. Riceviamo una piccola commissione dalla location, il che significa nessun costo aggiuntivo per te. Se preferisci utilizzare la nostra ricerca senza prenotare, si applica una tariffa di consulenza fissa.",
+      "title": "Prezzi semplici e trasparenti",
+      "text": "Il nostro servizio di ricerca location è gratuito quando prenoti attraverso di noi. Riceviamo una commissione dalla location (la commissione standard del settore è pari a circa il 10% al netto dell'IVA sull’affitto della location e, se inclusi, sui servizi di catering), che non implica alcun costo aggiuntivo per te. Se preferisci utilizzare la nostra ricerca senza prenotare, si applica una tariffa di consulenza fissa.",
       "contactText": "Contattaci",
       "contactSuffix": " per discutere le tue esigenze specifiche."
     },
     "cta": {
-      "label": "Pronto a Iniziare?",
-      "title": "Troviamo la Tua Location",
+      "label": "Pronto a iniziare?",
+      "title": "Troviamo la tua Location",
       "text": "Raccontaci del tuo evento e inizieremo la ricerca della tua ambientazione italiana perfetta.",
       "button": "Contattaci"
     }
   },
   "about": {
     "hero": {
-      "label": "Chi Siamo",
-      "title": "Radicati in Italia,<br>Aperti al Mondo",
-      "subtitle": "Creiamo un ponte tra clienti internazionali e le straordinarie location italiane, condividendo i luoghi e le tradizioni che rendono questo paese senza tempo.",
+      "label": "Chi siamo",
+      "title": "Radicati in Italia,<br>aperti al mondo",
+      "subtitle": "Connettiamo i nostri clienti italiani e internazionali con straordinarie location in Italia, condividendo i luoghi e le tradizioni che rendono questo paese senza tempo.",
       "heroImgAlt": "Paesaggio della campagna italiana"
     },
     "story": {
-      "label": "La Nostra Storia",
-      "title": "Nata da una Semplice Verita",
-      "text1": "L'Italia custodisce alcune delle location piu straordinarie al mondo: luoghi dove la storia vive in ogni pietra e le celebrazioni sembrano eterne. Eppure molte di queste location rimangono nascoste ai clienti internazionali, prive dell'infrastruttura per raggiungere oltre i confini italiani.",
-      "text2": "Aeterna Events e nata per colmare questo divario. Combiniamo una profonda conoscenza locale con una comprensione internazionale, connettendo clienti di tutto il mondo con location che altrimenti rimarrebbero non scoperte. Nessuna lista contrattuale, nessuna commissione che influenza le nostre raccomandazioni: solo una guida onesta verso luoghi che meritano di essere conosciuti.",
-      "text3": "Il nome \"Aeterna\" e latino per \"eterna\", riflettendo sia il patrimonio senza tempo dell'Italia che la nostra convinzione che la location giusta crei ricordi che durano oltre ogni singola celebrazione.",
+      "label": "La nostra storia",
+      "title": "Nata da una semplice verità",
+      "text1": "L'Italia custodisce alcune delle location piu straordinarie al mondo: luoghi dove la storia vive in ogni pietra e le celebrazioni sembrano eterne. Eppure molte di queste location rimangono nascoste ai più, prive dell'infrastruttura necessaria per sconfinare oltre le reeti locali",
+      "text2": "Aeterna Events è nata per colmare questo divario. Combiniamo una profonda conoscenza locale con una comprensione internazionale, connettendo clienti di tutto il mondo con location che altrimenti rimarrebbero nascoste. Nessuna lista di location gestite da noi o predefinite: solo una guida onesta verso luoghi che meritano di essere conosciuti.",
+      "text3": "Il nome \"Aeterna\" e latino per \"eterna\", riflette sia il patrimonio senza tempo dell'Italia che la nostra convinzione che la location giusta crei ricordi che durano oltre ogni singola celebrazione.",
       "imgAlt": "Dettaglio architettura italiana"
     },
     "vision": {
       "label": "Visione",
-      "title": "Cosa Vediamo",
+      "title": "La nostra filosofia",
       "text": "Rivelare il valore eterno del patrimonio culturale italiano attraverso location ed esperienze che trasformano le celebrazioni in momenti indimenticabili."
     },
     "mission": {
       "label": "Missione",
-      "title": "Cosa Facciamo",
-      "text": "Guidiamo brand internazionali, organizzazioni e coppie nella scoperta dell'Italia oltre le aspettative, fornendo ricerca esperta di location e supporto raffinato per eventi corporate significativi e celebrazioni private."
+      "title": "La nostra strategia",
+      "text": "Guidiamo brand nazionali e internazionali, organizzazioni e coppie nella scoperta dell'Italia oltre le aspettative, fornendo supporto nella ricerca di luoghi adatti e assistenza nell’organizzazione di eventi aziendali e celebrazioni private."
     },
     "values": {
-      "label": "I Nostri Valori",
-      "title": "Cosa Ci Guida",
+      "label": "I nostri valori",
+      "title": "Cosa ci guida",
       "items": [
         {
-          "title": "Senza Tempo",
-          "text": "Radicati in secoli di cultura, non nelle tendenze. Valorizziamo la qualita duratura rispetto alla moda passeggera."
+          "title": "Qualità senza tempo",
+          "text": "Radicati in secoli di cultura, non nelle tendenze. Valorizziamo la qualità duratura rispetto alla moda passeggera."
         },
         {
-          "title": "Raffinato",
-          "text": "Ogni dettaglio curato con cura e intenzione. Eccellenza nel servizio, dal primo contatto alla prenotazione finale."
+          "title": "Raffinatezza",
+          "text": "Ogni dettaglio rifinito con cura e intenzione. Eccellenza nel servizio, dal primo contatto alla prenotazione finale."
         },
         {
-          "title": "Caloroso",
+          "title": "Calore",
           "text": "Lusso accessibile, mai freddo o elitario. Siamo un amico fidato, non un servizio distante."
         },
         {
-          "title": "Competente",
-          "text": "Competenza profonda portata con leggerezza, condivisa generosamente. Conosciamo le location italiane perche le abbiamo cercate noi stessi."
+          "title": "Competenza",
+          "text": "Competenza profonda, condivisa generosamente. Conosciamo le location italiane perche le abbiamo esplorate noi stessi."
         }
       ]
     },
     "whyUs": {
-      "label": "Perche Sceglierci",
-      "title": "Cosa Ci Distingue",
-      "quote": "La maggior parte delle agenzie lavora con una lista contrattuale di location: location che pagano per essere presenti. Noi lavoriamo diversamente. Ogni ricerca inizia da zero, guidata solo dalla tua visione. Le nostre raccomandazioni sono oneste perche il nostro unico obiettivo e trovare la location giusta per te, non quella che ci paga di piu.",
+      "label": "Perchè sceglierci",
+      "title": "Cosa ci distingue",
+      "quote": "La maggior parte delle agenzie lavora con una lista predeterminata di location: location che pagano per essere parte del loro network . Noi lavoriamo diversamente. Ogni ricerca inizia da zero, guidata solo dalla tua visione. Le nostre raccomandazioni sono oneste perchè il nostro unico obiettivo è trovare la location giusta per te.",
       "items": [
         {
-          "title": "Rete Ampia",
-          "text": "Abbiamo costruito relazioni con location in tutta Italia, da tenute famose a proprieta a conduzione familiare che raramente appaiono nelle ricerche internazionali."
+          "title": "Ampia rete di conoscenze",
+          "text": "Abbiamo costruito relazioni con location in tutta Italia, da tenute famose a proprietà a conduzione familiare che raramente appaiono nelle ricerche tradizionali."
         },
         {
-          "title": "Comprensione Locale",
-          "text": "Parliamo la lingua, comprendiamo la cultura e navighiamo i requisiti locali che altrimenti creerebbero attrito."
+          "title": "Conoscenza profonda delle location",
+          "text": "Parliamo la stessa lingua delle strutture ricettive, comprendiamo le tue richieste e gestiamo la negoziazione con loro."
         },
         {
-          "title": "Approccio Su Misura",
-          "text": "Nessun cliente riceve la stessa lista di location. Ogni ricerca e personalizzata per la tua visione specifica, esigenze e budget."
+          "title": "Approccio su misura",
+          "text": "Nessun cliente riceve la stessa lista di location. Ogni ricerca è personalizzata per la tua visione specifica, le tue esigenze e il tuo budget."
         },
         {
-          "title": "Supporto Completo",
-          "text": "Dalla ricerca iniziale alla firma del contratto, gestiamo la complessita cosi tu puoi concentrarti sul tuo evento."
+          "title": "Supporto completo",
+          "text": "Dalla ricerca iniziale alla firma del contratto, gestiamo la complessità così tu puoi concentrarti sul tuo evento."
         }
       ]
     },
     "team": {
-      "label": "Il Team",
-      "title": "Chi Siamo",
-      "text": "Aeterna Events e guidata da professionisti con radici profonde in Italia e vasta esperienza in ospitalita, organizzazione eventi e servizi per destinazioni.",
+      "label": "Il team",
+      "title": "Chi siamo",
+      "text": "Aeterna Events è guidata da professionisti con radici profonde in Italia, vasta esperienza in ospitalità e organizzazione eventi.",
       "founderTitle": "Fondatore",
       "founderRole": "Ricerca Location & Relazioni Clienti"
     },
     "cta": {
-      "label": "Pronti a Iniziare?",
-      "title": "Troviamo la Tua Location",
-      "text": "Raccontaci del tuo evento e lasciaci mostrarti cosa puo offrire l'Italia.",
+      "label": "Pronti a iniziare?",
+      "title": "Troviamo la location per il tuo prossimo evento",
+      "text": "Raccontaci del tuo evento lascia che ti mostriamo cosa l’Italia ha da offrire",
       "button": "Contattaci"
     }
   },
   "contact": {
     "info": {
       "label": "Contatti",
-      "title": "Iniziamo<br>una Conversazione",
-      "text": "Raccontaci del tuo evento. Che tu stia pianificando un retreat aziendale o un matrimonio, ci piacerebbe ascoltare la tua visione e aiutarti a scoprire la location italiana perfetta.",
+      "title": "Facciamo<br>una chiacchierata",
+      "text": "Raccontaci del tuo evento. Che tu stia pianificando un evento aziendale o un matrimonio, ci piacerebbe ascoltare la tua visione e aiutarti a trovare la location perfetta.",
       "emailLabel": "Email",
-      "responseLabel": "Tempi di Risposta",
-      "responseText": "Di solito rispondiamo entro 24-48 ore.",
+      "responseLabel": "Tempi di risposta",
+      "responseText": "Di solito rispondiamo entro 2-3 giorni lavorativi.",
       "followLabel": "Seguici"
     },
     "form": {
       "nameLabel": "Nome *",
       "emailLabel": "Email *",
-      "eventTypeLabel": "Tipo di Evento *",
+      "eventTypeLabel": "Tipo di evento *",
       "eventTypePlaceholder": "Seleziona un'opzione",
-      "eventTypeCorporate": "Retreat Aziendale",
+      "eventTypeCorporate": "Evento aziendale",
       "eventTypeWedding": "Matrimonio",
       "eventTypeOther": "Altro",
-      "guestCountLabel": "Numero Stimato di Ospiti",
+      "guestCountLabel": "Numero stimato di ospiti",
       "guestCountPlaceholder": "es. 50-75",
-      "datesLabel": "Date Preferite",
+      "datesLabel": "Date desiderate",
       "datesPlaceholder": "es. Giugno 2026",
-      "regionLabel": "Regione Preferita in Italia",
+      "regionLabel": "Regione preferita in Italia",
       "regionPlaceholder": "es. Toscana, Costiera Amalfitana, o 'Aperto a suggerimenti'",
-      "messageLabel": "Raccontaci la Tua Visione *",
-      "messagePlaceholder": "Che tipo di location immagini? Quale atmosfera vuoi creare? Hai requisiti o sogni specifici?",
+      "messageLabel": "Raccontaci la tua visione *",
+      "messagePlaceholder": "Che tipo di location immagini? Quale atmosfera vuoi creare? Hai requisiti o desideri specifici?",
       "consentText": "Acconsento al trattamento dei miei dati personali come descritto nella",
       "consentLink": "Privacy Policy",
-      "submit": "Invia Messaggio"
+      "submit": "Invia messaggio"
     },
     "faq": {
-      "label": "Domande Frequenti",
-      "title": "Cosa Aspettarsi",
+      "label": "Domande frequenti",
+      "title": "Cosa aspettarsi",
       "items": [
         {
           "question": "Come funziona il vostro servizio?",
-          "answer": "Dopo che ci contatti, organizzeremo una chiamata per comprendere la tua visione, requisiti e budget. Poi cerchiamo nella nostra rete di location italiane e ti presentiamo una selezione curata. Una volta scelta, ti aiutiamo a coordinare il processo di prenotazione."
+          "answer": "Dopo che ci contatti, organizzeremo una chiamata gratuita per comprendere la tua visione, requisiti e budget. Poi cerchiamo nella nostra rete di location e ti presentiamo una selezione curata. Una volta scelta, ti aiutiamo a coordinare il processo di prenotazione e, se richiesto, ti supportiamo nell’organizzazione del tuo evento."
         },
         {
           "question": "Quanto costa il servizio di ricerca location?",
-          "answer": "Il nostro servizio di ricerca location e gratuito se prenoti attraverso di noi. Riceviamo una commissione dalla location, che non influisce sul prezzo che paghi. Se utilizzi la nostra ricerca ma prenoti indipendentemente, si applica una tariffa di consulenza fissa."
+          "answer": "Il nostro servizio di ricerca location è gratuito se prenoti attraverso di noi. Riceviamo una commissione dalla location, che non influisce sul prezzo che paghi. Se utilizzi la nostra ricerca ma decidi di non finalizzare la prenotazione, si applica una tariffa di consulenza fissa (concordata durante il primo contatto telefonico). Per i servizi di organizzazione aggiuntivi, si applica un preventivo personalizzato a seconda delle esigenze."
         },
         {
           "question": "Con quanto anticipo dovrei iniziare?",
-          "answer": "Per i matrimoni, raccomandiamo di iniziare 12-18 mesi prima, specialmente per regioni e date popolari. I retreat aziendali tipicamente richiedono 3-6 mesi di anticipo, anche se possiamo lavorare con tempistiche piu strette quando necessario."
+          "answer": "Per i matrimoni, raccomandiamo di iniziare 9-12 mesi prima, specialmente per regioni e date popolari. Gli eventi aziendali tipicamente richiedono 3-6 mesi di anticipo, anche se possiamo lavorare con tempistiche piu strette quando necessario. Evento last-minute? Nessun problema, prova a contattarci comunque, faremo il possibile per offrire il nostro supporto."
         },
         {
           "question": "Lavorate solo con location in certe regioni?",
-          "answer": "Abbiamo connessioni in tutta Italia, dai laghi del nord alla Sicilia. Mentre abbiamo reti particolarmente forti in Toscana, Umbria, Puglia e Costiera Amalfitana, possiamo cercare in qualsiasi regione in base alle tue preferenze."
+          "answer": "Abbiamo connessioni in tutta Italia, dai laghi del nord alla Sicilia. Possiamo trovare location di qualsiasi tipo e in qualsiasi regione in base alle tue preferenze."
         },
         {
           "question": "Offrite organizzazione completa dell'evento?",
-          "answer": "Il nostro servizio principale e la ricerca di location. Una volta assicurata la location, possiamo raccomandare planner locali fidati, catering e fornitori se hai bisogno di coordinamento completo dell'evento. Molte location offrono anche i propri servizi di gestione eventi."
+          "answer": "Sì, certo! Non abbiamo solo contatti con le location, ma anche con fornitori di fiducia per ogni aspetto del tuo evento. Se desideri che il tuo evento sia gestito interamente da noi, comunicacelo durante il nostro primo incontro e creeremo un'offerta su misura per te in base alle tue esigenze e preferenze."
         }
       ]
     }
