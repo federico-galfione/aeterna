@@ -13,16 +13,19 @@
       <nav class="footer-nav">
         <h4>{{ t.footer.navigate }}</h4>
         <ul>
-          <li><a href="{{ prefix }}corporate.html">{{ t.footer.corporateEvents }}</a></li>
-          <li><a href="{{ prefix }}weddings.html">{{ t.footer.weddings }}</a></li>
-          <li><a href="{{ prefix }}services.html">{{ t.footer.services }}</a></li>
-          <li><a href="{{ prefix }}about.html">{{ t.footer.aboutUs }}</a></li>
-          <li><a href="{{ prefix }}contact.html">{{ t.footer.contactLink }}</a></li>
+          <li><a href="{{ prefix }}corporate">{{ t.footer.corporateEvents }}</a></li>
+          <li><a href="{{ prefix }}weddings">{{ t.footer.weddings }}</a></li>
+          <li><a href="{{ prefix }}services">{{ t.footer.services }}</a></li>
+          <li><a href="{{ prefix }}about">{{ t.footer.aboutUs }}</a></li>
+          <li><a href="{{ prefix }}contact">{{ t.footer.contactLink }}</a></li>
+          {% if lang == "it" %}
+          <li><a href="{{ prefix }}collabora">Collabora con noi</a></li>
+          {% endif %}
         </ul>
       </nav>
       <div class="footer-contact">
         <h4>{{ t.footer.connect }}</h4>
-        <a href="mailto:hello@aeternaevents.com" class="footer-email">hello@aeternaevents.com</a>
+        <a href="mailto:hello@aeterna.events" class="footer-email">hello@aeterna.events</a>
         <div class="footer-social">
           <a href="https://instagram.com/aeternaevents" aria-label="Instagram" target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -49,8 +52,8 @@
     <div class="footer-bottom">
       <p>&copy; <span class="current-year">2026</span> Aeterna Events. {{ t.footer.rights }}</p>
       <div class="footer-legal">
-        <a href="{{ prefix }}privacy.html">{{ t.footer.privacyPolicy }}</a>
-        <a href="{{ prefix }}cookie-policy.html">{{ t.footer.cookiePolicy }}</a>
+        <a href="{{ prefix }}privacy">{{ t.footer.privacyPolicy }}</a>
+        <a href="{{ prefix }}cookie-policy">{{ t.footer.cookiePolicy }}</a>
       </div>
       <p>P.IVA 00000000000</p>
     </div>

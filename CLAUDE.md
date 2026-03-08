@@ -48,7 +48,7 @@ Deep knowledge and connections with a broad network of venues across Italy — n
 
 ### Domain
 
-`aeternaevents.com`
+`aeterna.events`
 
 ---
 

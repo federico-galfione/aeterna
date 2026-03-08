@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "npm run dev",
     "dev": "eleventy --serve",
     "build": "eleventy"
   },
