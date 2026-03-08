@@ -3,17 +3,17 @@
 <!-- Navigation -->
 <header class="navbar{% if navbarScrolled %} navbar--scrolled{% endif %}" id="navbar">
   <div class="container navbar-inner">
-    <a href="{{ prefix }}index.html" class="navbar-logo">
+    <a href="{{ prefix }}" class="navbar-logo">
       <img src="{{ baseUrl }}public/logos/Light_logo.svg" alt="Aeterna Events" class="logo-light">
       <img src="{{ baseUrl }}public/logos/Dark_logo.svg" alt="Aeterna Events" class="logo-dark">
       <img src="{{ baseUrl }}public/logos/Hero_logo.svg" alt="Aeterna Events" class="logo-hero">
     </a>
     <nav class="navbar-links">
-      <a href="{{ prefix }}corporate.html">{{ t.nav.corporate }}</a>
-      <a href="{{ prefix }}weddings.html">{{ t.nav.weddings }}</a>
-      <a href="{{ prefix }}services.html">{{ t.nav.services }}</a>
-      <a href="{{ prefix }}about.html">{{ t.nav.about }}</a>
-      <a href="{{ prefix }}contact.html" class="btn btn-primary btn-sm">{{ t.nav.contact }}</a>
+      <a href="{{ prefix }}corporate">{{ t.nav.corporate }}</a>
+      <a href="{{ prefix }}weddings">{{ t.nav.weddings }}</a>
+      <a href="{{ prefix }}services">{{ t.nav.services }}</a>
+      <a href="{{ prefix }}about">{{ t.nav.about }}</a>
+      <a href="{{ prefix }}contact" class="btn btn-primary btn-sm">{{ t.nav.contact }}</a>
       <div class="navbar-lang">
         <a href="{{ baseUrl }}{{ pageName }}"{% if lang == "en" %} class="active"{% endif %}>EN</a>
         <span>|</span>
@@ -30,12 +30,12 @@
 
 <!-- Mobile Menu -->
 <div class="mobile-menu" aria-hidden="true">
-  <a href="{{ prefix }}index.html">{{ t.nav.home }}</a>
-  <a href="{{ prefix }}corporate.html">{{ t.nav.corporate }}</a>
-  <a href="{{ prefix }}weddings.html">{{ t.nav.weddings }}</a>
-  <a href="{{ prefix }}services.html">{{ t.nav.services }}</a>
-  <a href="{{ prefix }}about.html">{{ t.nav.about }}</a>
-  <a href="{{ prefix }}contact.html">{{ t.nav.mobileContact }}</a>
+  <a href="{{ prefix }}">{{ t.nav.home }}</a>
+  <a href="{{ prefix }}corporate">{{ t.nav.corporate }}</a>
+  <a href="{{ prefix }}weddings">{{ t.nav.weddings }}</a>
+  <a href="{{ prefix }}services">{{ t.nav.services }}</a>
+  <a href="{{ prefix }}about">{{ t.nav.about }}</a>
+  <a href="{{ prefix }}contact">{{ t.nav.mobileContact }}</a>
   <div class="mobile-lang">
     <a href="{{ baseUrl }}{{ pageName }}"{% if lang == "en" %} class="active"{% endif %}>EN</a>
     <span>|</span>

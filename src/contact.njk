@@ -5,17 +5,17 @@ pagination:
   alias: lang
 permalink: "{% if lang == 'it' %}it/{% endif %}contact.html"
 layout: base.njk
-pageName: "contact.html"
+pageName: "contact"
 navbarScrolled: true
 eleventyComputed:
   title: "{% if lang == 'it' %}{{ it.pages.contact.title }}{% else %}{{ en.pages.contact.title }}{% endif %}"
   description: "{% if lang == 'it' %}{{ it.pages.contact.description }}{% else %}{{ en.pages.contact.description }}{% endif %}"
-  canonical: "https://aeternaevents.com/{% if lang == 'it' %}it/{% endif %}contact.html"
-  hreflangEn: "https://aeternaevents.com/contact.html"
-  hreflangIt: "https://aeternaevents.com/it/contact.html"
+  canonical: "https://aeternaevents.com/{% if lang == 'it' %}it/{% endif %}contact"
+  hreflangEn: "https://aeternaevents.com/contact"
+  hreflangIt: "https://aeternaevents.com/it/contact"
   ogTitle: "{% if lang == 'it' %}{{ it.pages.contact.ogTitle }}{% else %}{{ en.pages.contact.ogTitle }}{% endif %}"
   ogDescription: "{% if lang == 'it' %}{{ it.pages.contact.ogDescription }}{% else %}{{ en.pages.contact.ogDescription }}{% endif %}"
-  ogUrl: "https://aeternaevents.com/{% if lang == 'it' %}it/{% endif %}contact.html"
+  ogUrl: "https://aeternaevents.com/{% if lang == 'it' %}it/{% endif %}contact"
 ---
 {% set t = en if lang == "en" else it %}
 {% set prefix = baseUrl if lang == "en" else baseUrl + "it/" %}
@@ -120,7 +120,7 @@ eleventyComputed:
               <div class="form-group form-checkbox">
                 <input type="checkbox" id="consent" name="consent" required>
                 <label for="consent">
-                  {{ t.contact.form.consentText }} <a href="{{ prefix }}privacy.html" target="_blank">{{ t.contact.form.consentLink }}</a>. *
+                  {{ t.contact.form.consentText }} <a href="{{ prefix }}privacy" target="_blank">{{ t.contact.form.consentLink }}</a>. *
                 </label>
               </div>
 

@@ -5,16 +5,16 @@ pagination:
   alias: lang
 permalink: "{% if lang == 'it' %}it/{% endif %}services.html"
 layout: base.njk
-pageName: "services.html"
+pageName: "services"
 eleventyComputed:
   title: "{% if lang == 'it' %}{{ it.pages.services.title }}{% else %}{{ en.pages.services.title }}{% endif %}"
   description: "{% if lang == 'it' %}{{ it.pages.services.description }}{% else %}{{ en.pages.services.description }}{% endif %}"
-  canonical: "https://aeternaevents.com/{% if lang == 'it' %}it/{% endif %}services.html"
-  hreflangEn: "https://aeternaevents.com/services.html"
-  hreflangIt: "https://aeternaevents.com/it/services.html"
+  canonical: "https://aeternaevents.com/{% if lang == 'it' %}it/{% endif %}services"
+  hreflangEn: "https://aeternaevents.com/services"
+  hreflangIt: "https://aeternaevents.com/it/services"
   ogTitle: "{% if lang == 'it' %}{{ it.pages.services.ogTitle }}{% else %}{{ en.pages.services.ogTitle }}{% endif %}"
   ogDescription: "{% if lang == 'it' %}{{ it.pages.services.ogDescription }}{% else %}{{ en.pages.services.ogDescription }}{% endif %}"
-  ogUrl: "https://aeternaevents.com/{% if lang == 'it' %}it/{% endif %}services.html"
+  ogUrl: "https://aeternaevents.com/{% if lang == 'it' %}it/{% endif %}services"
   ogImage: "https://aeternaevents.com/images/og-image.jpg"
 ---
 {% set t = en if lang == "en" else it %}
@@ -165,7 +165,7 @@ eleventyComputed:
               <span class="label label--olive">{{ t.services.servicesCards.corporate.label }}</span>
               <h3>{{ t.services.servicesCards.corporate.title }}</h3>
               <p>{{ t.services.servicesCards.corporate.text }}</p>
-              <a href="{{ prefix }}corporate.html" class="btn btn-secondary">{{ t.services.servicesCards.corporate.cta }}</a>
+              <a href="{{ prefix }}corporate" class="btn btn-secondary">{{ t.services.servicesCards.corporate.cta }}</a>
             </div>
           </div>
           <div class="services-card fade-in">
@@ -176,7 +176,7 @@ eleventyComputed:
               <span class="label label--olive">{{ t.services.servicesCards.weddings.label }}</span>
               <h3>{{ t.services.servicesCards.weddings.title }}</h3>
               <p>{{ t.services.servicesCards.weddings.text }}</p>
-              <a href="{{ prefix }}weddings.html" class="btn btn-secondary">{{ t.services.servicesCards.weddings.cta }}</a>
+              <a href="{{ prefix }}weddings" class="btn btn-secondary">{{ t.services.servicesCards.weddings.cta }}</a>
             </div>
           </div>
         </div>
@@ -244,7 +244,7 @@ eleventyComputed:
         <div class="pricing-note fade-in">
           <h3>{{ t.services.pricing.title }}</h3>
           <p>{{ t.services.pricing.text }}</p>
-          <p style="margin-top: var(--space-lg);"><a href="{{ prefix }}contact.html" style="color: var(--accent-primary); text-decoration: underline;">{{ t.services.pricing.contactText }}</a>{{ t.services.pricing.contactSuffix }}</p>
+          <p style="margin-top: var(--space-lg);"><a href="{{ prefix }}contact" style="color: var(--accent-primary); text-decoration: underline;">{{ t.services.pricing.contactText }}</a>{{ t.services.pricing.contactSuffix }}</p>
         </div>
       </div>
     </section>
@@ -256,7 +256,7 @@ eleventyComputed:
           <span class="label">{{ t.services.cta.label }}</span>
           <h2>{{ t.services.cta.title }}</h2>
           <p>{{ t.services.cta.text }}</p>
-          <a href="{{ prefix }}contact.html" class="btn btn-ghost btn-lg">{{ t.services.cta.button }}</a>
+          <a href="{{ prefix }}contact" class="btn btn-ghost btn-lg">{{ t.services.cta.button }}</a>
         </div>
       </div>
     </section>

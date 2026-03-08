@@ -5,17 +5,17 @@ pagination:
   alias: lang
 permalink: "{% if lang == 'it' %}it/{% endif %}cookie-policy.html"
 layout: base.njk
-pageName: "cookie-policy.html"
+pageName: "cookie-policy"
 navbarScrolled: true
 eleventyComputed:
   title: "{% if lang == 'it' %}{{ it.pages.cookiePolicy.title }}{% else %}{{ en.pages.cookiePolicy.title }}{% endif %}"
   description: "{% if lang == 'it' %}{{ it.pages.cookiePolicy.description }}{% else %}{{ en.pages.cookiePolicy.description }}{% endif %}"
-  canonical: "https://aeternaevents.com/{% if lang == 'it' %}it/{% endif %}cookie-policy.html"
-  hreflangEn: "https://aeternaevents.com/cookie-policy.html"
-  hreflangIt: "https://aeternaevents.com/it/cookie-policy.html"
+  canonical: "https://aeternaevents.com/{% if lang == 'it' %}it/{% endif %}cookie-policy"
+  hreflangEn: "https://aeternaevents.com/cookie-policy"
+  hreflangIt: "https://aeternaevents.com/it/cookie-policy"
   ogTitle: "{% if lang == 'it' %}{{ it.pages.cookiePolicy.ogTitle }}{% else %}{{ en.pages.cookiePolicy.ogTitle }}{% endif %}"
   ogDescription: "{% if lang == 'it' %}{{ it.pages.cookiePolicy.ogDescription }}{% else %}{{ en.pages.cookiePolicy.ogDescription }}{% endif %}"
-  ogUrl: "https://aeternaevents.com/{% if lang == 'it' %}it/{% endif %}cookie-policy.html"
+  ogUrl: "https://aeternaevents.com/{% if lang == 'it' %}it/{% endif %}cookie-policy"
 ---
 {% set t = en if lang == "en" else it %}
 {% set prefix = baseUrl if lang == "en" else baseUrl + "it/" %}

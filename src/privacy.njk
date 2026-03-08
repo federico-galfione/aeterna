@@ -5,17 +5,17 @@ pagination:
   alias: lang
 permalink: "{% if lang == 'it' %}it/{% endif %}privacy.html"
 layout: base.njk
-pageName: "privacy.html"
+pageName: "privacy"
 navbarScrolled: true
 eleventyComputed:
   title: "{% if lang == 'it' %}{{ it.pages.privacy.title }}{% else %}{{ en.pages.privacy.title }}{% endif %}"
   description: "{% if lang == 'it' %}{{ it.pages.privacy.description }}{% else %}{{ en.pages.privacy.description }}{% endif %}"
-  canonical: "https://aeternaevents.com/{% if lang == 'it' %}it/{% endif %}privacy.html"
-  hreflangEn: "https://aeternaevents.com/privacy.html"
-  hreflangIt: "https://aeternaevents.com/it/privacy.html"
+  canonical: "https://aeternaevents.com/{% if lang == 'it' %}it/{% endif %}privacy"
+  hreflangEn: "https://aeternaevents.com/privacy"
+  hreflangIt: "https://aeternaevents.com/it/privacy"
   ogTitle: "{% if lang == 'it' %}{{ it.pages.privacy.ogTitle }}{% else %}{{ en.pages.privacy.ogTitle }}{% endif %}"
   ogDescription: "{% if lang == 'it' %}{{ it.pages.privacy.ogDescription }}{% else %}{{ en.pages.privacy.ogDescription }}{% endif %}"
-  ogUrl: "https://aeternaevents.com/{% if lang == 'it' %}it/{% endif %}privacy.html"
+  ogUrl: "https://aeternaevents.com/{% if lang == 'it' %}it/{% endif %}privacy"
 ---
 {% set t = en if lang == "en" else it %}
 {% set prefix = baseUrl if lang == "en" else baseUrl + "it/" %}

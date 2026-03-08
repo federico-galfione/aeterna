@@ -5,16 +5,16 @@ pagination:
   alias: lang
 permalink: "{% if lang == 'it' %}it/{% endif %}weddings.html"
 layout: base.njk
-pageName: "weddings.html"
+pageName: "weddings"
 eleventyComputed:
   title: "{% if lang == 'it' %}{{ it.pages.weddings.title }}{% else %}{{ en.pages.weddings.title }}{% endif %}"
   description: "{% if lang == 'it' %}{{ it.pages.weddings.description }}{% else %}{{ en.pages.weddings.description }}{% endif %}"
-  canonical: "https://aeternaevents.com/{% if lang == 'it' %}it/{% endif %}weddings.html"
-  hreflangEn: "https://aeternaevents.com/weddings.html"
-  hreflangIt: "https://aeternaevents.com/it/weddings.html"
+  canonical: "https://aeternaevents.com/{% if lang == 'it' %}it/{% endif %}weddings"
+  hreflangEn: "https://aeternaevents.com/weddings"
+  hreflangIt: "https://aeternaevents.com/it/weddings"
   ogTitle: "{% if lang == 'it' %}{{ it.pages.weddings.ogTitle }}{% else %}{{ en.pages.weddings.ogTitle }}{% endif %}"
   ogDescription: "{% if lang == 'it' %}{{ it.pages.weddings.ogDescription }}{% else %}{{ en.pages.weddings.ogDescription }}{% endif %}"
-  ogUrl: "https://aeternaevents.com/{% if lang == 'it' %}it/{% endif %}weddings.html"
+  ogUrl: "https://aeternaevents.com/{% if lang == 'it' %}it/{% endif %}weddings"
   ogImage: "https://aeternaevents.com/images/og-image.jpg"
 ---
 {% set t = en if lang == "en" else it %}
@@ -31,7 +31,7 @@ eleventyComputed:
         <span class="label hero-anim">{{ t.weddings.hero.label }}</span>
         <h1 class="hero-anim">{{ t.weddings.hero.title | safe }}</h1>
         <p class="subtitle hero-anim">{{ t.weddings.hero.subtitle }}</p>
-        <a href="{{ prefix }}contact.html" class="btn btn-ghost hero-anim">{{ t.weddings.hero.cta }}</a>
+        <a href="{{ prefix }}contact" class="btn btn-ghost hero-anim">{{ t.weddings.hero.cta }}</a>
       </div>
       <div class="scroll-indicator">
         <span>{{ t.weddings.hero.scrollIndicator }}</span>
@@ -183,7 +183,7 @@ eleventyComputed:
           <span class="label">{{ t.weddings.cta.label }}</span>
           <h2>{{ t.weddings.cta.title }}</h2>
           <p>{{ t.weddings.cta.text }}</p>
-          <a href="{{ prefix }}contact.html" class="btn btn-primary btn-lg">{{ t.weddings.cta.button }}</a>
+          <a href="{{ prefix }}contact" class="btn btn-primary btn-lg">{{ t.weddings.cta.button }}</a>
         </div>
       </div>
     </section>

@@ -5,16 +5,16 @@ pagination:
   alias: lang
 permalink: "{% if lang == 'it' %}it/{% endif %}about.html"
 layout: base.njk
-pageName: "about.html"
+pageName: "about"
 eleventyComputed:
   title: "{% if lang == 'it' %}{{ it.pages.about.title }}{% else %}{{ en.pages.about.title }}{% endif %}"
   description: "{% if lang == 'it' %}{{ it.pages.about.description }}{% else %}{{ en.pages.about.description }}{% endif %}"
-  canonical: "https://aeternaevents.com/{% if lang == 'it' %}it/{% endif %}about.html"
-  hreflangEn: "https://aeternaevents.com/about.html"
-  hreflangIt: "https://aeternaevents.com/it/about.html"
+  canonical: "https://aeternaevents.com/{% if lang == 'it' %}it/{% endif %}about"
+  hreflangEn: "https://aeternaevents.com/about"
+  hreflangIt: "https://aeternaevents.com/it/about"
   ogTitle: "{% if lang == 'it' %}{{ it.pages.about.ogTitle }}{% else %}{{ en.pages.about.ogTitle }}{% endif %}"
   ogDescription: "{% if lang == 'it' %}{{ it.pages.about.ogDescription }}{% else %}{{ en.pages.about.ogDescription }}{% endif %}"
-  ogUrl: "https://aeternaevents.com/{% if lang == 'it' %}it/{% endif %}about.html"
+  ogUrl: "https://aeternaevents.com/{% if lang == 'it' %}it/{% endif %}about"
   ogImage: "https://aeternaevents.com/images/og-image.jpg"
 ---
 {% set t = en if lang == "en" else it %}
@@ -180,7 +180,7 @@ eleventyComputed:
           <span class="label">{{ t.about.cta.label }}</span>
           <h2 style="color: var(--text-on-dark);">{{ t.about.cta.title }}</h2>
           <p style="color: rgba(250, 247, 240, 0.7);">{{ t.about.cta.text }}</p>
-          <a href="{{ prefix }}contact.html" class="btn btn-ghost btn-lg">{{ t.about.cta.button }}</a>
+          <a href="{{ prefix }}contact" class="btn btn-ghost btn-lg">{{ t.about.cta.button }}</a>
         </div>
       </div>
     </section>
